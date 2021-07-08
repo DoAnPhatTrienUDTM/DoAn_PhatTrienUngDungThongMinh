@@ -34,15 +34,6 @@ namespace GUI
             this.lblTen = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblChucVu = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.headerPanel = new System.Windows.Forms.Panel();
-            this.lblHeader = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.mainPanel = new System.Windows.Forms.Panel();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.lblClose = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnNhanVien = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnBaoCao_5 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -51,18 +42,27 @@ namespace GUI
             this.btnLienHe_2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnTrangChu_1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.indicator = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.picNhanVien = new Custom_Control.CircularPictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.headerPanel = new System.Windows.Forms.Panel();
+            this.lblClose = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblHeader = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.indicator)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.headerPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.indicator)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTen
@@ -109,98 +109,6 @@ namespace GUI
             this.panel1.Size = new System.Drawing.Size(285, 968);
             this.panel1.TabIndex = 2;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.bunifuThinButton21);
-            this.panel2.Controls.Add(this.picNhanVien);
-            this.panel2.Controls.Add(this.lblTen);
-            this.panel2.Controls.Add(this.lblChucVu);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 64);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(285, 238);
-            this.panel2.TabIndex = 9;
-            // 
-            // headerPanel
-            // 
-            this.headerPanel.BackColor = System.Drawing.Color.Transparent;
-            this.headerPanel.Controls.Add(this.lblClose);
-            this.headerPanel.Controls.Add(this.pictureBox4);
-            this.headerPanel.Controls.Add(this.pictureBox3);
-            this.headerPanel.Controls.Add(this.pictureBox1);
-            this.headerPanel.Controls.Add(this.lblHeader);
-            this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.headerPanel.Location = new System.Drawing.Point(285, 0);
-            this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(1613, 64);
-            this.headerPanel.TabIndex = 4;
-            // 
-            // lblHeader
-            // 
-            this.lblHeader.AutoSize = true;
-            this.lblHeader.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeader.ForeColor = System.Drawing.Color.Black;
-            this.lblHeader.Location = new System.Drawing.Point(33, 16);
-            this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(85, 25);
-            this.lblHeader.TabIndex = 0;
-            this.lblHeader.Text = "DauBuoi";
-            // 
-            // mainPanel
-            // 
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(285, 0);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1613, 968);
-            this.mainPanel.TabIndex = 3;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 25;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // lblClose
-            // 
-            this.lblClose.AutoSize = true;
-            this.lblClose.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.lblClose.Location = new System.Drawing.Point(1576, 9);
-            this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(25, 30);
-            this.lblClose.TabIndex = 4;
-            this.lblClose.Text = "x";
-            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1495, 16);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1445, 16);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1395, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnNhanVien
             // 
             this.btnNhanVien.Activecolor = System.Drawing.Color.Transparent;
@@ -223,14 +131,14 @@ namespace GUI
             this.btnNhanVien.IconVisible = true;
             this.btnNhanVien.IconZoom = 60D;
             this.btnNhanVien.IsTab = false;
-            this.btnNhanVien.Location = new System.Drawing.Point(13, 369);
+            this.btnNhanVien.Location = new System.Drawing.Point(4, 369);
             this.btnNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.btnNhanVien.Name = "btnNhanVien";
             this.btnNhanVien.Normalcolor = System.Drawing.Color.Transparent;
             this.btnNhanVien.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnNhanVien.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnNhanVien.selected = false;
-            this.btnNhanVien.Size = new System.Drawing.Size(272, 59);
+            this.btnNhanVien.Size = new System.Drawing.Size(281, 59);
             this.btnNhanVien.TabIndex = 20;
             this.btnNhanVien.Text = "    Nhân viên";
             this.btnNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -295,14 +203,14 @@ namespace GUI
             this.btnBaoCao_5.IconVisible = true;
             this.btnBaoCao_5.IconZoom = 60D;
             this.btnBaoCao_5.IsTab = false;
-            this.btnBaoCao_5.Location = new System.Drawing.Point(13, 631);
+            this.btnBaoCao_5.Location = new System.Drawing.Point(4, 631);
             this.btnBaoCao_5.Margin = new System.Windows.Forms.Padding(4);
             this.btnBaoCao_5.Name = "btnBaoCao_5";
             this.btnBaoCao_5.Normalcolor = System.Drawing.Color.Transparent;
             this.btnBaoCao_5.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnBaoCao_5.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnBaoCao_5.selected = false;
-            this.btnBaoCao_5.Size = new System.Drawing.Size(268, 59);
+            this.btnBaoCao_5.Size = new System.Drawing.Size(277, 59);
             this.btnBaoCao_5.TabIndex = 18;
             this.btnBaoCao_5.Text = "    Báo cáo";
             this.btnBaoCao_5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -332,14 +240,14 @@ namespace GUI
             this.btnSanPham_4.IconVisible = true;
             this.btnSanPham_4.IconZoom = 60D;
             this.btnSanPham_4.IsTab = false;
-            this.btnSanPham_4.Location = new System.Drawing.Point(12, 566);
+            this.btnSanPham_4.Location = new System.Drawing.Point(4, 566);
             this.btnSanPham_4.Margin = new System.Windows.Forms.Padding(4);
             this.btnSanPham_4.Name = "btnSanPham_4";
             this.btnSanPham_4.Normalcolor = System.Drawing.Color.Transparent;
             this.btnSanPham_4.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnSanPham_4.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnSanPham_4.selected = false;
-            this.btnSanPham_4.Size = new System.Drawing.Size(269, 59);
+            this.btnSanPham_4.Size = new System.Drawing.Size(277, 59);
             this.btnSanPham_4.TabIndex = 16;
             this.btnSanPham_4.Text = "   Sản phẩm";
             this.btnSanPham_4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -368,14 +276,14 @@ namespace GUI
             this.btnKho_3.IconVisible = true;
             this.btnKho_3.IconZoom = 60D;
             this.btnKho_3.IsTab = false;
-            this.btnKho_3.Location = new System.Drawing.Point(13, 501);
+            this.btnKho_3.Location = new System.Drawing.Point(4, 501);
             this.btnKho_3.Margin = new System.Windows.Forms.Padding(4);
             this.btnKho_3.Name = "btnKho_3";
             this.btnKho_3.Normalcolor = System.Drawing.Color.Transparent;
             this.btnKho_3.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnKho_3.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnKho_3.selected = false;
-            this.btnKho_3.Size = new System.Drawing.Size(270, 59);
+            this.btnKho_3.Size = new System.Drawing.Size(279, 59);
             this.btnKho_3.TabIndex = 14;
             this.btnKho_3.Text = "    Kho";
             this.btnKho_3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -404,14 +312,14 @@ namespace GUI
             this.btnLienHe_2.IconVisible = true;
             this.btnLienHe_2.IconZoom = 60D;
             this.btnLienHe_2.IsTab = false;
-            this.btnLienHe_2.Location = new System.Drawing.Point(13, 436);
+            this.btnLienHe_2.Location = new System.Drawing.Point(4, 436);
             this.btnLienHe_2.Margin = new System.Windows.Forms.Padding(4);
             this.btnLienHe_2.Name = "btnLienHe_2";
             this.btnLienHe_2.Normalcolor = System.Drawing.Color.Transparent;
             this.btnLienHe_2.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnLienHe_2.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnLienHe_2.selected = false;
-            this.btnLienHe_2.Size = new System.Drawing.Size(272, 59);
+            this.btnLienHe_2.Size = new System.Drawing.Size(281, 59);
             this.btnLienHe_2.TabIndex = 12;
             this.btnLienHe_2.Text = "    Nhà cung cấp";
             this.btnLienHe_2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -441,14 +349,14 @@ namespace GUI
             this.btnTrangChu_1.IconVisible = true;
             this.btnTrangChu_1.IconZoom = 60D;
             this.btnTrangChu_1.IsTab = false;
-            this.btnTrangChu_1.Location = new System.Drawing.Point(13, 302);
+            this.btnTrangChu_1.Location = new System.Drawing.Point(4, 302);
             this.btnTrangChu_1.Margin = new System.Windows.Forms.Padding(4);
             this.btnTrangChu_1.Name = "btnTrangChu_1";
             this.btnTrangChu_1.Normalcolor = System.Drawing.Color.Transparent;
             this.btnTrangChu_1.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnTrangChu_1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnTrangChu_1.selected = false;
-            this.btnTrangChu_1.Size = new System.Drawing.Size(272, 59);
+            this.btnTrangChu_1.Size = new System.Drawing.Size(281, 59);
             this.btnTrangChu_1.TabIndex = 10;
             this.btnTrangChu_1.Text = "    Trang chủ";
             this.btnTrangChu_1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -461,10 +369,22 @@ namespace GUI
             this.indicator.BackColor = System.Drawing.Color.Orchid;
             this.indicator.Location = new System.Drawing.Point(0, 302);
             this.indicator.Name = "indicator";
-            this.indicator.Size = new System.Drawing.Size(10, 59);
+            this.indicator.Size = new System.Drawing.Size(5, 59);
             this.indicator.TabIndex = 7;
             this.indicator.TabStop = false;
             this.indicator.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.bunifuThinButton21);
+            this.panel2.Controls.Add(this.picNhanVien);
+            this.panel2.Controls.Add(this.lblTen);
+            this.panel2.Controls.Add(this.lblChucVu);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 64);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(285, 238);
+            this.panel2.TabIndex = 9;
             // 
             // bunifuThinButton21
             // 
@@ -514,6 +434,86 @@ namespace GUI
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
+            // headerPanel
+            // 
+            this.headerPanel.BackColor = System.Drawing.Color.Transparent;
+            this.headerPanel.Controls.Add(this.lblClose);
+            this.headerPanel.Controls.Add(this.pictureBox4);
+            this.headerPanel.Controls.Add(this.pictureBox3);
+            this.headerPanel.Controls.Add(this.pictureBox1);
+            this.headerPanel.Controls.Add(this.lblHeader);
+            this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.headerPanel.Location = new System.Drawing.Point(285, 0);
+            this.headerPanel.Name = "headerPanel";
+            this.headerPanel.Size = new System.Drawing.Size(1613, 64);
+            this.headerPanel.TabIndex = 4;
+            // 
+            // lblClose
+            // 
+            this.lblClose.AutoSize = true;
+            this.lblClose.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.lblClose.Location = new System.Drawing.Point(1576, 9);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(25, 30);
+            this.lblClose.TabIndex = 4;
+            this.lblClose.Text = "x";
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(1495, 16);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(1445, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1395, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblHeader
+            // 
+            this.lblHeader.AutoSize = true;
+            this.lblHeader.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeader.ForeColor = System.Drawing.Color.Black;
+            this.lblHeader.Location = new System.Drawing.Point(33, 16);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(85, 25);
+            this.lblHeader.TabIndex = 0;
+            this.lblHeader.Text = "DauBuoi";
+            // 
+            // mainPanel
+            // 
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(285, 0);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(1613, 968);
+            this.mainPanel.TabIndex = 3;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 25;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // frmMain
             // 
             this.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -529,16 +529,16 @@ namespace GUI
             this.Text = "Màn hình làm việc";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.indicator)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.headerPanel.ResumeLayout(false);
             this.headerPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.indicator)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

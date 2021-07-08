@@ -102,7 +102,8 @@ namespace GUI
 
         private void btnPhanQuyenNhomNguoiDung_Click(object sender, EventArgs e)
         {
-
+            frmPhanQuyen frm = new frmPhanQuyen();
+            frm.Show();
         }
 
         private void btnThem_Click(object sender, EventArgs e)

@@ -28,6 +28,15 @@ namespace BLL_DAL
             return data as IQueryable;
         }
 
+        public IQueryable loadNguoiDung_True()
+        {
+            return quanLyKho.NGUOIDUNGs.Where(t => t.TINHTRANG == true).Select(s => new
+            {
+                ID_DN = s.ID_DN,
+                TEN = s.TEN
+            });
+        }
+
         //Bindings gridView
         //Lấy tên
         public string gridViewCellClick_TenNhanVien(string id_dn)

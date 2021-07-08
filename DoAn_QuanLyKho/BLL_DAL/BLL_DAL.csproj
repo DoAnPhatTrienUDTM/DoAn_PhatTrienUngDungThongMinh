@@ -64,6 +64,9 @@
     <Compile Include="KhoBLL_DAL.cs" />
     <Compile Include="LoaiSanPham_BLL_DAL.cs" />
     <Compile Include="NhanVienBLL_DAL.cs" />
+    <Compile Include="PhanQuyen_BLL_DAL.cs" />
+    <Compile Include="PhanQuyen_Join.cs" />
+    <Compile Include="QL_NguoiDungNhomNguoiDung_BLL_DAL.cs" />
     <Compile Include="QL_NhomNguoiDung.cs" />
     <Compile Include="QuanLyKho.designer.cs">
       <AutoGen>True</AutoGen>
