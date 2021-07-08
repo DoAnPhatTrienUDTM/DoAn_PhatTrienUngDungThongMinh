@@ -47,6 +47,8 @@ namespace GUI
             this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.gridHangHoa = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,8 +59,6 @@ namespace GUI
             this.cbbLoaiSP = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.btnsua = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnluu = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -227,6 +227,7 @@ namespace GUI
             this.gridHangHoa.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gridHangHoa.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridHangHoa.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridHangHoa.BackgroundColor = System.Drawing.Color.White;
             this.gridHangHoa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridHangHoa.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -278,118 +279,6 @@ namespace GUI
             this.gridHangHoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridHangHoa_CellContentClick);
             this.gridHangHoa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gridHangHoa_KeyPress);
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "ID_SP";
-            this.Column1.HeaderText = "Mã Hàng Hóa";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column1.Width = 106;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "TENSP";
-            this.Column2.HeaderText = "Tên Hàng Hóa";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 105;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "DVT";
-            this.Column6.HeaderText = "Đơn Vị Tính";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 106;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "SOLUONG";
-            this.Column5.HeaderText = "Số Lượng Tồn";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 105;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.DataPropertyName = "HINHANH";
-            this.Column3.HeaderText = "Hình Ảnh";
-            this.Column3.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "DONGIA";
-            this.Column7.HeaderText = "Đơn Giá";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Width = 105;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Ngày Nhập";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 106;
-            // 
-            // cbbLoaiSP
-            // 
-            this.cbbLoaiSP.DataPropertyName = "ID_LSP";
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            this.cbbLoaiSP.DefaultCellStyle = dataGridViewCellStyle3;
-            this.cbbLoaiSP.HeaderText = "Loại Sản Phẩm";
-            this.cbbLoaiSP.MinimumWidth = 6;
-            this.cbbLoaiSP.Name = "cbbLoaiSP";
-            this.cbbLoaiSP.ReadOnly = true;
-            this.cbbLoaiSP.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.cbbLoaiSP.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.cbbLoaiSP.Width = 105;
-            // 
-            // btnsua
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.btnsua.DefaultCellStyle = dataGridViewCellStyle4;
-            this.btnsua.HeaderText = "";
-            this.btnsua.MinimumWidth = 6;
-            this.btnsua.Name = "btnsua";
-            this.btnsua.ReadOnly = true;
-            this.btnsua.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.btnsua.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.btnsua.Text = "sửa";
-            this.btnsua.ToolTipText = "sửa";
-            this.btnsua.UseColumnTextForButtonValue = true;
-            this.btnsua.Width = 106;
-            // 
-            // btnluu
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            this.btnluu.DefaultCellStyle = dataGridViewCellStyle5;
-            this.btnluu.HeaderText = "";
-            this.btnluu.MinimumWidth = 6;
-            this.btnluu.Name = "btnluu";
-            this.btnluu.ReadOnly = true;
-            this.btnluu.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.btnluu.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.btnluu.Text = "luu";
-            this.btnluu.ToolTipText = "luu";
-            this.btnluu.UseColumnTextForButtonValue = true;
-            this.btnluu.Width = 105;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
@@ -408,6 +297,110 @@ namespace GUI
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "ID_SP";
+            this.Column1.HeaderText = "Mã Hàng Hóa";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "TENSP";
+            this.Column2.HeaderText = "Tên Hàng Hóa";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "DVT";
+            this.Column6.HeaderText = "Đơn Vị Tính";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "SOLUONG";
+            this.Column5.HeaderText = "Số Lượng Tồn";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column3.DataPropertyName = "HINHANH";
+            this.Column3.HeaderText = "Hình Ảnh";
+            this.Column3.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column3.Width = 106;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "DONGIA";
+            this.Column7.HeaderText = "Đơn Giá";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Ngày Nhập";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // cbbLoaiSP
+            // 
+            this.cbbLoaiSP.DataPropertyName = "ID_LSP";
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            this.cbbLoaiSP.DefaultCellStyle = dataGridViewCellStyle3;
+            this.cbbLoaiSP.HeaderText = "Loại Sản Phẩm";
+            this.cbbLoaiSP.MinimumWidth = 6;
+            this.cbbLoaiSP.Name = "cbbLoaiSP";
+            this.cbbLoaiSP.ReadOnly = true;
+            this.cbbLoaiSP.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.cbbLoaiSP.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // btnsua
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.btnsua.DefaultCellStyle = dataGridViewCellStyle4;
+            this.btnsua.HeaderText = "";
+            this.btnsua.MinimumWidth = 6;
+            this.btnsua.Name = "btnsua";
+            this.btnsua.ReadOnly = true;
+            this.btnsua.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.btnsua.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.btnsua.Text = "sửa";
+            this.btnsua.ToolTipText = "sửa";
+            this.btnsua.UseColumnTextForButtonValue = true;
+            // 
+            // btnluu
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.btnluu.DefaultCellStyle = dataGridViewCellStyle5;
+            this.btnluu.HeaderText = "";
+            this.btnluu.MinimumWidth = 6;
+            this.btnluu.Name = "btnluu";
+            this.btnluu.ReadOnly = true;
+            this.btnluu.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.btnluu.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.btnluu.Text = "luu";
+            this.btnluu.ToolTipText = "luu";
+            this.btnluu.UseColumnTextForButtonValue = true;
             // 
             // frmHangHoa
             // 
@@ -445,6 +438,7 @@ namespace GUI
         private Bunifu.Framework.UI.BunifuImageButton btnSearch;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtSearch;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
@@ -455,6 +449,5 @@ namespace GUI
         private System.Windows.Forms.DataGridViewComboBoxColumn cbbLoaiSP;
         private System.Windows.Forms.DataGridViewButtonColumn btnsua;
         private System.Windows.Forms.DataGridViewButtonColumn btnluu;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
