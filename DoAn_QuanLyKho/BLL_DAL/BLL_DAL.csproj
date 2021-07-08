@@ -60,7 +60,9 @@
   <ItemGroup>
     <Compile Include="Add_NhaCungCap.cs" />
     <Compile Include="DanhMucMH_BLL_DAL.cs" />
+    <Compile Include="Hanghoa_BLL_DAL.cs" />
     <Compile Include="KhoBLL_DAL.cs" />
+    <Compile Include="LoaiSanPham_BLL_DAL.cs" />
     <Compile Include="NhanVienBLL_DAL.cs" />
     <Compile Include="QL_NhomNguoiDung.cs" />
     <Compile Include="QuanLyKho.designer.cs">
