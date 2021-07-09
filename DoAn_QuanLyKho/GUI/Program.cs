@@ -21,6 +21,7 @@ namespace GUI
             //Application.Run(new frmMain());
             Application.Run(new frmLoading());
             //Application.Run(new TestMapControl());
+            //Application.Run(new Form1());
         }
     }
 }

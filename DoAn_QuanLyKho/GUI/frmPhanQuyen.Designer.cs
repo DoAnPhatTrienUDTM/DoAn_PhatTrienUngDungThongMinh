@@ -72,11 +72,11 @@ namespace GUI
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label2.Location = new System.Drawing.Point(12, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(424, 30);
+            this.label2.Size = new System.Drawing.Size(390, 32);
             this.label2.TabIndex = 51;
             this.label2.Text = "Phân quyền cho nhóm người dùng";
             // 
@@ -91,7 +91,7 @@ namespace GUI
             this.btnLuu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLuu.BackgroundImage")));
             this.btnLuu.ButtonText = "Lưu thay đổi";
             this.btnLuu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLuu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnLuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLuu.IdleBorderThickness = 1;
             this.btnLuu.IdleCornerRadius = 20;
@@ -109,10 +109,12 @@ namespace GUI
             // bunifuElipse2
             // 
             this.bunifuElipse2.ElipseRadius = 25;
+            this.bunifuElipse2.TargetControl = this;
             // 
             // bunifuElipse3
             // 
             this.bunifuElipse3.ElipseRadius = 25;
+            this.bunifuElipse3.TargetControl = this;
             // 
             // grvNhomNguoiDung
             // 
@@ -143,6 +145,8 @@ namespace GUI
             this.grvNhomNguoiDung.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grvNhomNguoiDung.Size = new System.Drawing.Size(486, 623);
             this.grvNhomNguoiDung.TabIndex = 55;
+            this.grvNhomNguoiDung.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grvNhomNguoiDung_CellClick);
+            this.grvNhomNguoiDung.SelectionChanged += new System.EventHandler(this.grvNhomNguoiDung_SelectionChanged);
             // 
             // Column2
             // 
@@ -192,21 +196,21 @@ namespace GUI
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.DataPropertyName = "ID_MANHINH";
+            this.Column1.DataPropertyName = "IntIDManHinh";
             this.Column1.HeaderText = "Mã màn hình";
             this.Column1.Name = "Column1";
             // 
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column5.DataPropertyName = "TENMANHINH";
+            this.Column5.DataPropertyName = "StrTenManHinh";
             this.Column5.HeaderText = "Tên màn hình";
             this.Column5.Name = "Column5";
             // 
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column6.DataPropertyName = "COQUYEN";
+            this.Column6.DataPropertyName = "BolCoQuyen";
             this.Column6.HeaderText = "Có quyền";
             this.Column6.Name = "Column6";
             this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -243,11 +247,11 @@ namespace GUI
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
         private Bunifu.Framework.UI.BunifuCustomDataGrid grvPhanQuyen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column6;
         private Bunifu.Framework.UI.BunifuCustomDataGrid grvNhomNguoiDung;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column6;
     }
 }

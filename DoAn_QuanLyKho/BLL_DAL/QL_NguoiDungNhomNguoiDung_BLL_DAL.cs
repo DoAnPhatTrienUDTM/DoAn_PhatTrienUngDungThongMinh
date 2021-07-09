@@ -19,7 +19,7 @@ namespace BLL_DAL
         //Load gridView
         public IQueryable loadDataNguoiDungNhomNguoiDung_id(string id_nhom)
         {
-            return quanLyKho.NGUOIDUNGNHOMNGUOIDUNGs.Select(t => t.ID_NHOM == id_nhom);
+            return quanLyKho.NGUOIDUNGNHOMNGUOIDUNGs.Select(t => t).Where(s => s.ID_DN == id_nhom);
         }
 
         public IQueryable loadDataNguoiDungNhomNguoiDung()
@@ -59,6 +59,21 @@ namespace BLL_DAL
             catch
             {
                 return false;
+            }
+        }
+
+        //Lấy role người dùng
+        public string getRole(string id_dn)
+        {
+            try
+            {
+                NGUOIDUNGNHOMNGUOIDUNG nd = quanLyKho.NGUOIDUNGNHOMNGUOIDUNGs.FirstOrDefault(s => s.ID_DN == id_dn);
+                NHOMNGUOIDUNG nhomND = quanLyKho.NHOMNGUOIDUNGs.FirstOrDefault(s => s.ID_NHOM == nd.ID_NHOM);
+                return nhomND.TENNHOM;
+            }
+            catch
+            {
+                return null;
             }
         }
     }

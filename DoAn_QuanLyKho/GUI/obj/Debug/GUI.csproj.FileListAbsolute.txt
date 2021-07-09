@@ -1656,3 +1656,4 @@ C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDu
 C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.exe
 C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.pdb
+C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\GUI\obj\Debug\GUI.Form1.resources

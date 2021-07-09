@@ -119,6 +119,26 @@ namespace BLL_DAL
                 throw;
             }
         }
+        public bool update_TinhTrang(string id)
+        {
+            try
+            {
+                NGUOIDUNG nguoidung = quanLyKho.NGUOIDUNGs.SingleOrDefault(t => t.ID_DN.Equals(id));
+                if (nguoidung != null)
+                {
+                    nguoidung.TINHTRANG = true;
+                    quanLyKho.SubmitChanges();
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
+        }
+
 
         //Lấy info người dùng
         public NGUOIDUNG get_Info(string id)

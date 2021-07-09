@@ -16,22 +16,40 @@ namespace BLL_DAL
 
         }
 
+        //Load full bảng
+        public IQueryable load_PhanQuyenFull(string id_nhom)
+        {
+            return quanLyKho.PHANQUYENs.Select(s => s).Where(s => s.ID_NHOM == id_nhom);
+        }  
+        
         //Liên kết bảng phân quyền và màn hình
-        public List<PhanQuyen_Join> loadPhanQuyen_Join()
+        public List<PhanQuyen_Join> loadPhanQuyen()
         {
             var PhanQuyen = from manhinh in quanLyKho.MANHINHs
-                            join phanquyen in quanLyKho.PHANQUYENs on manhinh.ID_MANHINH equals phanquyen.ID_MANHINH
                             select new PhanQuyen_Join()
                             {
                                 IntIDManHinh = manhinh.ID_MANHINH,
                                 StrTenManHinh = manhinh.TENMANHINH,
-                                BolCoQuyen = phanquyen.COQUYEN
+                                BolCoQuyen = false
                             };
             return PhanQuyen.ToList();
         }
 
-        //Lưu phân quyền
-        public bool luuPhanQuyen(string idNhom, int idManHinh, bool coQuyen)
+        public List<PhanQuyen_Join> loadphanQuyen_Join(string id_nhom)
+        {
+            var phanQuyen = from phanquyen in quanLyKho.PHANQUYENs where phanquyen.ID_NHOM == id_nhom
+                            join manhinh in quanLyKho.MANHINHs on phanquyen.ID_MANHINH equals manhinh.ID_MANHINH
+                            select new PhanQuyen_Join()
+                            {
+                                IntIDManHinh = phanquyen.ID_MANHINH,
+                                StrTenManHinh = manhinh.TENMANHINH,
+                                BolCoQuyen = phanquyen.COQUYEN
+                            };
+            return phanQuyen.ToList();
+        }
+
+        //Thêm phân quyền
+        public bool themPhanQuyen(string idNhom, int idManHinh, bool coQuyen)
         {
             try
             {
@@ -43,6 +61,64 @@ namespace BLL_DAL
                 quanLyKho.PHANQUYENs.InsertOnSubmit(phanQuyen);
                 quanLyKho.SubmitChanges();
                 return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        //Update phân quyền
+        public bool updatePhanQuyen(string id_nhom, int id_manhinh, bool coQuyen)
+        {
+            try
+            {
+                PHANQUYEN phanQuyen = quanLyKho.PHANQUYENs.Where(s => s.ID_NHOM == id_nhom && s.ID_MANHINH == id_manhinh).FirstOrDefault();
+                phanQuyen.COQUYEN = coQuyen;
+                quanLyKho.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        //Kiểm tra get phân quyền
+        public int kiemTraKhoaChinh_PhanQuyen(string id_nhom, int id_manhinh)
+        {
+            try
+            {
+                var phanQuyen = from phanquyen in quanLyKho.PHANQUYENs where phanquyen.ID_NHOM == id_nhom && phanquyen.ID_MANHINH == id_manhinh select phanquyen;
+                if (phanQuyen.Count() == 0)
+                {
+                    return 0; //Chưa có, sử dụng hàm thêm phân quyền
+                }
+                else
+                {
+                    return 1; //Đã có, sử dụng hàm update phân quyền
+                }
+            }
+            catch
+            {
+                return 2; //Có lỗi xảy ra
+            }
+        }
+
+        //Kiểm tra khóa ID_NHOM trên bảng phân quyền
+        public bool kiemTraID_Nhom(string id_nhom)
+        {
+            try
+            {
+                var khoaChinh = from phanquyen in quanLyKho.PHANQUYENs where phanquyen.ID_NHOM == id_nhom select phanquyen;
+                if(khoaChinh.Count() == 0)
+                {
+                    return true;
+                }   
+                else
+                {
+                    return false;
+                }    
             }
             catch
             {

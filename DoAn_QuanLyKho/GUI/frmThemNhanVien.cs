@@ -16,6 +16,7 @@ namespace GUI
     {
         NhanVienBLL_DAL nv = new NhanVienBLL_DAL();
         KhoBLL_DAL kho = new KhoBLL_DAL();
+        DefendPassword mk = new DefendPassword();
         public frmThemNhanVien()
         {
             InitializeComponent();
