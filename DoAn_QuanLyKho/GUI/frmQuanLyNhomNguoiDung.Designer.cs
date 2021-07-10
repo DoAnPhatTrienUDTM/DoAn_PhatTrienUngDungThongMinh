@@ -37,6 +37,7 @@ namespace GUI
             this.panelLeft = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.txtTenNhom = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,13 +50,12 @@ namespace GUI
             this.btnSuaNCC = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnThemNCC = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnXoaNCC = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNhomNguoiDung = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.btnTaoMoi = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panelLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grvNhomNguoiDung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grvNhomNguoiDung)).BeginInit();
             this.SuspendLayout();
             // 
             // panelLeft
@@ -84,13 +84,23 @@ namespace GUI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(26, 258);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(297, 22);
+            this.label1.Size = new System.Drawing.Size(296, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "HỆ THỐNG QUẢN LÝ KHO HÀNG";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.wms_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(70, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(217, 196);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // bunifuElipse1
             // 
@@ -101,7 +111,7 @@ namespace GUI
             // 
             this.txtTenNhom.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTenNhom.Enabled = false;
-            this.txtTenNhom.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtTenNhom.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenNhom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtTenNhom.HintForeColor = System.Drawing.Color.Empty;
             this.txtTenNhom.HintText = "";
@@ -120,22 +130,22 @@ namespace GUI
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label6.Location = new System.Drawing.Point(771, 184);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 21);
+            this.label6.Size = new System.Drawing.Size(81, 21);
             this.label6.TabIndex = 53;
             this.label6.Text = "&Tên nhóm:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label2.Location = new System.Drawing.Point(373, 43);
+            this.label2.Location = new System.Drawing.Point(386, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(320, 30);
+            this.label2.Size = new System.Drawing.Size(303, 32);
             this.label2.TabIndex = 50;
             this.label2.Text = "Quản lý nhóm người dùng";
             // 
@@ -236,7 +246,7 @@ namespace GUI
             this.btnSuaNCC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSuaNCC.BackgroundImage")));
             this.btnSuaNCC.ButtonText = "Sửa";
             this.btnSuaNCC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSuaNCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaNCC.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnSuaNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSuaNCC.IdleBorderThickness = 1;
             this.btnSuaNCC.IdleCornerRadius = 20;
@@ -262,7 +272,7 @@ namespace GUI
             this.btnThemNCC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThemNCC.BackgroundImage")));
             this.btnThemNCC.ButtonText = "Thêm";
             this.btnThemNCC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThemNCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemNCC.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnThemNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnThemNCC.IdleBorderThickness = 1;
             this.btnThemNCC.IdleCornerRadius = 20;
@@ -288,7 +298,7 @@ namespace GUI
             this.btnXoaNCC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXoaNCC.BackgroundImage")));
             this.btnXoaNCC.ButtonText = "Xóa";
             this.btnXoaNCC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoaNCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaNCC.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnXoaNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnXoaNCC.IdleBorderThickness = 1;
             this.btnXoaNCC.IdleCornerRadius = 20;
@@ -303,24 +313,14 @@ namespace GUI
             this.btnXoaNCC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnXoaNCC.Click += new System.EventHandler(this.btnXoaNCC_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.wms_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(70, 43);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(217, 196);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label5.Location = new System.Drawing.Point(374, 184);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 21);
+            this.label5.Size = new System.Drawing.Size(76, 21);
             this.label5.TabIndex = 51;
             this.label5.Text = "&ID Nhóm:";
             // 
@@ -328,7 +328,7 @@ namespace GUI
             // 
             this.txtNhomNguoiDung.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNhomNguoiDung.Enabled = false;
-            this.txtNhomNguoiDung.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtNhomNguoiDung.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNhomNguoiDung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNhomNguoiDung.HintForeColor = System.Drawing.Color.Empty;
             this.txtNhomNguoiDung.HintText = "";
@@ -355,7 +355,7 @@ namespace GUI
             this.btnTaoMoi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTaoMoi.BackgroundImage")));
             this.btnTaoMoi.ButtonText = "Thao tác";
             this.btnTaoMoi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTaoMoi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaoMoi.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnTaoMoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnTaoMoi.IdleBorderThickness = 1;
             this.btnTaoMoi.IdleCornerRadius = 20;
@@ -394,8 +394,8 @@ namespace GUI
             this.Load += new System.EventHandler(this.frmQuanLyNhomNguoiDung_Load);
             this.panelLeft.ResumeLayout(false);
             this.panelLeft.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grvNhomNguoiDung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grvNhomNguoiDung)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -10,20 +10,6 @@
       <Association Name="SANPHAM_CHITIETPHIEUDAT" Member="SANPHAM" ThisKey="ID_SP" OtherKey="ID_SP" Type="SANPHAM" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.CHITIETPHIEUNHAP" Member="CHITIETPHIEUNHAPs">
-    <Type Name="CHITIETPHIEUNHAP">
-      <Column Name="ID_PN" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="ID_PD" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ID_SP" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="SOLUONG" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="DONGIANHAP" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="DONGIABAN" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="HANSD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="THANHTIEN" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Association Name="PHIEUDAT_CHITIETPHIEUNHAP" Member="PHIEUDAT" ThisKey="ID_PD" OtherKey="ID_PD" Type="PHIEUDAT" IsForeignKey="true" />
-      <Association Name="PHIEUNHAP_CHITIETPHIEUNHAP" Member="PHIEUNHAP" ThisKey="ID_PN" OtherKey="ID_PN" Type="PHIEUNHAP" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.CHITIETPHIEUXUAT" Member="CHITIETPHIEUXUATs">
     <Type Name="CHITIETPHIEUXUAT">
       <Column Name="ID_PX" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -220,6 +206,19 @@
       <Association Name="YEUCAUXUATHANG_CHITIETYCXUATHANG" Member="CHITIETYCXUATHANGs" ThisKey="ID_YCXH" OtherKey="ID_YCXH" Type="CHITIETYCXUATHANG" />
       <Association Name="YEUCAUXUATHANG_PHIEUXUAT" Member="PHIEUXUATs" ThisKey="ID_YCXH" OtherKey="ID_YCXH" Type="PHIEUXUAT" />
       <Association Name="NGUOIDUNG_YEUCAUXUATHANG" Member="NGUOIDUNG" ThisKey="ID_DN" OtherKey="ID_DN" Type="NGUOIDUNG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETPHIEUNHAP" Member="CHITIETPHIEUNHAPs">
+    <Type Name="CHITIETPHIEUNHAP">
+      <Column Name="ID_PN" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_SP" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SOLUONG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DONGIANHAP" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HANSD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="THANHTIEN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="PHIEUDAT_CHITIETPHIEUNHAP" Member="PHIEUDAT" ThisKey="ID_PD" OtherKey="ID_PD" Type="PHIEUDAT" IsForeignKey="true" />
+      <Association Name="PHIEUNHAP_CHITIETPHIEUNHAP" Member="PHIEUNHAP" ThisKey="ID_PN" OtherKey="ID_PN" Type="PHIEUNHAP" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>
