@@ -28,6 +28,15 @@ namespace BLL_DAL
             return data as IQueryable;
         }
 
+        public IQueryable loadNguoiDung_True()
+        {
+            return quanLyKho.NGUOIDUNGs.Where(t => t.TINHTRANG == true).Select(s => new
+            {
+                ID_DN = s.ID_DN,
+                TEN = s.TEN
+            });
+        }
+
         //Bindings gridView
         //Lấy tên
         public string gridViewCellClick_TenNhanVien(string id_dn)
@@ -110,6 +119,26 @@ namespace BLL_DAL
                 throw;
             }
         }
+        public bool update_TinhTrang(string id)
+        {
+            try
+            {
+                NGUOIDUNG nguoidung = quanLyKho.NGUOIDUNGs.SingleOrDefault(t => t.ID_DN.Equals(id));
+                if (nguoidung != null)
+                {
+                    nguoidung.TINHTRANG = true;
+                    quanLyKho.SubmitChanges();
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
+        }
+
 
         //Lấy info người dùng
         public NGUOIDUNG get_Info(string id)

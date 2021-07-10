@@ -59,11 +59,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Add_NhaCungCap.cs" />
+    <Compile Include="CTPD_BLL_DAL.cs" />
     <Compile Include="DanhMucMH_BLL_DAL.cs" />
     <Compile Include="Hanghoa_BLL_DAL.cs" />
     <Compile Include="KhoBLL_DAL.cs" />
     <Compile Include="LoaiSanPham_BLL_DAL.cs" />
+    <Compile Include="NCC_BLL_DAL.cs" />
     <Compile Include="NhanVienBLL_DAL.cs" />
+<<<<<<< HEAD
+    <Compile Include="PhieuDat_BLL_DAL.cs" />
+=======
+    <Compile Include="PhanQuyen_BLL_DAL.cs" />
+    <Compile Include="PhanQuyen_Join.cs" />
+    <Compile Include="QL_NguoiDungNhomNguoiDung_BLL_DAL.cs" />
+>>>>>>> 976563c5f17c9a03db3afb01acd6550b46e30615
     <Compile Include="QL_NhomNguoiDung.cs" />
     <Compile Include="QuanLyKho.designer.cs">
       <AutoGen>True</AutoGen>
@@ -149,6 +158,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\find_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

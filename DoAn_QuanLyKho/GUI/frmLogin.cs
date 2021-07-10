@@ -14,7 +14,7 @@ namespace GUI
     {
         Check_Login login = new Check_Login();
         DefendPassword password = new DefendPassword();
-        string manv;
+        public string manv;
         public frmLogin()
         {
             InitializeComponent();
@@ -102,8 +102,8 @@ namespace GUI
                     frm.ShowDialog(this);
                 }
                 manv = login.getIDUser(txtUsername.Text, txtPass.Text);
-                frmMain frmQuanLyKho = new frmMain(manv);
-                frmQuanLyKho.Show();
+                Program.main.MaNhanVien = manv;
+                Program.main.Show();
                 this.Hide();
             }
             else
