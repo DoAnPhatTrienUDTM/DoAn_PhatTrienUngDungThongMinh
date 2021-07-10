@@ -28,15 +28,6 @@ namespace BLL_DAL
             return data as IQueryable;
         }
 
-        public IQueryable loadNguoiDung_True()
-        {
-            return quanLyKho.NGUOIDUNGs.Where(t => t.TINHTRANG == true).Select(s => new
-            {
-                ID_DN = s.ID_DN,
-                TEN = s.TEN
-            });
-        }
-
         //Bindings gridView
         //Lấy tên
         public string gridViewCellClick_TenNhanVien(string id_dn)
@@ -94,15 +85,8 @@ namespace BLL_DAL
             return kho.DIACHI;
         }
 
-        //Lấy file ảnh
-        public string gridViewCellClick_FileAnh(string id_dn)
-        {
-            NGUOIDUNG nd = quanLyKho.NGUOIDUNGs.FirstOrDefault(s => s.ID_DN == id_dn);
-            return nd.HINH;
-        }
-
         //Cập nhật
-        public bool updateInfo(string id, string ten, string sdt, string diachi, DateTime ngaysinh, string gioitinh, string pass, string pic)
+        public bool updateInfo(string id, string ten, string sdt, string diachi, DateTime ngaysinh, string gioitinh, string pass)
         {
             try
             {
@@ -115,47 +99,6 @@ namespace BLL_DAL
                     nguoidung.NGAYSINH = ngaysinh;
                     nguoidung.GIOITINH = gioitinh;
                     nguoidung.MATKHAU = pass;
-                    nguoidung.HINH = pic;
-                    quanLyKho.SubmitChanges();
-                    return true;
-                }
-                return false;
-            }
-            catch (Exception)
-            {
-                return false;
-                throw;
-            }
-        }
-
-        public bool update_TinhTrang_True(string id)
-        {
-            try
-            {
-                NGUOIDUNG nguoidung = quanLyKho.NGUOIDUNGs.SingleOrDefault(t => t.ID_DN.Equals(id));
-                if (nguoidung != null)
-                {
-                    nguoidung.TINHTRANG = true;
-                    quanLyKho.SubmitChanges();
-                    return true;
-                }
-                return false;
-            }
-            catch (Exception)
-            {
-                return false;
-                throw;
-            }
-        }
-
-        public bool update_TinhTrang_False(string id)
-        {
-            try
-            {
-                NGUOIDUNG nguoidung = quanLyKho.NGUOIDUNGs.SingleOrDefault(t => t.ID_DN.Equals(id));
-                if (nguoidung != null)
-                {
-                    nguoidung.TINHTRANG = false;
                     quanLyKho.SubmitChanges();
                     return true;
                 }
@@ -175,7 +118,7 @@ namespace BLL_DAL
         }
 
         //Thêm người dùng
-        public bool themNguoiDung(int id_kho, string id, string ten, string sdt, string diachi, DateTime ngaysinh, string gioitinh, string pass, string pic)
+        public bool themNguoiDung(int id_kho, string id, string ten, string sdt, string diachi, DateTime ngaysinh, string gioitinh, string pass)
         {
             try
             {
@@ -188,7 +131,6 @@ namespace BLL_DAL
                 nd.NGAYSINH = ngaysinh;
                 nd.GIOITINH = gioitinh;
                 nd.MATKHAU = pass;
-                nd.HINH = pic;
                 quanLyKho.NGUOIDUNGs.InsertOnSubmit(nd);
                 quanLyKho.SubmitChanges();
                 return true;
@@ -213,33 +155,6 @@ namespace BLL_DAL
             {
                 return false;
             }
-        }
-
-        //Search nhân viên
-        public IQueryable searchNhanVien(string ten)
-        {
-            var data = quanLyKho.NGUOIDUNGs.Select(s => new
-            {
-                ID_DN = s.ID_DN,
-                TEN = s.TEN
-            }
-            );
-            data = data.Where(s => s.TEN.Contains(ten));
-            return data as IQueryable;
-        }
-
-        //Đếm nhân viên
-        public int count_NhanVien()
-        {
-            var demNhanVien = from nhanvien in quanLyKho.NGUOIDUNGs select nhanvien;
-            return demNhanVien.Count();
-        }
-
-        //Đếm nhân viên còn hoạt động
-        public int count_NhanVien_True()
-        {
-            var demNhanVien = from nhanvien in quanLyKho.NGUOIDUNGs where nhanvien.TINHTRANG == true select nhanvien;
-            return demNhanVien.Count();
         }
     }
 }

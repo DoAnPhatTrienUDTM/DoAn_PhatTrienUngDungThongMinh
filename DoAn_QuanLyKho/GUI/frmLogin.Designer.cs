@@ -59,10 +59,9 @@ namespace GUI
             // 
             // doubleBitmapControl1
             // 
-            this.doubleBitmapControl1.Location = new System.Drawing.Point(223, 212);
-            this.doubleBitmapControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.doubleBitmapControl1.Location = new System.Drawing.Point(260, 261);
             this.doubleBitmapControl1.Name = "doubleBitmapControl1";
-            this.doubleBitmapControl1.Size = new System.Drawing.Size(7, 6);
+            this.doubleBitmapControl1.Size = new System.Drawing.Size(8, 8);
             this.doubleBitmapControl1.TabIndex = 0;
             this.doubleBitmapControl1.Text = "doubleBitmapControl1";
             this.doubleBitmapControl1.Visible = false;
@@ -74,9 +73,8 @@ namespace GUI
             this.panelRight.Controls.Add(this.panelLeft);
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelRight.Location = new System.Drawing.Point(0, 0);
-            this.panelRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(758, 592);
+            this.panelRight.Size = new System.Drawing.Size(884, 728);
             this.panelRight.TabIndex = 2;
             this.panelRight.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRight_Paint);
             // 
@@ -94,9 +92,10 @@ namespace GUI
             this.panel1.Controls.Add(this.lblClose);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(367, 0);
+            this.panel1.Location = new System.Drawing.Point(428, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(391, 592);
+            this.panel1.Size = new System.Drawing.Size(456, 728);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -107,8 +106,8 @@ namespace GUI
             this.chkRememberMe.Checked = false;
             this.chkRememberMe.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.chkRememberMe.ForeColor = System.Drawing.Color.White;
-            this.chkRememberMe.Location = new System.Drawing.Point(21, 292);
-            this.chkRememberMe.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkRememberMe.Location = new System.Drawing.Point(25, 359);
+            this.chkRememberMe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chkRememberMe.Name = "chkRememberMe";
             this.chkRememberMe.Size = new System.Drawing.Size(20, 20);
             this.chkRememberMe.TabIndex = 4;
@@ -117,11 +116,12 @@ namespace GUI
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label6.Location = new System.Drawing.Point(50, 292);
+            this.label6.Location = new System.Drawing.Point(58, 359);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(159, 21);
+            this.label6.Size = new System.Drawing.Size(209, 23);
             this.label6.TabIndex = 4;
             this.label6.Text = "&Nhớ tài khoản của tôi";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -133,8 +133,8 @@ namespace GUI
             this.chkShowPass.Checked = false;
             this.chkShowPass.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.chkShowPass.ForeColor = System.Drawing.Color.White;
-            this.chkShowPass.Location = new System.Drawing.Point(21, 254);
-            this.chkShowPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chkShowPass.Location = new System.Drawing.Point(25, 313);
+            this.chkShowPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chkShowPass.Name = "chkShowPass";
             this.chkShowPass.Size = new System.Drawing.Size(20, 20);
             this.chkShowPass.TabIndex = 3;
@@ -144,11 +144,12 @@ namespace GUI
             // 
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(23, 334);
+            this.btnLogin.Location = new System.Drawing.Point(27, 411);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(339, 34);
+            this.btnLogin.Size = new System.Drawing.Size(396, 42);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "&Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -157,11 +158,12 @@ namespace GUI
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label7.Location = new System.Drawing.Point(50, 252);
+            this.label7.Location = new System.Drawing.Point(58, 310);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(111, 21);
+            this.label7.Size = new System.Drawing.Size(138, 23);
             this.label7.TabIndex = 0;
             this.label7.Text = "&Hiện mật khẩu";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -169,7 +171,7 @@ namespace GUI
             // txtPass
             // 
             this.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPass.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPass.HintForeColor = System.Drawing.Color.Empty;
             this.txtPass.HintText = "";
@@ -179,10 +181,10 @@ namespace GUI
             this.txtPass.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtPass.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtPass.LineThickness = 3;
-            this.txtPass.Location = new System.Drawing.Point(24, 205);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPass.Location = new System.Drawing.Point(28, 252);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(5);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(339, 31);
+            this.txtPass.Size = new System.Drawing.Size(396, 38);
             this.txtPass.TabIndex = 2;
             this.txtPass.Text = "Password";
             this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -191,11 +193,12 @@ namespace GUI
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label4.Location = new System.Drawing.Point(20, 182);
+            this.label4.Location = new System.Drawing.Point(23, 224);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 21);
+            this.label4.Size = new System.Drawing.Size(97, 23);
             this.label4.TabIndex = 0;
             this.label4.Text = "&Mật khẩu:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -203,7 +206,7 @@ namespace GUI
             // txtUsername
             // 
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtUsername.HintForeColor = System.Drawing.Color.Empty;
             this.txtUsername.HintText = "";
@@ -212,10 +215,10 @@ namespace GUI
             this.txtUsername.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtUsername.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtUsername.LineThickness = 3;
-            this.txtUsername.Location = new System.Drawing.Point(24, 134);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsername.Location = new System.Drawing.Point(28, 165);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(5);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(339, 31);
+            this.txtUsername.Size = new System.Drawing.Size(396, 38);
             this.txtUsername.TabIndex = 1;
             this.txtUsername.Text = "Username";
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -224,11 +227,12 @@ namespace GUI
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label3.Location = new System.Drawing.Point(20, 111);
+            this.label3.Location = new System.Drawing.Point(23, 137);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 21);
+            this.label3.Size = new System.Drawing.Size(160, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "&Tên đăng nhập:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -238,9 +242,10 @@ namespace GUI
             this.lblClose.AutoSize = true;
             this.lblClose.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.lblClose.Location = new System.Drawing.Point(353, 2);
+            this.lblClose.Location = new System.Drawing.Point(412, 2);
+            this.lblClose.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(25, 30);
+            this.lblClose.Size = new System.Drawing.Size(31, 37);
             this.lblClose.TabIndex = 0;
             this.lblClose.Text = "x";
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
@@ -248,11 +253,12 @@ namespace GUI
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.label2.Location = new System.Drawing.Point(18, 57);
+            this.label2.Location = new System.Drawing.Point(21, 70);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(241, 32);
+            this.label2.Size = new System.Drawing.Size(316, 37);
             this.label2.TabIndex = 0;
             this.label2.Text = "Thông tin đăng nhập";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -265,8 +271,9 @@ namespace GUI
             this.panelLeft.Controls.Add(this.pictureBox1);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelLeft.Margin = new System.Windows.Forms.Padding(4);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(367, 592);
+            this.panelLeft.Size = new System.Drawing.Size(428, 728);
             this.panelLeft.TabIndex = 2;
             this.panelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLeft_Paint);
             // 
@@ -275,9 +282,10 @@ namespace GUI
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(11, 549);
+            this.label9.Location = new System.Drawing.Point(13, 676);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(206, 22);
+            this.label9.Size = new System.Drawing.Size(260, 30);
             this.label9.TabIndex = 2;
             this.label9.Text = "Beta Version 1.0 2021";
             this.label9.Click += new System.EventHandler(this.label9_Click);
@@ -285,11 +293,12 @@ namespace GUI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(29, 317);
+            this.label1.Location = new System.Drawing.Point(22, 392);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 25);
+            this.label1.Size = new System.Drawing.Size(385, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "HỆ THỐNG QUẢN LÝ KHO HÀNG\r\n";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -297,9 +306,10 @@ namespace GUI
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GUI.Properties.Resources.wms_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(75, 103);
+            this.pictureBox1.Location = new System.Drawing.Point(88, 127);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(217, 196);
+            this.pictureBox1.Size = new System.Drawing.Size(253, 241);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -312,12 +322,13 @@ namespace GUI
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(758, 592);
+            this.ClientSize = new System.Drawing.Size(884, 728);
             this.Controls.Add(this.panelRight);
             this.Controls.Add(this.doubleBitmapControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
