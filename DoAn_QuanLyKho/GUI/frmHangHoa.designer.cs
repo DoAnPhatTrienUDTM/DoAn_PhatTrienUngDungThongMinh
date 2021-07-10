@@ -39,7 +39,6 @@ namespace GUI
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnexprot = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.cbxloaisp = new System.Windows.Forms.ComboBox();
@@ -48,14 +47,16 @@ namespace GUI
             this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.gridHangHoa = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cbbLoaiSP = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbbLoaiSP = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.btnsua = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnluu = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tableLayoutPanel1.SuspendLayout();
@@ -64,6 +65,8 @@ namespace GUI
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridHangHoa)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -72,14 +75,15 @@ namespace GUI
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.gridHangHoa, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.33334F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1032, 598);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1112, 594);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -90,54 +94,25 @@ namespace GUI
             this.tableLayoutPanel2.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1028, 71);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1106, 64);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.btnexprot);
             this.panel1.Controls.Add(this.bunifuThinButton21);
             this.panel1.Controls.Add(this.bunifuDatepicker1);
             this.panel1.Controls.Add(this.cbxloaisp);
             this.panel1.Controls.Add(this.lb1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(516, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(556, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(510, 67);
+            this.panel1.Size = new System.Drawing.Size(547, 58);
             this.panel1.TabIndex = 0;
-            // 
-            // btnexprot
-            // 
-            this.btnexprot.ActiveBorderThickness = 1;
-            this.btnexprot.ActiveCornerRadius = 20;
-            this.btnexprot.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnexprot.ActiveForecolor = System.Drawing.Color.White;
-            this.btnexprot.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnexprot.BackColor = System.Drawing.Color.White;
-            this.btnexprot.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnexprot.BackgroundImage")));
-            this.btnexprot.ButtonText = "Export ";
-            this.btnexprot.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnexprot.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexprot.ForeColor = System.Drawing.Color.White;
-            this.btnexprot.IdleBorderThickness = 1;
-            this.btnexprot.IdleCornerRadius = 20;
-            this.btnexprot.IdleFillColor = System.Drawing.Color.Coral;
-            this.btnexprot.IdleForecolor = System.Drawing.Color.White;
-            this.btnexprot.IdleLineColor = System.Drawing.Color.White;
-            this.btnexprot.Location = new System.Drawing.Point(365, 4);
-            this.btnexprot.Margin = new System.Windows.Forms.Padding(4);
-            this.btnexprot.Name = "btnexprot";
-            this.btnexprot.Size = new System.Drawing.Size(136, 40);
-            this.btnexprot.TabIndex = 4;
-            this.btnexprot.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnexprot.Click += new System.EventHandler(this.btnexprot_Click);
             // 
             // bunifuThinButton21
             // 
@@ -157,10 +132,10 @@ namespace GUI
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Coral;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(226, 4);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(355, 5);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(136, 40);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(181, 49);
             this.bunifuThinButton21.TabIndex = 3;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
@@ -172,9 +147,10 @@ namespace GUI
             this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
             this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(181, 6);
+            this.bunifuDatepicker1.Location = new System.Drawing.Point(296, 7);
+            this.bunifuDatepicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(38, 38);
+            this.bunifuDatepicker1.Size = new System.Drawing.Size(50, 47);
             this.bunifuDatepicker1.TabIndex = 2;
             this.bunifuDatepicker1.Value = new System.DateTime(2021, 7, 7, 9, 52, 8, 180);
             this.bunifuDatepicker1.onValueChanged += new System.EventHandler(this.bunifuDatepicker1_onValueChanged);
@@ -182,20 +158,18 @@ namespace GUI
             // cbxloaisp
             // 
             this.cbxloaisp.FormattingEnabled = true;
-            this.cbxloaisp.Location = new System.Drawing.Point(95, 15);
-            this.cbxloaisp.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxloaisp.Location = new System.Drawing.Point(182, 19);
             this.cbxloaisp.Name = "cbxloaisp";
-            this.cbxloaisp.Size = new System.Drawing.Size(81, 21);
+            this.cbxloaisp.Size = new System.Drawing.Size(107, 24);
             this.cbxloaisp.TabIndex = 1;
             this.cbxloaisp.SelectedIndexChanged += new System.EventHandler(this.cbxloaisp_SelectedIndexChanged);
             // 
             // lb1
             // 
             this.lb1.AutoSize = true;
-            this.lb1.Location = new System.Drawing.Point(12, 18);
-            this.lb1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb1.Location = new System.Drawing.Point(72, 22);
             this.lb1.Name = "lb1";
-            this.lb1.Size = new System.Drawing.Size(79, 13);
+            this.lb1.Size = new System.Drawing.Size(104, 17);
             this.lb1.TabIndex = 0;
             this.lb1.Text = "Loại Sản Phẩm";
             this.lb1.Click += new System.EventHandler(this.lb1_Click);
@@ -206,10 +180,9 @@ namespace GUI
             this.panel2.Controls.Add(this.btnSearch);
             this.panel2.Controls.Add(this.txtSearch);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(2, 2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(510, 67);
+            this.panel2.Size = new System.Drawing.Size(547, 58);
             this.panel2.TabIndex = 1;
             // 
             // btnSearch
@@ -217,10 +190,10 @@ namespace GUI
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageActive = null;
-            this.btnSearch.Location = new System.Drawing.Point(264, 4);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Location = new System.Drawing.Point(352, 5);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(58, 35);
+            this.btnSearch.Size = new System.Drawing.Size(78, 43);
             this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnSearch.TabIndex = 5;
             this.btnSearch.TabStop = false;
@@ -239,10 +212,10 @@ namespace GUI
             this.txtSearch.LineIdleColor = System.Drawing.Color.Gray;
             this.txtSearch.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtSearch.LineThickness = 3;
-            this.txtSearch.Location = new System.Drawing.Point(4, 6);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearch.Location = new System.Drawing.Point(5, 7);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(5);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(261, 33);
+            this.txtSearch.Size = new System.Drawing.Size(348, 41);
             this.txtSearch.TabIndex = 4;
             this.txtSearch.Text = "Search";
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -272,11 +245,11 @@ namespace GUI
             this.Column1,
             this.Column2,
             this.Column6,
-            this.cbbLoaiSP,
             this.Column5,
-            this.Column7,
             this.Column3,
+            this.Column7,
             this.Column4,
+            this.cbbLoaiSP,
             this.btnsua,
             this.btnluu});
             this.gridHangHoa.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -285,8 +258,7 @@ namespace GUI
             this.gridHangHoa.GridColor = System.Drawing.Color.Black;
             this.gridHangHoa.HeaderBgColor = System.Drawing.Color.White;
             this.gridHangHoa.HeaderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.gridHangHoa.Location = new System.Drawing.Point(2, 77);
-            this.gridHangHoa.Margin = new System.Windows.Forms.Padding(2);
+            this.gridHangHoa.Location = new System.Drawing.Point(3, 73);
             this.gridHangHoa.Name = "gridHangHoa";
             this.gridHangHoa.ReadOnly = true;
             this.gridHangHoa.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -301,11 +273,30 @@ namespace GUI
             this.gridHangHoa.RowHeadersWidth = 51;
             this.gridHangHoa.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.gridHangHoa.RowTemplate.Height = 50;
-            this.gridHangHoa.Size = new System.Drawing.Size(1028, 519);
+            this.gridHangHoa.Size = new System.Drawing.Size(1106, 480);
             this.gridHangHoa.TabIndex = 1;
             this.gridHangHoa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridHangHoa_CellClick);
             this.gridHangHoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridHangHoa_CellContentClick);
             this.gridHangHoa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gridHangHoa_KeyPress);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(3, 559);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1106, 32);
+            this.panel3.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(172, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
             // 
             // Column1
             // 
@@ -332,18 +323,6 @@ namespace GUI
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             // 
-            // cbbLoaiSP
-            // 
-            this.cbbLoaiSP.DataPropertyName = "ID_LSP";
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            this.cbbLoaiSP.DefaultCellStyle = dataGridViewCellStyle3;
-            this.cbbLoaiSP.HeaderText = "Loại Sản Phẩm";
-            this.cbbLoaiSP.MinimumWidth = 6;
-            this.cbbLoaiSP.Name = "cbbLoaiSP";
-            this.cbbLoaiSP.ReadOnly = true;
-            this.cbbLoaiSP.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.cbbLoaiSP.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
             // Column5
             // 
             this.Column5.DataPropertyName = "SOLUONG";
@@ -351,14 +330,6 @@ namespace GUI
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "DONGIA";
-            this.Column7.HeaderText = "Đơn Giá";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
             // 
             // Column3
             // 
@@ -372,12 +343,32 @@ namespace GUI
             this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column3.Width = 106;
             // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "DONGIA";
+            this.Column7.HeaderText = "Đơn Giá";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
             // Column4
             // 
             this.Column4.HeaderText = "Ngày Nhập";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
+            // 
+            // cbbLoaiSP
+            // 
+            this.cbbLoaiSP.DataPropertyName = "ID_LSP";
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            this.cbbLoaiSP.DefaultCellStyle = dataGridViewCellStyle3;
+            this.cbbLoaiSP.HeaderText = "Loại Sản Phẩm";
+            this.cbbLoaiSP.MinimumWidth = 6;
+            this.cbbLoaiSP.Name = "cbbLoaiSP";
+            this.cbbLoaiSP.ReadOnly = true;
+            this.cbbLoaiSP.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.cbbLoaiSP.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // btnsua
             // 
@@ -413,11 +404,10 @@ namespace GUI
             // 
             // frmHangHoa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 598);
+            this.ClientSize = new System.Drawing.Size(1112, 594);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHangHoa";
             this.Text = "frmHangHoa";
             this.Load += new System.EventHandler(this.frmHangHoa_Load);
@@ -428,6 +418,8 @@ namespace GUI
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridHangHoa)).EndInit();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -445,15 +437,16 @@ namespace GUI
         private System.Windows.Forms.Label lb1;
         private Bunifu.Framework.UI.BunifuImageButton btnSearch;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtSearch;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnexprot;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewComboBoxColumn cbbLoaiSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewImageColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewComboBoxColumn cbbLoaiSP;
         private System.Windows.Forms.DataGridViewButtonColumn btnsua;
         private System.Windows.Forms.DataGridViewButtonColumn btnluu;
     }

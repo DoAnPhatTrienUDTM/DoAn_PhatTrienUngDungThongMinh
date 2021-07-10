@@ -15,16 +15,7 @@ namespace BLL_DAL
         {
             return quanLyKho.SANPHAMs.Select(n => n);
         }
-        public SANPHAM get_sp(int idsp)
-        {
-            return quanLyKho.SANPHAMs.SingleOrDefault(n => n.ID_SP == idsp);
-        }
-        public IQueryable get_sp_ncc(int idncc)
-        {
-            var dssp = quanLyKho.DANHMUCSANPHAMs.Where(n => n.ID_NCC == idncc).Select(n => new { idsp = n.ID_SP, tensp = n.SANPHAM.TENSP });
-            return dssp;
-        }
-        public bool insert_SanPham(string tensp, string dvt, int id_lsp, string hinh, int dongia)
+        public bool insert_SanPham(string tensp, string dvt, int id_lsp, string hinh,int dongia)
         {
             try
             {
@@ -39,7 +30,6 @@ namespace BLL_DAL
                     insert.HINHANH = hinh;
                     insert.DONGIA = dongia;
                     insert.SOLUONG = 0;
-                    insert.NGAYNHAP = DateTime.Today.Date;
                     quanLyKho.SANPHAMs.InsertOnSubmit(insert);
                     quanLyKho.SubmitChanges();
                     return true;
@@ -53,7 +43,7 @@ namespace BLL_DAL
             }
         }
 
-        public bool update_SanPham(int id, string tensp, string dvt, string hinh, int dongia, int loaisp)
+        public bool update_SanPham(int id, string tensp, string dvt, string hinh, int dongia,int loaisp)
         {
             try
             {
@@ -77,7 +67,6 @@ namespace BLL_DAL
                 throw;
             }
         }
-
         public IQueryable get_DataSP_Search(string tensp)
         {
             var sanpham = from sp in quanLyKho.SANPHAMs
@@ -98,10 +87,6 @@ namespace BLL_DAL
                           where sp.NGAYNHAP == date
                           select (sp);
             return sanpham;
-        }
-        public void export_SP_CanDatHang()
-        {
-            
         }
     }
 }
