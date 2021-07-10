@@ -73,7 +73,6 @@ namespace GUI
             this.btnXoa = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnThem = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnKichHoatTaiKhoan = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCards2.SuspendLayout();
             this.bunifuCards3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -120,7 +119,6 @@ namespace GUI
             this.bunifuCards2.BorderRadius = 40;
             this.bunifuCards2.BottomSahddow = true;
             this.bunifuCards2.color = System.Drawing.Color.Transparent;
-            this.bunifuCards2.Controls.Add(this.btnKichHoatTaiKhoan);
             this.bunifuCards2.Controls.Add(this.btnNhomNguoiDung);
             this.bunifuCards2.Controls.Add(this.btnThemNguoiDungVaoNhom);
             this.bunifuCards2.Controls.Add(this.btnPhanQuyenNhomNguoiDung);
@@ -162,7 +160,7 @@ namespace GUI
             this.btnNhomNguoiDung.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNhomNguoiDung.BackgroundImage")));
             this.btnNhomNguoiDung.ButtonText = "Quản lý nhóm người dùng";
             this.btnNhomNguoiDung.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNhomNguoiDung.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnNhomNguoiDung.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhomNguoiDung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnNhomNguoiDung.IdleBorderThickness = 1;
             this.btnNhomNguoiDung.IdleCornerRadius = 20;
@@ -188,7 +186,7 @@ namespace GUI
             this.btnThemNguoiDungVaoNhom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThemNguoiDungVaoNhom.BackgroundImage")));
             this.btnThemNguoiDungVaoNhom.ButtonText = "Thêm người dùng vào nhóm";
             this.btnThemNguoiDungVaoNhom.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThemNguoiDungVaoNhom.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnThemNguoiDungVaoNhom.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemNguoiDungVaoNhom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnThemNguoiDungVaoNhom.IdleBorderThickness = 1;
             this.btnThemNguoiDungVaoNhom.IdleCornerRadius = 20;
@@ -214,7 +212,7 @@ namespace GUI
             this.btnPhanQuyenNhomNguoiDung.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPhanQuyenNhomNguoiDung.BackgroundImage")));
             this.btnPhanQuyenNhomNguoiDung.ButtonText = "Phân quyền nhóm người dùng";
             this.btnPhanQuyenNhomNguoiDung.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPhanQuyenNhomNguoiDung.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnPhanQuyenNhomNguoiDung.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhanQuyenNhomNguoiDung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnPhanQuyenNhomNguoiDung.IdleBorderThickness = 1;
             this.btnPhanQuyenNhomNguoiDung.IdleCornerRadius = 20;
@@ -240,7 +238,7 @@ namespace GUI
             this.btnDanhMucMH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDanhMucMH.BackgroundImage")));
             this.btnDanhMucMH.ButtonText = "Quản lý danh mục màn hình";
             this.btnDanhMucMH.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDanhMucMH.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnDanhMucMH.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDanhMucMH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnDanhMucMH.IdleBorderThickness = 1;
             this.btnDanhMucMH.IdleCornerRadius = 20;
@@ -266,7 +264,7 @@ namespace GUI
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Xem thông tin tài khoản";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bunifuThinButton21.IdleBorderThickness = 1;
             this.bunifuThinButton21.IdleCornerRadius = 20;
@@ -615,11 +613,11 @@ namespace GUI
             this.btnLamMoi.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLamMoi.ActiveForecolor = System.Drawing.Color.White;
             this.btnLamMoi.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnLamMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(182)))), ((int)(((byte)(194)))));
+            this.btnLamMoi.BackColor = System.Drawing.Color.White;
             this.btnLamMoi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.BackgroundImage")));
             this.btnLamMoi.ButtonText = "Có thay đổi? Làm mới danh sách ngay!";
             this.btnLamMoi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLamMoi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLamMoi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLamMoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLamMoi.IdleBorderThickness = 1;
             this.btnLamMoi.IdleCornerRadius = 20;
@@ -632,6 +630,7 @@ namespace GUI
             this.btnLamMoi.Size = new System.Drawing.Size(354, 48);
             this.btnLamMoi.TabIndex = 11;
             this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLamMoi.Visible = false;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnSua
@@ -641,11 +640,11 @@ namespace GUI
             this.btnSua.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSua.ActiveForecolor = System.Drawing.Color.White;
             this.btnSua.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(182)))), ((int)(((byte)(194)))));
+            this.btnSua.BackColor = System.Drawing.Color.White;
             this.btnSua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSua.BackgroundImage")));
             this.btnSua.ButtonText = "Sửa";
             this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnSua.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSua.IdleBorderThickness = 1;
             this.btnSua.IdleCornerRadius = 20;
@@ -667,11 +666,11 @@ namespace GUI
             this.btnXoa.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnXoa.ActiveForecolor = System.Drawing.Color.White;
             this.btnXoa.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(182)))), ((int)(((byte)(194)))));
+            this.btnXoa.BackColor = System.Drawing.Color.White;
             this.btnXoa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXoa.BackgroundImage")));
             this.btnXoa.ButtonText = "Xóa";
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnXoa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnXoa.IdleBorderThickness = 1;
             this.btnXoa.IdleCornerRadius = 20;
@@ -693,11 +692,11 @@ namespace GUI
             this.btnThem.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnThem.ActiveForecolor = System.Drawing.Color.White;
             this.btnThem.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(182)))), ((int)(((byte)(194)))));
+            this.btnThem.BackColor = System.Drawing.Color.White;
             this.btnThem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThem.BackgroundImage")));
             this.btnThem.ButtonText = "Thêm";
             this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnThem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnThem.IdleBorderThickness = 1;
             this.btnThem.IdleCornerRadius = 20;
@@ -726,36 +725,9 @@ namespace GUI
             this.btnSearch.TabStop = false;
             this.btnSearch.Zoom = 10;
             // 
-            // btnKichHoatTaiKhoan
-            // 
-            this.btnKichHoatTaiKhoan.ActiveBorderThickness = 1;
-            this.btnKichHoatTaiKhoan.ActiveCornerRadius = 35;
-            this.btnKichHoatTaiKhoan.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnKichHoatTaiKhoan.ActiveForecolor = System.Drawing.Color.White;
-            this.btnKichHoatTaiKhoan.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnKichHoatTaiKhoan.BackColor = System.Drawing.Color.White;
-            this.btnKichHoatTaiKhoan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnKichHoatTaiKhoan.BackgroundImage")));
-            this.btnKichHoatTaiKhoan.ButtonText = "Kích hoạt tài khoản này";
-            this.btnKichHoatTaiKhoan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnKichHoatTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnKichHoatTaiKhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnKichHoatTaiKhoan.IdleBorderThickness = 1;
-            this.btnKichHoatTaiKhoan.IdleCornerRadius = 20;
-            this.btnKichHoatTaiKhoan.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnKichHoatTaiKhoan.IdleForecolor = System.Drawing.Color.White;
-            this.btnKichHoatTaiKhoan.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnKichHoatTaiKhoan.Location = new System.Drawing.Point(476, 186);
-            this.btnKichHoatTaiKhoan.Margin = new System.Windows.Forms.Padding(4);
-            this.btnKichHoatTaiKhoan.Name = "btnKichHoatTaiKhoan";
-            this.btnKichHoatTaiKhoan.Size = new System.Drawing.Size(240, 48);
-            this.btnKichHoatTaiKhoan.TabIndex = 12;
-            this.btnKichHoatTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnKichHoatTaiKhoan.Visible = false;
-            this.btnKichHoatTaiKhoan.Click += new System.EventHandler(this.btnKichHoatTaiKhoan_Click);
-            // 
             // frmNhanVien
             // 
-            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(182)))), ((int)(((byte)(194)))));
+            this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -835,6 +807,5 @@ namespace GUI
         private Bunifu.Framework.UI.BunifuThinButton2 btnThem;
         public Bunifu.Framework.UI.BunifuCustomDataGrid grvNhanVien;
         private Bunifu.Framework.UI.BunifuThinButton2 btnLamMoi;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnKichHoatTaiKhoan;
     }
 }

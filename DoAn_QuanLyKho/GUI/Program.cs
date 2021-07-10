@@ -27,7 +27,6 @@ namespace GUI
             frmphieudat = new frmPhieuDat();
             Application.Run(new frmLoading());
             //Application.Run(new TestMapControl());
-            //Application.Run(new Form1());
         }
     }
 }

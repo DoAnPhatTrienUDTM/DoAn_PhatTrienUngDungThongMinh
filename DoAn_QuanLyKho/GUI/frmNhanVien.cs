@@ -53,16 +53,6 @@ namespace GUI
         private void frmNhanVien_Load(object sender, EventArgs e)
         {
             InitializeData();
-            string id = grvNhanVien.CurrentRow.Cells[0].Value.ToString();
-            bool? tinhTrang = nv.gridViewCellClick_TinhTrangTaiKhoan(id);
-            if (tinhTrang == true)
-            {
-                btnKichHoatTaiKhoan.Visible = false;
-            }
-            else
-            {
-                btnKichHoatTaiKhoan.Visible = true;
-            }
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
@@ -112,8 +102,7 @@ namespace GUI
 
         private void btnPhanQuyenNhomNguoiDung_Click(object sender, EventArgs e)
         {
-            frmPhanQuyen frm = new frmPhanQuyen();
-            frm.Show();
+
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -148,19 +137,6 @@ namespace GUI
         {
             grvNhanVien.DataSource = nv.loadDataNguoiDung();
             grvNhanVien.Refresh();
-        }
-
-        private void btnKichHoatTaiKhoan_Click(object sender, EventArgs e)
-        {
-            string id = grvNhanVien.CurrentRow.Cells[0].Value.ToString();
-            if (nv.update_TinhTrang(id) == true)
-            {
-                MessageBox.Show("Đã kích hoạt tài khoản thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Kích hoạt thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
     }
 }

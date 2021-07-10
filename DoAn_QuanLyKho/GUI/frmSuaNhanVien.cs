@@ -16,7 +16,6 @@ namespace GUI
     {
         NhanVienBLL_DAL nv = new NhanVienBLL_DAL();
         KhoBLL_DAL kho = new KhoBLL_DAL();
-        QL_NguoiDungNhomNguoiDung_BLL_DAL nguoiDung = new QL_NguoiDungNhomNguoiDung_BLL_DAL();
         private BindingSource formDataSource;
         public frmSuaNhanVien(BindingSource dataSource)
         {
@@ -80,7 +79,6 @@ namespace GUI
             txtSoDT.Text = nd.SDT.ToString();
             txtPass.Text = nd.MATKHAU.ToString();
             dateNgaySinh.Value = (DateTime)nd.NGAYSINH;
-            lblChucVu.Text = nguoiDung.getRole(nd.ID_DN);
 
             if (String.Compare(nd.GIOITINH.ToString(), "Nam", true) == 0)
             {

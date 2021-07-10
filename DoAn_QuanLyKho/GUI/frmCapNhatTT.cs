@@ -16,7 +16,6 @@ namespace GUI
     {
         Check_Login login = new Check_Login();
         NhanVienBLL_DAL nv = new NhanVienBLL_DAL();
-        QL_NguoiDungNhomNguoiDung_BLL_DAL nguoiDung = new QL_NguoiDungNhomNguoiDung_BLL_DAL();
         string maNV;
         public frmCapNhatTT(string manv)
         {
@@ -47,7 +46,6 @@ namespace GUI
         private void frmCapNhatTT_Load(object sender, EventArgs e)
         {
             getData();
-            lblChucVu.Text = nguoiDung.getRole(maNV);
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)

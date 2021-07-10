@@ -110,11 +110,11 @@ namespace GUI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(25, 404);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 25);
+            this.label1.Size = new System.Drawing.Size(297, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "HỆ THỐNG QUẢN LÝ KHO HÀNG";
             // 
@@ -159,18 +159,18 @@ namespace GUI
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label8.Location = new System.Drawing.Point(373, 468);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(73, 21);
+            this.label8.Size = new System.Drawing.Size(77, 21);
             this.label8.TabIndex = 69;
             this.label8.Text = "&Giới tính:";
             // 
             // txtDiaChi
             // 
             this.txtDiaChi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDiaChi.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtDiaChi.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtDiaChi.HintForeColor = System.Drawing.Color.Empty;
             this.txtDiaChi.HintText = "";
@@ -189,11 +189,11 @@ namespace GUI
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label7.Location = new System.Drawing.Point(373, 397);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 21);
+            this.label7.Size = new System.Drawing.Size(68, 21);
             this.label7.TabIndex = 67;
             this.label7.Text = "&Địa chỉ:";
             // 
@@ -201,7 +201,7 @@ namespace GUI
             // 
             this.btnThemNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.btnThemNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemNhanVien.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnThemNhanVien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemNhanVien.ForeColor = System.Drawing.Color.White;
             this.btnThemNhanVien.Location = new System.Drawing.Point(377, 716);
             this.btnThemNhanVien.Name = "btnThemNhanVien";
@@ -227,18 +227,18 @@ namespace GUI
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label10.Location = new System.Drawing.Point(373, 552);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(83, 21);
+            this.label10.Size = new System.Drawing.Size(89, 21);
             this.label10.TabIndex = 64;
             this.label10.Text = "&Ngày sinh:";
             // 
             // txtSoDT
             // 
             this.txtSoDT.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSoDT.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtSoDT.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtSoDT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSoDT.HintForeColor = System.Drawing.Color.Empty;
             this.txtSoDT.HintText = "";
@@ -257,18 +257,18 @@ namespace GUI
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label6.Location = new System.Drawing.Point(373, 329);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 21);
+            this.label6.Size = new System.Drawing.Size(111, 21);
             this.label6.TabIndex = 62;
             this.label6.Text = "&Số điện thoại:";
             // 
             // txtHoVaTen
             // 
             this.txtHoVaTen.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtHoVaTen.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtHoVaTen.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtHoVaTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtHoVaTen.HintForeColor = System.Drawing.Color.Empty;
             this.txtHoVaTen.HintText = "";
@@ -287,18 +287,18 @@ namespace GUI
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label5.Location = new System.Drawing.Point(373, 245);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 21);
+            this.label5.Size = new System.Drawing.Size(90, 21);
             this.label5.TabIndex = 60;
             this.label5.Text = "&Họ và tên:";
             // 
             // txtPass
             // 
             this.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPass.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtPass.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPass.HintForeColor = System.Drawing.Color.Empty;
             this.txtPass.HintText = "";
@@ -318,18 +318,18 @@ namespace GUI
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label4.Location = new System.Drawing.Point(373, 164);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 21);
+            this.label4.Size = new System.Drawing.Size(86, 21);
             this.label4.TabIndex = 53;
             this.label4.Text = "&Mật khẩu:";
             // 
             // txtUsername
             // 
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtUsername.HintForeColor = System.Drawing.Color.Empty;
             this.txtUsername.HintText = "";
@@ -348,22 +348,22 @@ namespace GUI
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label3.Location = new System.Drawing.Point(373, 93);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 21);
+            this.label3.Size = new System.Drawing.Size(133, 21);
             this.label3.TabIndex = 54;
             this.label3.Text = "&Tên đăng nhập:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label2.Location = new System.Drawing.Point(370, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(321, 32);
+            this.label2.Size = new System.Drawing.Size(358, 30);
             this.label2.TabIndex = 52;
             this.label2.Text = "Thêm nhân viên vào công ty";
             // 
@@ -388,13 +388,13 @@ namespace GUI
             // lblTrangThai
             // 
             this.lblTrangThai.AutoSize = true;
-            this.lblTrangThai.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrangThai.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTrangThai.ForeColor = System.Drawing.Color.White;
-            this.lblTrangThai.Location = new System.Drawing.Point(19, 287);
+            this.lblTrangThai.Location = new System.Drawing.Point(13, 284);
             this.lblTrangThai.Name = "lblTrangThai";
-            this.lblTrangThai.Size = new System.Drawing.Size(263, 20);
+            this.lblTrangThai.Size = new System.Drawing.Size(265, 19);
             this.lblTrangThai.TabIndex = 6;
-            this.lblTrangThai.Text = "Trạng thái tài khoản: Không hoạt động";
+            this.lblTrangThai.Text = "Trạng thái tài khoản: Đang hoạt động";
             // 
             // picNhanVien
             // 
@@ -410,33 +410,33 @@ namespace GUI
             // 
             this.lblTen.AutoSize = true;
             this.lblTen.BackColor = System.Drawing.Color.Transparent;
-            this.lblTen.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTen.ForeColor = System.Drawing.Color.White;
-            this.lblTen.Location = new System.Drawing.Point(48, 202);
+            this.lblTen.Location = new System.Drawing.Point(45, 207);
             this.lblTen.Name = "lblTen";
-            this.lblTen.Size = new System.Drawing.Size(160, 21);
+            this.lblTen.Size = new System.Drawing.Size(160, 19);
             this.lblTen.TabIndex = 4;
             this.lblTen.Text = "Xin chào, Bill Gates!";
             // 
             // lblChucVu
             // 
             this.lblChucVu.AutoSize = true;
-            this.lblChucVu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChucVu.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChucVu.ForeColor = System.Drawing.Color.White;
-            this.lblChucVu.Location = new System.Drawing.Point(91, 242);
+            this.lblChucVu.Location = new System.Drawing.Point(120, 241);
             this.lblChucVu.Name = "lblChucVu";
-            this.lblChucVu.Size = new System.Drawing.Size(117, 20);
+            this.lblChucVu.Size = new System.Drawing.Size(53, 19);
             this.lblChucVu.TabIndex = 5;
-            this.lblChucVu.Text = "Chưa có chức vụ";
+            this.lblChucVu.Text = "Admin";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label11.Location = new System.Drawing.Point(746, 602);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(162, 21);
+            this.label11.Size = new System.Drawing.Size(179, 21);
             this.label11.TabIndex = 72;
             this.label11.Text = "&Chỉ định kho làm việc:";
             // 
