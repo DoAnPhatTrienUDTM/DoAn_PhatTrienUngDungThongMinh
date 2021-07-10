@@ -362,6 +362,7 @@ D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_P
 D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.Office.v20.1.Core.resources.dll
 D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
 D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csprojAssemblyReference.cache
 D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.Properties.Resources.resources
 D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csproj.GenerateResource.cache
 D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.dll.licenses
@@ -369,9 +370,6 @@ D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_P
 D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csproj.CopyComplete
 D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.dll
 D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.pdb
-<<<<<<< HEAD
-D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csprojAssemblyReference.cache
-=======
 C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\BLL_DAL.dll.config
 C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\BLL_DAL.dll
 C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\BLL_DAL.pdb
@@ -465,4 +463,3 @@ C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDu
 C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csproj.CopyComplete
 C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.dll
 C:\Users\Phan Van Dai\Desktop\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.pdb
->>>>>>> 976563c5f17c9a03db3afb01acd6550b46e30615

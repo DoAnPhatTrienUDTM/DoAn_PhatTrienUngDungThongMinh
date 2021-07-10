@@ -16,19 +16,12 @@ namespace GUI
     {
         Check_Login login = new Check_Login();
         NhanVienBLL_DAL nv = new NhanVienBLL_DAL();
-<<<<<<< HEAD
-        public string MaNhanVien;
-       
-        public NGUOIDUNG nd = new NGUOIDUNG();
-        public frmMain()
-=======
         QL_NguoiDungNhomNguoiDung_BLL_DAL nguoiDung = new QL_NguoiDungNhomNguoiDung_BLL_DAL();
         PhanQuyen_BLL_DAL phanQuyen = new PhanQuyen_BLL_DAL();
         string MaNhanVien;
         public frmMain(string manv)
->>>>>>> 976563c5f17c9a03db3afb01acd6550b46e30615
         {
-            
+            MaNhanVien = manv;
             InitializeComponent();
         }
 
@@ -149,29 +142,10 @@ namespace GUI
 
         private void btnTrangChu_Click_1(object sender, EventArgs e)
         {
-           
             lblHeader.Text = "Trang chủ";
             indicator.Top = ((Control)sender).Top;
             frmTrangChu frm = new frmTrangChu();
             openSubForm(frm);
-<<<<<<< HEAD
-            
-            try
-            {
-                nd = nv.get_Info(MaNhanVien);
-                lblTen.Text = "Xin chào " + nd.TEN.ToString() +"!";
-                Image img = Image.FromFile(Application.StartupPath + "\\img\\" + nd.HINH);
-                picNhanVien.Image = img;
-            }
-            catch
-            {
-                nd = nv.get_Info(MaNhanVien);
-                lblTen.Text = "Xin chào " + nd.TEN.ToString() + "!";
-                Image img = Image.FromFile(Application.StartupPath + "\\img\\user_32x322.png");
-                picNhanVien.Image = img;
-            }
-=======
->>>>>>> 976563c5f17c9a03db3afb01acd6550b46e30615
         }
 
         private void btnNhanVien_Click(object sender, EventArgs e)
@@ -210,15 +184,6 @@ namespace GUI
         {
             lblHeader.Text = "Báo cáo";
             indicator.Top = ((Control)sender).Top;
-        }
-
-        private void btnPD_Click(object sender, EventArgs e)
-        {
-            lblHeader.Text = "Phiếu Đặt";
-            indicator.Top = ((Control)sender).Top;
-            //frmPhieuDat frm = new frmPhieuDat();
-            frmDatHang frm = new frmDatHang();
-            openSubForm(frm);
         }
     }
 }

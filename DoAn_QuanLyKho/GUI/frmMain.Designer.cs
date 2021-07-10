@@ -34,19 +34,8 @@ namespace GUI
             this.lblTen = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblChucVu = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
-            this.btnNhanVien = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnBaoCao_5 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnSanPham_4 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnKho_3 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnLienHe_2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnTrangChu_1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.indicator = new System.Windows.Forms.PictureBox();
-=======
             this.indicator = new System.Windows.Forms.PictureBox();
             this.bunifuFlatButton6 = new Bunifu.Framework.UI.BunifuFlatButton();
->>>>>>> 976563c5f17c9a03db3afb01acd6550b46e30615
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.picNhanVien = new Custom_Control.CircularPictureBox();
@@ -57,11 +46,6 @@ namespace GUI
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblHeader = new Bunifu.Framework.UI.BunifuCustomLabel();
-<<<<<<< HEAD
-            this.mainPanel = new System.Windows.Forms.Panel();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.btnPD = new Bunifu.Framework.UI.BunifuFlatButton();
-=======
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelMenu1 = new System.Windows.Forms.Panel();
             this.btnNhaCungCap = new System.Windows.Forms.Button();
@@ -71,7 +55,6 @@ namespace GUI
             this.btnSanPham = new System.Windows.Forms.Button();
             this.btnBaoCao = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
->>>>>>> 976563c5f17c9a03db3afb01acd6550b46e30615
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.indicator)).BeginInit();
             this.panel2.SuspendLayout();
@@ -81,10 +64,7 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-<<<<<<< HEAD
-=======
             this.panelMenu1.SuspendLayout();
->>>>>>> 976563c5f17c9a03db3afb01acd6550b46e30615
             this.SuspendLayout();
             // 
             // lblTen
@@ -115,12 +95,7 @@ namespace GUI
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(92)))), ((int)(((byte)(125)))));
-<<<<<<< HEAD
-            this.panel1.Controls.Add(this.btnPD);
-            this.panel1.Controls.Add(this.btnNhanVien);
-=======
             this.panel1.Controls.Add(this.panelMenu1);
->>>>>>> 976563c5f17c9a03db3afb01acd6550b46e30615
             this.panel1.Controls.Add(this.bunifuFlatButton6);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -130,11 +105,7 @@ namespace GUI
             this.panel1.Size = new System.Drawing.Size(280, 968);
             this.panel1.TabIndex = 2;
             // 
-<<<<<<< HEAD
-            // btnNhanVien
-=======
             // indicator
->>>>>>> 976563c5f17c9a03db3afb01acd6550b46e30615
             // 
             this.indicator.BackColor = System.Drawing.Color.Orchid;
             this.indicator.Location = new System.Drawing.Point(0, 0);
@@ -180,193 +151,7 @@ namespace GUI
             this.bunifuFlatButton6.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton6.TextFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-<<<<<<< HEAD
-            // btnBaoCao_5
-            // 
-            this.btnBaoCao_5.Activecolor = System.Drawing.Color.Transparent;
-            this.btnBaoCao_5.BackColor = System.Drawing.Color.Transparent;
-            this.btnBaoCao_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBaoCao_5.BorderRadius = 0;
-            this.btnBaoCao_5.ButtonText = "    Báo cáo";
-            this.btnBaoCao_5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBaoCao_5.DisabledColor = System.Drawing.Color.Gray;
-            this.btnBaoCao_5.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnBaoCao_5.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnBaoCao_5.Iconimage")));
-            this.btnBaoCao_5.Iconimage_right = null;
-            this.btnBaoCao_5.Iconimage_right_Selected = null;
-            this.btnBaoCao_5.Iconimage_Selected = null;
-            this.btnBaoCao_5.IconMarginLeft = 0;
-            this.btnBaoCao_5.IconMarginRight = 0;
-            this.btnBaoCao_5.IconRightVisible = true;
-            this.btnBaoCao_5.IconRightZoom = 0D;
-            this.btnBaoCao_5.IconVisible = true;
-            this.btnBaoCao_5.IconZoom = 60D;
-            this.btnBaoCao_5.IsTab = false;
-            this.btnBaoCao_5.Location = new System.Drawing.Point(10, 842);
-            this.btnBaoCao_5.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBaoCao_5.Name = "btnBaoCao_5";
-            this.btnBaoCao_5.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnBaoCao_5.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnBaoCao_5.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnBaoCao_5.selected = false;
-            this.btnBaoCao_5.Size = new System.Drawing.Size(268, 59);
-            this.btnBaoCao_5.TabIndex = 18;
-            this.btnBaoCao_5.Text = "    Báo cáo";
-            this.btnBaoCao_5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBaoCao_5.Textcolor = System.Drawing.Color.White;
-            this.btnBaoCao_5.TextFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaoCao_5.Click += new System.EventHandler(this.btnBaoCao_5_Click);
-            // 
-            // btnSanPham_4
-            // 
-            this.btnSanPham_4.Activecolor = System.Drawing.Color.Transparent;
-            this.btnSanPham_4.BackColor = System.Drawing.Color.Transparent;
-            this.btnSanPham_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSanPham_4.BorderRadius = 0;
-            this.btnSanPham_4.ButtonText = "   Sản phẩm";
-            this.btnSanPham_4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSanPham_4.DisabledColor = System.Drawing.Color.Gray;
-            this.btnSanPham_4.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSanPham_4.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnSanPham_4.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSanPham_4.Iconimage")));
-            this.btnSanPham_4.Iconimage_right = null;
-            this.btnSanPham_4.Iconimage_right_Selected = null;
-            this.btnSanPham_4.Iconimage_Selected = null;
-            this.btnSanPham_4.IconMarginLeft = 0;
-            this.btnSanPham_4.IconMarginRight = 0;
-            this.btnSanPham_4.IconRightVisible = true;
-            this.btnSanPham_4.IconRightZoom = 0D;
-            this.btnSanPham_4.IconVisible = true;
-            this.btnSanPham_4.IconZoom = 60D;
-            this.btnSanPham_4.IsTab = false;
-            this.btnSanPham_4.Location = new System.Drawing.Point(9, 775);
-            this.btnSanPham_4.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSanPham_4.Name = "btnSanPham_4";
-            this.btnSanPham_4.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnSanPham_4.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnSanPham_4.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnSanPham_4.selected = false;
-            this.btnSanPham_4.Size = new System.Drawing.Size(269, 59);
-            this.btnSanPham_4.TabIndex = 16;
-            this.btnSanPham_4.Text = "   Sản phẩm";
-            this.btnSanPham_4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSanPham_4.Textcolor = System.Drawing.Color.White;
-            this.btnSanPham_4.TextFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSanPham_4.Click += new System.EventHandler(this.btnSanPham_4_Click);
-            // 
-            // btnKho_3
-            // 
-            this.btnKho_3.Activecolor = System.Drawing.Color.Transparent;
-            this.btnKho_3.BackColor = System.Drawing.Color.Transparent;
-            this.btnKho_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnKho_3.BorderRadius = 0;
-            this.btnKho_3.ButtonText = "    Kho";
-            this.btnKho_3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnKho_3.DisabledColor = System.Drawing.Color.Gray;
-            this.btnKho_3.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnKho_3.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnKho_3.Iconimage")));
-            this.btnKho_3.Iconimage_right = null;
-            this.btnKho_3.Iconimage_right_Selected = null;
-            this.btnKho_3.Iconimage_Selected = null;
-            this.btnKho_3.IconMarginLeft = 0;
-            this.btnKho_3.IconMarginRight = 0;
-            this.btnKho_3.IconRightVisible = true;
-            this.btnKho_3.IconRightZoom = 0D;
-            this.btnKho_3.IconVisible = true;
-            this.btnKho_3.IconZoom = 60D;
-            this.btnKho_3.IsTab = false;
-            this.btnKho_3.Location = new System.Drawing.Point(13, 501);
-            this.btnKho_3.Margin = new System.Windows.Forms.Padding(4);
-            this.btnKho_3.Name = "btnKho_3";
-            this.btnKho_3.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnKho_3.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnKho_3.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnKho_3.selected = false;
-            this.btnKho_3.Size = new System.Drawing.Size(270, 59);
-            this.btnKho_3.TabIndex = 14;
-            this.btnKho_3.Text = "    Kho";
-            this.btnKho_3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKho_3.Textcolor = System.Drawing.Color.White;
-            this.btnKho_3.TextFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKho_3.Click += new System.EventHandler(this.btnKho_3_Click);
-            // 
-            // btnLienHe_2
-            // 
-            this.btnLienHe_2.Activecolor = System.Drawing.Color.Transparent;
-            this.btnLienHe_2.BackColor = System.Drawing.Color.Transparent;
-            this.btnLienHe_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLienHe_2.BorderRadius = 0;
-            this.btnLienHe_2.ButtonText = "    Nhà cung cấp";
-            this.btnLienHe_2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLienHe_2.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLienHe_2.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnLienHe_2.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLienHe_2.Iconimage")));
-            this.btnLienHe_2.Iconimage_right = null;
-            this.btnLienHe_2.Iconimage_right_Selected = null;
-            this.btnLienHe_2.Iconimage_Selected = null;
-            this.btnLienHe_2.IconMarginLeft = 0;
-            this.btnLienHe_2.IconMarginRight = 0;
-            this.btnLienHe_2.IconRightVisible = true;
-            this.btnLienHe_2.IconRightZoom = 0D;
-            this.btnLienHe_2.IconVisible = true;
-            this.btnLienHe_2.IconZoom = 60D;
-            this.btnLienHe_2.IsTab = false;
-            this.btnLienHe_2.Location = new System.Drawing.Point(13, 436);
-            this.btnLienHe_2.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLienHe_2.Name = "btnLienHe_2";
-            this.btnLienHe_2.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnLienHe_2.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnLienHe_2.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnLienHe_2.selected = false;
-            this.btnLienHe_2.Size = new System.Drawing.Size(272, 59);
-            this.btnLienHe_2.TabIndex = 12;
-            this.btnLienHe_2.Text = "    Nhà cung cấp";
-            this.btnLienHe_2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLienHe_2.Textcolor = System.Drawing.Color.White;
-            this.btnLienHe_2.TextFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLienHe_2.Click += new System.EventHandler(this.btnLienHe_2_Click);
-            // 
-            // btnTrangChu_1
-            // 
-            this.btnTrangChu_1.Activecolor = System.Drawing.Color.Transparent;
-            this.btnTrangChu_1.BackColor = System.Drawing.Color.Transparent;
-            this.btnTrangChu_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTrangChu_1.BorderRadius = 0;
-            this.btnTrangChu_1.ButtonText = "    Trang chủ";
-            this.btnTrangChu_1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTrangChu_1.DisabledColor = System.Drawing.Color.Gray;
-            this.btnTrangChu_1.ForeColor = System.Drawing.Color.White;
-            this.btnTrangChu_1.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnTrangChu_1.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTrangChu_1.Iconimage")));
-            this.btnTrangChu_1.Iconimage_right = null;
-            this.btnTrangChu_1.Iconimage_right_Selected = null;
-            this.btnTrangChu_1.Iconimage_Selected = null;
-            this.btnTrangChu_1.IconMarginLeft = 0;
-            this.btnTrangChu_1.IconMarginRight = 0;
-            this.btnTrangChu_1.IconRightVisible = true;
-            this.btnTrangChu_1.IconRightZoom = 0D;
-            this.btnTrangChu_1.IconVisible = true;
-            this.btnTrangChu_1.IconZoom = 60D;
-            this.btnTrangChu_1.IsTab = false;
-            this.btnTrangChu_1.Location = new System.Drawing.Point(13, 302);
-            this.btnTrangChu_1.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTrangChu_1.Name = "btnTrangChu_1";
-            this.btnTrangChu_1.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnTrangChu_1.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnTrangChu_1.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnTrangChu_1.selected = false;
-            this.btnTrangChu_1.Size = new System.Drawing.Size(272, 59);
-            this.btnTrangChu_1.TabIndex = 10;
-            this.btnTrangChu_1.Text = "    Trang chủ";
-            this.btnTrangChu_1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrangChu_1.Textcolor = System.Drawing.Color.White;
-            this.btnTrangChu_1.TextFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTrangChu_1.Click += new System.EventHandler(this.btnTrangChu_1_Click);
-            // 
-            // indicator
-=======
             // panel2
->>>>>>> 976563c5f17c9a03db3afb01acd6550b46e30615
             // 
             this.panel2.Controls.Add(this.bunifuThinButton21);
             this.panel2.Controls.Add(this.picNhanVien);
@@ -376,18 +161,6 @@ namespace GUI
             this.panel2.Location = new System.Drawing.Point(0, 64);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(280, 238);
-            this.panel2.TabIndex = 9;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.bunifuThinButton21);
-            this.panel2.Controls.Add(this.picNhanVien);
-            this.panel2.Controls.Add(this.lblTen);
-            this.panel2.Controls.Add(this.lblChucVu);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 64);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(285, 238);
             this.panel2.TabIndex = 9;
             // 
             // bunifuThinButton21
@@ -447,15 +220,9 @@ namespace GUI
             this.headerPanel.Controls.Add(this.pictureBox1);
             this.headerPanel.Controls.Add(this.lblHeader);
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
-<<<<<<< HEAD
-            this.headerPanel.Location = new System.Drawing.Point(285, 0);
-            this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(1613, 64);
-=======
             this.headerPanel.Location = new System.Drawing.Point(280, 0);
             this.headerPanel.Name = "headerPanel";
             this.headerPanel.Size = new System.Drawing.Size(1618, 64);
->>>>>>> 976563c5f17c9a03db3afb01acd6550b46e30615
             this.headerPanel.TabIndex = 4;
             // 
             // lblClose
@@ -511,59 +278,11 @@ namespace GUI
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "DauBuoi";
             // 
-<<<<<<< HEAD
-            // mainPanel
-            // 
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(285, 0);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1613, 968);
-            this.mainPanel.TabIndex = 3;
-            // 
-=======
->>>>>>> 976563c5f17c9a03db3afb01acd6550b46e30615
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 25;
             this.bunifuElipse1.TargetControl = this;
             // 
-<<<<<<< HEAD
-            // btnPD
-            // 
-            this.btnPD.Activecolor = System.Drawing.Color.Transparent;
-            this.btnPD.BackColor = System.Drawing.Color.Transparent;
-            this.btnPD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPD.BorderRadius = 0;
-            this.btnPD.ButtonText = "Phiếu Đặt";
-            this.btnPD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPD.DisabledColor = System.Drawing.Color.Gray;
-            this.btnPD.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnPD.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnPD.Iconimage")));
-            this.btnPD.Iconimage_right = null;
-            this.btnPD.Iconimage_right_Selected = null;
-            this.btnPD.Iconimage_Selected = null;
-            this.btnPD.IconMarginLeft = 0;
-            this.btnPD.IconMarginRight = 0;
-            this.btnPD.IconRightVisible = true;
-            this.btnPD.IconRightZoom = 0D;
-            this.btnPD.IconVisible = true;
-            this.btnPD.IconZoom = 60D;
-            this.btnPD.IsTab = false;
-            this.btnPD.Location = new System.Drawing.Point(13, 568);
-            this.btnPD.Margin = new System.Windows.Forms.Padding(4);
-            this.btnPD.Name = "btnPD";
-            this.btnPD.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnPD.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnPD.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnPD.selected = false;
-            this.btnPD.Size = new System.Drawing.Size(270, 59);
-            this.btnPD.TabIndex = 21;
-            this.btnPD.Text = "Phiếu Đặt";
-            this.btnPD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPD.Textcolor = System.Drawing.Color.White;
-            this.btnPD.TextFont = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPD.Click += new System.EventHandler(this.btnPD_Click);
-=======
             // panelMenu1
             // 
             this.panelMenu1.Controls.Add(this.indicator);
@@ -717,7 +436,6 @@ namespace GUI
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(1618, 968);
             this.panelMenu.TabIndex = 3;
->>>>>>> 976563c5f17c9a03db3afb01acd6550b46e30615
             // 
             // frmMain
             // 
@@ -744,10 +462,7 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-<<<<<<< HEAD
-=======
             this.panelMenu1.ResumeLayout(false);
->>>>>>> 976563c5f17c9a03db3afb01acd6550b46e30615
             this.ResumeLayout(false);
 
         }
@@ -769,9 +484,6 @@ namespace GUI
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Label lblClose;
-<<<<<<< HEAD
-        private Bunifu.Framework.UI.BunifuFlatButton btnPD;
-=======
         private System.Windows.Forms.Panel panelMenu1;
         private System.Windows.Forms.Button btnBaoCao;
         private System.Windows.Forms.Button btnSanPham;
@@ -780,6 +492,5 @@ namespace GUI
         private System.Windows.Forms.Button btnNhanVien;
         private System.Windows.Forms.Button btnTrangChu;
         private System.Windows.Forms.Panel panelMenu;
->>>>>>> 976563c5f17c9a03db3afb01acd6550b46e30615
     }
 }
