@@ -99,9 +99,18 @@ namespace BLL_DAL
                           select (sp);
             return sanpham;
         }
-        public void export_SP_CanDatHang()
+        public List<SANPHAM> get_SP_CHUAGIAO(int idpd)
         {
-            
+            List<SANPHAM> list = new List<SANPHAM>();
+            CTPD_BLL_DAL ctpd = new CTPD_BLL_DAL();
+            CTPN_BLL_DAL ctpn = new CTPN_BLL_DAL();
+            var dsctpd = ctpd.get_CTPD(idpd);
+            foreach (CHITIETPHIEUDAT ct in dsctpd)
+            {
+                if (ct.SOLUONG != ctpn.get_SP_DANHAP(idpd, ct.ID_SP))
+                    list.Add(get_sp(ct.ID_SP));
+            }
+            return list;
         }
     }
 }

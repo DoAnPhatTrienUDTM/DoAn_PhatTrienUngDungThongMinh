@@ -66,6 +66,7 @@ namespace GUI
             Load_CTPD(ctpd.get_CTPD(phieudat.ID_PD));
             lblmapd.Text = phieudat.ID_PD.ToString();
             lblngaylap.Text = phieudat.NGAYLAP.Value.Date.ToShortDateString();
+            lblnv.Text = phieudat.NGUOIDUNG.TEN;
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)

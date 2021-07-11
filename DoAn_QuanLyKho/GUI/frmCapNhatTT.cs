@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
+using System.IO;
 
 namespace GUI
 {
@@ -16,6 +17,9 @@ namespace GUI
     {
         Check_Login login = new Check_Login();
         NhanVienBLL_DAL nv = new NhanVienBLL_DAL();
+        QL_NguoiDungNhomNguoiDung_BLL_DAL nguoiDung = new QL_NguoiDungNhomNguoiDung_BLL_DAL();
+        //Initialize load file
+        OpenFileDialog open = new OpenFileDialog();
         string maNV;
         public frmCapNhatTT(string manv)
         {
@@ -46,6 +50,7 @@ namespace GUI
         private void frmCapNhatTT_Load(object sender, EventArgs e)
         {
             getData();
+            lblChucVu.Text = nguoiDung.getRole(maNV);
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
@@ -56,6 +61,7 @@ namespace GUI
             txtSoDT.Enabled = true;
             dateNgaySinh.Enabled = true;
             btnLuu.Enabled = true;
+            btnLoadAnh.Enabled = true;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -65,33 +71,60 @@ namespace GUI
             DateTime ngaysinh = dateNgaySinh.Value;
             string diachi = txtDiaChi.Text.ToString();
             string pass = txtPass.Text.ToString();
+            string picture = "";
+            if (lblTenFile.Text == "")
+            {
+                picture = null;
+            }
+            else
+            {
+                picture = lblTenFile.Text;
+            }
+
             string gioitinh = "Nam";
             if (rdoNam.Checked)
             {
                 gioitinh = "Nam";
             }
             else
+            {
+
                 gioitinh = "Nữ";
+            }
 
 
-            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn?", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn lưu thay đổi này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Yes)
             {
                 if (txtUsername.Text.Length != 0)
                 {
                     if (txtHoVaTen.Text.Length != 0 && txtDiaChi.Text.Length != 0 && txtSoDT.Text.Length != 0)
                     {
-                        bool check = nv.updateInfo(maNV, ten, sdt, diachi, ngaysinh, gioitinh, pass);
+                        bool check = nv.updateInfo(maNV, ten, sdt, diachi, ngaysinh, gioitinh, pass, picture);
                         if (check)
                         {
                             MessageBox.Show("Cập nhật thành công!");
+                            try
+                            {
+                                File.Copy(lblFullPath.Text, Application.StartupPath + "\\img\\" + lblTenFile.Text, true);
+                            }
+                            catch
+                            {
+                                MessageBox.Show("Không thể lưu file ảnh này!");
+                            }
                         }
                         else
+                        {
+
                             MessageBox.Show("Cập nhật không thành công!");
+                        }
                     }
                 }
                 else
+                {
+
                     MessageBox.Show("Lỗi cập nhật!");
+                }
             }
         }
 
@@ -107,7 +140,7 @@ namespace GUI
             lblTen.Text = "Xin chào " + nd.TEN.ToString() + "!";
             bool? tinhTrang = nd.TINHTRANG;
 
-            if(tinhTrang == true)
+            if (tinhTrang == true)
             {
                 lblTrangThai.Text = "Trạng thái tài khoản: Đang hoạt động";
             }
@@ -124,7 +157,7 @@ namespace GUI
             }
             else
             {
-                img = Image.FromFile(Application.StartupPath + "\\img\\user_32x322.png");
+                img = Image.FromFile(Application.StartupPath + "\\img\\profile1.png");
                 picNhanVien.Image = img;
             }
             if (String.Compare(nd.GIOITINH.ToString(), "NAM", true) == 0)
@@ -132,12 +165,30 @@ namespace GUI
                 rdoNam.Checked = true;
             }
             else
+            {
+
                 rdoNu.Checked = true;
+            }
         }
 
         private void lblClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnLoadAnh_Click(object sender, EventArgs e)
+        {
+            open.Filter = "Choose Image(*.jpg; *.png;*.gif)|*.jpg; *.png;*.gif";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                picNhanVien.Image = Image.FromFile(open.FileName);
+                lblTenFile.Text = System.IO.Path.GetFileName(open.FileName);
+                lblFullPath.Text = open.FileName;
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }

@@ -187,7 +187,7 @@ namespace GUI
             // txtSearch
             // 
             this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSearch.HintForeColor = System.Drawing.Color.Empty;
             this.txtSearch.HintText = "Nhập tại đây để tìm kiếm";
@@ -196,10 +196,10 @@ namespace GUI
             this.txtSearch.LineIdleColor = System.Drawing.Color.Gray;
             this.txtSearch.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtSearch.LineThickness = 3;
-            this.txtSearch.Location = new System.Drawing.Point(20, 20);
+            this.txtSearch.Location = new System.Drawing.Point(66, 24);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(492, 37);
+            this.txtSearch.Size = new System.Drawing.Size(402, 37);
             this.txtSearch.TabIndex = 10;
             this.txtSearch.Text = "Search";
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -240,7 +240,7 @@ namespace GUI
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Xem vị trí công ty trên bản đồ";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.bunifuThinButton21.IdleBorderThickness = 1;
             this.bunifuThinButton21.IdleCornerRadius = 20;
@@ -366,7 +366,7 @@ namespace GUI
             this.btnSuaNCC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSuaNCC.BackgroundImage")));
             this.btnSuaNCC.ButtonText = "Sửa";
             this.btnSuaNCC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSuaNCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaNCC.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnSuaNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSuaNCC.IdleBorderThickness = 1;
             this.btnSuaNCC.IdleCornerRadius = 20;
@@ -385,7 +385,7 @@ namespace GUI
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
             this.btnSearch.ImageActive = null;
-            this.btnSearch.Location = new System.Drawing.Point(518, 20);
+            this.btnSearch.Location = new System.Drawing.Point(20, 23);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(39, 37);
@@ -405,7 +405,7 @@ namespace GUI
             this.btnThemNCC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThemNCC.BackgroundImage")));
             this.btnThemNCC.ButtonText = "Thêm";
             this.btnThemNCC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThemNCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemNCC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnThemNCC.IdleBorderThickness = 1;
             this.btnThemNCC.IdleCornerRadius = 20;
@@ -430,7 +430,7 @@ namespace GUI
             this.btnXoaNCC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXoaNCC.BackgroundImage")));
             this.btnXoaNCC.ButtonText = "Xóa";
             this.btnXoaNCC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoaNCC.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaNCC.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnXoaNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnXoaNCC.IdleBorderThickness = 1;
             this.btnXoaNCC.IdleCornerRadius = 20;

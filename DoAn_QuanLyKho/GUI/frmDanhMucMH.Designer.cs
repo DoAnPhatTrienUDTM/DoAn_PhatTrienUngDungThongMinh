@@ -30,9 +30,9 @@ namespace GUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDanhMucMH));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.lblClose = new System.Windows.Forms.Label();
@@ -42,6 +42,7 @@ namespace GUI
             this.panelLeft = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.txtTenManHinh = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -50,7 +51,6 @@ namespace GUI
             this.btnSua = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnThem = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnXoa = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.grvDanhMucManHinh)).BeginInit();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,8 +77,8 @@ namespace GUI
             // 
             this.grvDanhMucManHinh.AllowUserToAddRows = false;
             this.grvDanhMucManHinh.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.grvDanhMucManHinh.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.grvDanhMucManHinh.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.grvDanhMucManHinh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -87,26 +87,26 @@ namespace GUI
             this.grvDanhMucManHinh.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.grvDanhMucManHinh.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.grvDanhMucManHinh.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(122)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grvDanhMucManHinh.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(122)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grvDanhMucManHinh.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.grvDanhMucManHinh.ColumnHeadersHeight = 50;
             this.grvDanhMucManHinh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grvDanhMucManHinh.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grvDanhMucManHinh.DefaultCellStyle = dataGridViewCellStyle6;
             this.grvDanhMucManHinh.DoubleBuffered = true;
             this.grvDanhMucManHinh.EnableHeadersVisualStyles = false;
             this.grvDanhMucManHinh.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(122)))), ((int)(((byte)(224)))));
@@ -168,22 +168,32 @@ namespace GUI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(26, 258);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(297, 22);
+            this.label1.Size = new System.Drawing.Size(296, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "HỆ THỐNG QUẢN LÝ KHO HÀNG";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.wms_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(70, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(217, 196);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label2.Location = new System.Drawing.Point(373, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(352, 30);
+            this.label2.Size = new System.Drawing.Size(321, 32);
             this.label2.TabIndex = 32;
             this.label2.Text = "Quản lý danh mục màn hình";
             // 
@@ -196,7 +206,7 @@ namespace GUI
             // 
             this.txtTenManHinh.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTenManHinh.Enabled = false;
-            this.txtTenManHinh.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtTenManHinh.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenManHinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtTenManHinh.HintForeColor = System.Drawing.Color.Empty;
             this.txtTenManHinh.HintText = "";
@@ -215,11 +225,11 @@ namespace GUI
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label6.Location = new System.Drawing.Point(374, 179);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 21);
+            this.label6.Size = new System.Drawing.Size(106, 21);
             this.label6.TabIndex = 43;
             this.label6.Text = "&Tên màn hình:";
             // 
@@ -234,7 +244,7 @@ namespace GUI
             this.btnTaoMoi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTaoMoi.BackgroundImage")));
             this.btnTaoMoi.ButtonText = "Thao tác";
             this.btnTaoMoi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTaoMoi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaoMoi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaoMoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnTaoMoi.IdleBorderThickness = 1;
             this.btnTaoMoi.IdleCornerRadius = 20;
@@ -260,7 +270,7 @@ namespace GUI
             this.btnSua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSua.BackgroundImage")));
             this.btnSua.ButtonText = "Sửa";
             this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSua.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnSua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnSua.IdleBorderThickness = 1;
             this.btnSua.IdleCornerRadius = 20;
@@ -286,7 +296,7 @@ namespace GUI
             this.btnThem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThem.BackgroundImage")));
             this.btnThem.ButtonText = "Thêm";
             this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnThem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnThem.IdleBorderThickness = 1;
             this.btnThem.IdleCornerRadius = 20;
@@ -312,7 +322,7 @@ namespace GUI
             this.btnXoa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXoa.BackgroundImage")));
             this.btnXoa.ButtonText = "Xóa";
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnXoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnXoa.IdleBorderThickness = 1;
             this.btnXoa.IdleCornerRadius = 20;
@@ -326,16 +336,6 @@ namespace GUI
             this.btnXoa.TabIndex = 46;
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.wms_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(70, 43);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(217, 196);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // frmDanhMucMH
             // 

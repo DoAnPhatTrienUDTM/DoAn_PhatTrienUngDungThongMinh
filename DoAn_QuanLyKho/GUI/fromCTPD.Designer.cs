@@ -30,7 +30,6 @@ namespace GUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fromCTPD));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -38,10 +37,9 @@ namespace GUI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fromCTPD));
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnthem = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.cbxloaisp = new System.Windows.Forms.ComboBox();
             this.lb1 = new System.Windows.Forms.Label();
@@ -55,19 +53,20 @@ namespace GUI
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.gridCTPD = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblnv = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblmapd = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblngaylap = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lblnv = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.btnthem = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbbsp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -77,21 +76,8 @@ namespace GUI
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridCTPD)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.ImageActive = null;
-            this.btnSearch.Location = new System.Drawing.Point(337, 4);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(58, 35);
-            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnSearch.TabIndex = 5;
-            this.btnSearch.TabStop = false;
-            this.btnSearch.Zoom = 10;
             // 
             // txtSearch
             // 
@@ -125,32 +111,6 @@ namespace GUI
             this.panel2.Size = new System.Drawing.Size(715, 68);
             this.panel2.TabIndex = 1;
             // 
-            // btnthem
-            // 
-            this.btnthem.ActiveBorderThickness = 1;
-            this.btnthem.ActiveCornerRadius = 20;
-            this.btnthem.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnthem.ActiveForecolor = System.Drawing.Color.White;
-            this.btnthem.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnthem.BackColor = System.Drawing.Color.White;
-            this.btnthem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnthem.BackgroundImage")));
-            this.btnthem.ButtonText = "+ Add Oders";
-            this.btnthem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnthem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthem.ForeColor = System.Drawing.Color.White;
-            this.btnthem.IdleBorderThickness = 1;
-            this.btnthem.IdleCornerRadius = 20;
-            this.btnthem.IdleFillColor = System.Drawing.Color.Coral;
-            this.btnthem.IdleForecolor = System.Drawing.Color.White;
-            this.btnthem.IdleLineColor = System.Drawing.Color.White;
-            this.btnthem.Location = new System.Drawing.Point(226, 9);
-            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
-            this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(109, 40);
-            this.btnthem.TabIndex = 3;
-            this.btnthem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnthem.Click += new System.EventHandler(this.bunifuThinButton21_Click);
-            // 
             // bunifuDatepicker1
             // 
             this.bunifuDatepicker1.BackColor = System.Drawing.Color.Coral;
@@ -159,6 +119,7 @@ namespace GUI
             this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.bunifuDatepicker1.FormatCustom = null;
             this.bunifuDatepicker1.Location = new System.Drawing.Point(181, 11);
+            this.bunifuDatepicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuDatepicker1.Name = "bunifuDatepicker1";
             this.bunifuDatepicker1.Size = new System.Drawing.Size(38, 38);
             this.bunifuDatepicker1.TabIndex = 2;
@@ -262,7 +223,7 @@ namespace GUI
             this.gridPDat.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(122)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 15F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -344,7 +305,7 @@ namespace GUI
             this.gridCTPD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -397,43 +358,63 @@ namespace GUI
             this.panel3.Size = new System.Drawing.Size(1011, 47);
             this.panel3.TabIndex = 0;
             // 
+            // lblnv
+            // 
+            this.lblnv.AutoSize = true;
+            this.lblnv.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblnv.Location = new System.Drawing.Point(748, 12);
+            this.lblnv.Name = "lblnv";
+            this.lblnv.Size = new System.Drawing.Size(102, 25);
+            this.lblnv.TabIndex = 5;
+            this.lblnv.Text = "Nhân Viên";
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(642, 12);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(102, 25);
+            this.bunifuCustomLabel2.TabIndex = 4;
+            this.bunifuCustomLabel2.Text = "Nhân Viên";
+            // 
             // bunifuCustomLabel4
             // 
             this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.bunifuCustomLabel4.Location = new System.Drawing.Point(358, 12);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(90, 24);
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(93, 25);
             this.bunifuCustomLabel4.TabIndex = 3;
             this.bunifuCustomLabel4.Text = "Ngày Lập";
             // 
             // lblmapd
             // 
             this.lblmapd.AutoSize = true;
-            this.lblmapd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblmapd.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.lblmapd.Location = new System.Drawing.Point(214, 11);
             this.lblmapd.Name = "lblmapd";
-            this.lblmapd.Size = new System.Drawing.Size(182, 24);
+            this.lblmapd.Size = new System.Drawing.Size(190, 25);
             this.lblmapd.TabIndex = 2;
             this.lblmapd.Text = "bunifuCustomLabel3";
             // 
             // lblngaylap
             // 
             this.lblngaylap.AutoSize = true;
-            this.lblngaylap.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblngaylap.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.lblngaylap.Location = new System.Drawing.Point(454, 12);
             this.lblngaylap.Name = "lblngaylap";
-            this.lblngaylap.Size = new System.Drawing.Size(182, 24);
+            this.lblngaylap.Size = new System.Drawing.Size(190, 25);
             this.lblngaylap.TabIndex = 1;
             this.lblngaylap.Text = "bunifuCustomLabel2";
             // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(96, 11);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(122, 24);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(129, 25);
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Mã Phiếu Đặt";
             // 
@@ -442,25 +423,45 @@ namespace GUI
             this.bunifuElipse1.ElipseRadius = 1;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // bunifuCustomLabel2
+            // btnthem
             // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(642, 12);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(100, 24);
-            this.bunifuCustomLabel2.TabIndex = 4;
-            this.bunifuCustomLabel2.Text = "Nhân Viên";
+            this.btnthem.ActiveBorderThickness = 1;
+            this.btnthem.ActiveCornerRadius = 20;
+            this.btnthem.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnthem.ActiveForecolor = System.Drawing.Color.White;
+            this.btnthem.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnthem.BackColor = System.Drawing.Color.White;
+            this.btnthem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnthem.BackgroundImage")));
+            this.btnthem.ButtonText = "+ Add Oders";
+            this.btnthem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnthem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnthem.ForeColor = System.Drawing.Color.White;
+            this.btnthem.IdleBorderThickness = 1;
+            this.btnthem.IdleCornerRadius = 20;
+            this.btnthem.IdleFillColor = System.Drawing.Color.Coral;
+            this.btnthem.IdleForecolor = System.Drawing.Color.White;
+            this.btnthem.IdleLineColor = System.Drawing.Color.White;
+            this.btnthem.Location = new System.Drawing.Point(226, 9);
+            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnthem.Name = "btnthem";
+            this.btnthem.Size = new System.Drawing.Size(109, 40);
+            this.btnthem.TabIndex = 3;
+            this.btnthem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnthem.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
-            // lblnv
+            // btnSearch
             // 
-            this.lblnv.AutoSize = true;
-            this.lblnv.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblnv.Location = new System.Drawing.Point(748, 12);
-            this.lblnv.Name = "lblnv";
-            this.lblnv.Size = new System.Drawing.Size(100, 24);
-            this.lblnv.TabIndex = 5;
-            this.lblnv.Text = "Nhân Viên";
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.ImageActive = null;
+            this.btnSearch.Location = new System.Drawing.Point(337, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(58, 35);
+            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSearch.TabIndex = 5;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Zoom = 10;
             // 
             // Column3
             // 
@@ -470,7 +471,7 @@ namespace GUI
             // 
             // cbbsp
             // 
-            this.cbbsp.HeaderText = "tên Sản Phẩm";
+            this.cbbsp.HeaderText = "Tên Sản Phẩm";
             this.cbbsp.Name = "cbbsp";
             this.cbbsp.ReadOnly = true;
             this.cbbsp.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -504,7 +505,6 @@ namespace GUI
             this.Name = "fromCTPD";
             this.Text = "fromCTPD";
             this.Load += new System.EventHandler(this.fromCTPD_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -516,6 +516,7 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.gridCTPD)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.ResumeLayout(false);
 
         }

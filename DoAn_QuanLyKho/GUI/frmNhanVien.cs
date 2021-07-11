@@ -57,7 +57,7 @@ namespace GUI
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            frmShowPass frm = new frmShowPass();
+            frmShowPass frm = new frmShowPass(bindingSource1);
             frm.Show();
         }
 
@@ -102,7 +102,8 @@ namespace GUI
 
         private void btnPhanQuyenNhomNguoiDung_Click(object sender, EventArgs e)
         {
-
+            frmPhanQuyen frm = new frmPhanQuyen();
+            frm.Show();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -137,6 +138,37 @@ namespace GUI
         {
             grvNhanVien.DataSource = nv.loadDataNguoiDung();
             grvNhanVien.Refresh();
+        }
+
+        private void btnKichHoatTaiKhoan_Click(object sender, EventArgs e)
+        {
+            string id = grvNhanVien.CurrentRow.Cells[0].Value.ToString();
+            if (nv.update_TinhTrang_True(id) == true)
+            {
+                MessageBox.Show("Đã kích hoạt tài khoản thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Kích hoạt thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnKhoaTaiKhoan_Click(object sender, EventArgs e)
+        {
+            string id = grvNhanVien.CurrentRow.Cells[0].Value.ToString();
+            if (nv.update_TinhTrang_False(id) == true)
+            {
+                MessageBox.Show("Đã khóa tài khoản thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Khóa tài khoản thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtSearch_OnValueChanged(object sender, EventArgs e)
+        {
+            grvNhanVien.DataSource = nv.searchNhanVien(txtSearch.Text);
         }
     }
 }

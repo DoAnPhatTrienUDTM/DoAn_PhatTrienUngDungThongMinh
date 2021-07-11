@@ -117,4 +117,45 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnLuu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAARIAAAAwCAYAAADdJPWqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJdSURBVHhe7d2/axNhGMDxDg0KpRV/LEKhs4NjJ3ESOgn+
+        Fw7i7uAi6c9Ai0ipIBKwYDcHKYKIoyBUEEopiIvQgtBCh6Rtaugl72Oe9zTkx5Pk5NnMd/hM995lui93
+        70GekVKpJADgQUgAuBESAG6EBIAbIQHgRkgAuPUPydGBVLaKkqzPSG3tpoTCVZEnIwCGgN7vet8nxdty
+        9vm5lA/37E409AzJ6fYbCUuXJSyMmz8CYHiE+TEJi5fk7NMzsxddIdHqnL++G0+yLghgeIXFCam9mJby
+        z+9t3WgLiUakvjIpks+ZFwEApZ043t+xQ6JPIkQEQBa6f9IVkrgnwusMgKzmx6T6/lFLSI4O4saquRgA
+        etBuHP/4koZEP+3orqy1EAB6yo9KdfNBGhL9TmwuAoAB6k+n0pDUl6+bCwBgoMZTSQxJmLtoLwCADGJI
+        rAMAkBUhAeBGSAC4ERIAboQEgBshAeBGSAC4ERIAboQEgBshAeBGSAC4ERIAboQEgBshAeBGSAC4pSHJ
+        j5oHASCLGBJGcQLwiCHRyVnWQQAYRP+qNYbk14fHInMXzEUA0M/5xr00JDp6j+FYAP6VzgKufN1IQ6Kq
+        mw/j5CxrMQB0yeckeXWnfWSnTturrd6wTwCADqFwTcqHex0hadDRe6FwxTwJAP7SUZ2nu++a7WgLiTr5
+        9lHqK5MSZpl1A6DDbC4+ibRGRHWFJGq85lTf3mcDFkBTWBiX5OWt5utMKzskf2h19NOOXsC6MID/n07i
+        TNZnpLJVNDuh+oYEALIgJADcCAkAN0ICwI2QAHAqyW/2XUhyHGFf0gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="bunifuElipse2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>141, 17</value>
+  </metadata>
+  <metadata name="bunifuElipse3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>265, 17</value>
+  </metadata>
 </root>

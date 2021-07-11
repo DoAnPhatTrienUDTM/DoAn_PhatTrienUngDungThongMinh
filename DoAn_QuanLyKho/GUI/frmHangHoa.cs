@@ -270,8 +270,7 @@ namespace GUI
             else
             {
                 var senderGrid = (DataGridView)sender;
-                if (senderGrid.Columns[e.ColumnIndex] is DataGridViewImageColumn &&
-                    e.ColumnIndex == 4)
+                if (senderGrid.Columns[e.ColumnIndex] is DataGridViewImageColumn)
                 {
                     opf.Reset();
                     opf.Filter = "Choose Image(*.jpg; *.png;*.gif)|*.jpg; *.png;*.gif";

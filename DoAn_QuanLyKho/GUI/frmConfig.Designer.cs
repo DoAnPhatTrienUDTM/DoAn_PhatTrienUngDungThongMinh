@@ -33,7 +33,6 @@ namespace GUI
             this.panelLeft = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,6 +45,7 @@ namespace GUI
             this.btnTestConn = new System.Windows.Forms.Button();
             this.txtDataname = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.btnSaveConfig = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -76,23 +76,13 @@ namespace GUI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(19, 318);
+            this.label1.Location = new System.Drawing.Point(34, 316);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(297, 22);
+            this.label1.Size = new System.Drawing.Size(296, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "HỆ THỐNG QUẢN LÝ KHO HÀNG";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.wms_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(75, 103);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(217, 196);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // bunifuElipse1
             // 
@@ -182,7 +172,7 @@ namespace GUI
             this.txtUsername.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtUsername.LineThickness = 3;
             this.txtUsername.Location = new System.Drawing.Point(380, 209);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(365, 31);
             this.txtUsername.TabIndex = 2;
@@ -203,7 +193,7 @@ namespace GUI
             this.txtPass.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtPass.LineThickness = 3;
             this.txtPass.Location = new System.Drawing.Point(379, 291);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(365, 31);
             this.txtPass.TabIndex = 3;
@@ -238,7 +228,7 @@ namespace GUI
             this.txtDataname.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtDataname.LineThickness = 3;
             this.txtDataname.Location = new System.Drawing.Point(380, 386);
-            this.txtDataname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDataname.Margin = new System.Windows.Forms.Padding(4);
             this.txtDataname.Name = "txtDataname";
             this.txtDataname.Size = new System.Drawing.Size(365, 31);
             this.txtDataname.TabIndex = 17;
@@ -258,6 +248,16 @@ namespace GUI
             this.btnSaveConfig.Text = "&Save config";
             this.btnSaveConfig.UseVisualStyleBackColor = false;
             this.btnSaveConfig.Click += new System.EventHandler(this.btnSaveConfig_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.wms_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(75, 103);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(217, 196);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // frmConfig
             // 

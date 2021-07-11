@@ -29,21 +29,18 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPhieuDat));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPhieuDat));
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.cbxloaisp = new System.Windows.Forms.ComboBox();
             this.lb1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnaddPD = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.gridPD = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,12 +48,14 @@ namespace GUI
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnaddPD = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridPD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSearch
@@ -88,23 +87,8 @@ namespace GUI
             this.panel2.Location = new System.Drawing.Point(2, 2);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(407, 50);
+            this.panel2.Size = new System.Drawing.Size(407, 54);
             this.panel2.TabIndex = 1;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.ImageActive = null;
-            this.btnSearch.Location = new System.Drawing.Point(264, 4);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(58, 35);
-            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnSearch.TabIndex = 5;
-            this.btnSearch.TabStop = false;
-            this.btnSearch.Zoom = 10;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // bunifuDatepicker1
             // 
@@ -150,33 +134,8 @@ namespace GUI
             this.panel1.Location = new System.Drawing.Point(413, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(408, 50);
+            this.panel1.Size = new System.Drawing.Size(408, 54);
             this.panel1.TabIndex = 0;
-            // 
-            // btnaddPD
-            // 
-            this.btnaddPD.ActiveBorderThickness = 1;
-            this.btnaddPD.ActiveCornerRadius = 20;
-            this.btnaddPD.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnaddPD.ActiveForecolor = System.Drawing.Color.White;
-            this.btnaddPD.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnaddPD.BackColor = System.Drawing.Color.White;
-            this.btnaddPD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddPD.BackgroundImage")));
-            this.btnaddPD.ButtonText = "+ Add Orders";
-            this.btnaddPD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnaddPD.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaddPD.ForeColor = System.Drawing.Color.White;
-            this.btnaddPD.IdleBorderThickness = 1;
-            this.btnaddPD.IdleCornerRadius = 20;
-            this.btnaddPD.IdleFillColor = System.Drawing.Color.Coral;
-            this.btnaddPD.IdleForecolor = System.Drawing.Color.White;
-            this.btnaddPD.IdleLineColor = System.Drawing.Color.White;
-            this.btnaddPD.Location = new System.Drawing.Point(226, 4);
-            this.btnaddPD.Margin = new System.Windows.Forms.Padding(4);
-            this.btnaddPD.Name = "btnaddPD";
-            this.btnaddPD.Size = new System.Drawing.Size(136, 40);
-            this.btnaddPD.TabIndex = 3;
-            this.btnaddPD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel2
             // 
@@ -191,7 +150,7 @@ namespace GUI
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(823, 54);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(823, 58);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -199,28 +158,16 @@ namespace GUI
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.gridPD, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.33334F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(827, 493);
             this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(2, 464);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(823, 27);
-            this.panel3.TabIndex = 2;
             // 
             // gridPD
             // 
@@ -235,7 +182,7 @@ namespace GUI
             this.gridPD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -263,12 +210,12 @@ namespace GUI
             this.gridPD.GridColor = System.Drawing.Color.Black;
             this.gridPD.HeaderBgColor = System.Drawing.Color.White;
             this.gridPD.HeaderForeColor = System.Drawing.Color.Black;
-            this.gridPD.Location = new System.Drawing.Point(3, 61);
+            this.gridPD.Location = new System.Drawing.Point(3, 65);
             this.gridPD.Name = "gridPD";
             this.gridPD.ReadOnly = true;
             this.gridPD.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gridPD.RowTemplate.Height = 50;
-            this.gridPD.Size = new System.Drawing.Size(821, 398);
+            this.gridPD.Size = new System.Drawing.Size(821, 425);
             this.gridPD.TabIndex = 3;
             this.gridPD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridPD_CellClick);
             // 
@@ -308,6 +255,46 @@ namespace GUI
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             // 
+            // btnaddPD
+            // 
+            this.btnaddPD.ActiveBorderThickness = 1;
+            this.btnaddPD.ActiveCornerRadius = 20;
+            this.btnaddPD.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnaddPD.ActiveForecolor = System.Drawing.Color.White;
+            this.btnaddPD.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnaddPD.BackColor = System.Drawing.Color.White;
+            this.btnaddPD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddPD.BackgroundImage")));
+            this.btnaddPD.ButtonText = "+ Add Orders";
+            this.btnaddPD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnaddPD.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnaddPD.ForeColor = System.Drawing.Color.White;
+            this.btnaddPD.IdleBorderThickness = 1;
+            this.btnaddPD.IdleCornerRadius = 20;
+            this.btnaddPD.IdleFillColor = System.Drawing.Color.Coral;
+            this.btnaddPD.IdleForecolor = System.Drawing.Color.White;
+            this.btnaddPD.IdleLineColor = System.Drawing.Color.White;
+            this.btnaddPD.Location = new System.Drawing.Point(226, 4);
+            this.btnaddPD.Margin = new System.Windows.Forms.Padding(4);
+            this.btnaddPD.Name = "btnaddPD";
+            this.btnaddPD.Size = new System.Drawing.Size(136, 40);
+            this.btnaddPD.TabIndex = 3;
+            this.btnaddPD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.ImageActive = null;
+            this.btnSearch.Location = new System.Drawing.Point(264, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(58, 35);
+            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSearch.TabIndex = 5;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Zoom = 10;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // frmPhieuDat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,12 +305,12 @@ namespace GUI
             this.Text = "frmPhieuDat";
             this.Load += new System.EventHandler(this.frmPhieuDat_Load);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridPD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -339,7 +326,6 @@ namespace GUI
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panel3;
         private Bunifu.Framework.UI.BunifuCustomDataGrid gridPD;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

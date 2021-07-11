@@ -33,12 +33,12 @@ namespace GUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTrangChu));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.lblSoNhanVien = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.lblNhanVien_True = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -69,7 +69,7 @@ namespace GUI
             this.bunifuCards1.BorderRadius = 50;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.Transparent;
-            this.bunifuCards1.Controls.Add(this.labelControl2);
+            this.bunifuCards1.Controls.Add(this.lblSoNhanVien);
             this.bunifuCards1.Controls.Add(this.pictureBox1);
             this.bunifuCards1.Controls.Add(this.labelControl1);
             this.bunifuCards1.LeftSahddow = false;
@@ -81,18 +81,18 @@ namespace GUI
             this.bunifuCards1.Size = new System.Drawing.Size(288, 222);
             this.bunifuCards1.TabIndex = 0;
             // 
-            // labelControl2
+            // lblSoNhanVien
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(14, 183);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(14, 19);
-            this.labelControl2.TabIndex = 3;
-            this.labelControl2.Text = "18";
+            this.lblSoNhanVien.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoNhanVien.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lblSoNhanVien.Appearance.Options.UseFont = true;
+            this.lblSoNhanVien.Appearance.Options.UseForeColor = true;
+            this.lblSoNhanVien.Location = new System.Drawing.Point(14, 183);
+            this.lblSoNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblSoNhanVien.Name = "lblSoNhanVien";
+            this.lblSoNhanVien.Size = new System.Drawing.Size(14, 19);
+            this.lblSoNhanVien.TabIndex = 3;
+            this.lblSoNhanVien.Text = "18";
             // 
             // pictureBox1
             // 
@@ -124,7 +124,7 @@ namespace GUI
             this.bunifuCards2.BottomSahddow = true;
             this.bunifuCards2.color = System.Drawing.Color.Transparent;
             this.bunifuCards2.Controls.Add(this.pictureBox2);
-            this.bunifuCards2.Controls.Add(this.labelControl3);
+            this.bunifuCards2.Controls.Add(this.lblNhanVien_True);
             this.bunifuCards2.Controls.Add(this.labelControl4);
             this.bunifuCards2.LeftSahddow = false;
             this.bunifuCards2.Location = new System.Drawing.Point(322, 21);
@@ -146,18 +146,18 @@ namespace GUI
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // labelControl3
+            // lblNhanVien_True
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(14, 183);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(14, 19);
-            this.labelControl3.TabIndex = 3;
-            this.labelControl3.Text = "18";
+            this.lblNhanVien_True.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNhanVien_True.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lblNhanVien_True.Appearance.Options.UseFont = true;
+            this.lblNhanVien_True.Appearance.Options.UseForeColor = true;
+            this.lblNhanVien_True.Location = new System.Drawing.Point(14, 183);
+            this.lblNhanVien_True.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblNhanVien_True.Name = "lblNhanVien_True";
+            this.lblNhanVien_True.Size = new System.Drawing.Size(14, 19);
+            this.lblNhanVien_True.TabIndex = 3;
+            this.lblNhanVien_True.Text = "18";
             // 
             // labelControl4
             // 
@@ -327,10 +327,10 @@ namespace GUI
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private Bunifu.Framework.UI.BunifuCards bunifuCards2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl lblNhanVien_True;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl lblSoNhanVien;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
     }

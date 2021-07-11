@@ -10,5 +10,10 @@ namespace BLL_DAL
     {
         public static AppSetting setting = new AppSetting();
         QuanLyKhoDataContext quanLyKho = new QuanLyKhoDataContext(setting.GetConnectionString("BLL_DAL.Properties.Settings.QL_KHOHANGConnectionString"));
+
+        public IQueryable get_NCC()
+        {
+            return quanLyKho.NHACUNGCAPs;
+        }
     }
 }

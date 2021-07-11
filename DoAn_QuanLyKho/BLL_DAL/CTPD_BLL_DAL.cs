@@ -43,7 +43,7 @@ namespace BLL_DAL
             }
             return dsspcl as IQueryable;
         }
-        public bool insert_CTPD(int idpd, int idsp, int soluong, int thanhtien)
+        public bool insert_CTPD(int idpd, int idsp, int soluong)
         {
             try
             {
@@ -51,7 +51,7 @@ namespace BLL_DAL
                 insert.ID_PD = idpd;
                 insert.ID_SP = idsp;
                 insert.SOLUONG = soluong;
-                insert.THANHTIEN = thanhtien;
+                insert.THANHTIEN = 0;
                 quanLyKho.CHITIETPHIEUDATs.InsertOnSubmit(insert);
                 quanLyKho.SubmitChanges();
                 return true;
@@ -61,6 +61,17 @@ namespace BLL_DAL
                 return false;
                 throw;
             }
+        }
+        public bool ktslnhap(int idpd, int idsp, int sldanhap)
+        {
+            bool kq = true;
+            CHITIETPHIEUDAT ctpd = quanLyKho.CHITIETPHIEUDATs.SingleOrDefault(n => n.ID_PD == idpd && n.ID_SP == idsp);
+            int sl = (int)ctpd.SOLUONG;
+            if ( sldanhap > sl)
+            {
+                kq = false;
+            }
+            return kq;
         }
     }
 }

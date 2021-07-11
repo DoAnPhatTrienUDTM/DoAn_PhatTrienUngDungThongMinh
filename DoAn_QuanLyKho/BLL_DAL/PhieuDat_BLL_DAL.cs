@@ -21,19 +21,58 @@ namespace BLL_DAL
             var phieudat = from pd in quanLyKho.PHIEUDATs where pd.NHACUNGCAP.TENNCC.Contains(tenncc) && pd.NGUOIDUNG.ID_KHO == Id_kho select (pd);
             return phieudat;
         }
-        public IQueryable get_PD_date(int Id_kho ,DateTime date)
+        public IQueryable get_PD_date(int Id_kho, DateTime date)
         {
             var phieudat = from pd in quanLyKho.PHIEUDATs where pd.NGAYLAP == date && pd.NGUOIDUNG.ID_KHO == Id_kho select (pd);
             return phieudat;
         }
         public IQueryable get_PD_CTPD(int idkho)
         {
-            var phieudat = quanLyKho.PHIEUDATs.Where(n => n.NGUOIDUNG.ID_KHO == idkho).Select(n => new {Id = n.ID_PD, tenncc = n.NHACUNGCAP.TENNCC});
+            var phieudat = quanLyKho.PHIEUDATs.Where(n => n.NGUOIDUNG.ID_KHO == idkho).Select(n => new { Id = n.ID_PD, tenncc = n.NHACUNGCAP.TENNCC });
             return phieudat;
         }
         public PHIEUDAT getPD(int id)
         {
             return quanLyKho.PHIEUDATs.SingleOrDefault(n => n.ID_PD == id);
+        }
+        public IQueryable get_PD_false(int idkho)
+        {
+            return quanLyKho.PHIEUDATs.Where(n => n.TINHTRANG == false && n.NGUOIDUNG.ID_KHO == idkho);
+        }
+        public IQueryable get_PD_false_search(int idkho, string tenncc)
+        {
+            return quanLyKho.PHIEUDATs.Where(n => n.TINHTRANG == false && n.NGUOIDUNG.ID_KHO == idkho && n.NHACUNGCAP.TENNCC.Contains(tenncc));
+        }
+        public IQueryable get_PD_false_date(int idkho, DateTime date)
+        {
+            return quanLyKho.PHIEUDATs.Where(n => n.TINHTRANG == false && n.NGUOIDUNG.ID_KHO == idkho && n.NGAYLAP == date);
+        }
+        public bool kt_trangthai_PD(int idpd)
+        {
+            bool kq = true;
+            CTPD_BLL_DAL ctpd = new CTPD_BLL_DAL();
+            CTPN_BLL_DAL ctpn = new CTPN_BLL_DAL();
+            var dsctpd = ctpd.get_CTPD(idpd);
+            foreach (CHITIETPHIEUDAT ct in dsctpd)
+            {
+                int sl = ctpn.get_SP_DANHAP(idpd, ct.ID_SP);
+                if (ct.SOLUONG != sl)
+                {
+                    kq = false;
+                    return kq;
+                }
+
+            }
+            return kq;
+        }
+        public void update_TrangThai_PD(int idpd)
+        {
+            PHIEUDAT pd = getPD(idpd);
+            if (kt_trangthai_PD(idpd))
+            {
+                pd.TINHTRANG = true;
+            }
+            quanLyKho.SubmitChanges();
         }
         public bool insert_PhieuDat(int idncc, string idnv, DateTime ngaynhap, int tongtien)
         {
@@ -55,7 +94,14 @@ namespace BLL_DAL
                 throw;
             }
         }
+        public int countpd()
+        {
+            int i = 0;
+            var dspn = quanLyKho.PHIEUDATs.OrderByDescending(n => n.ID_PD).Take(1);
+            foreach (PHIEUDAT pn in dspn)
+                i = pn.ID_PD;
+            return i;
 
-       
+        }
     }
 }

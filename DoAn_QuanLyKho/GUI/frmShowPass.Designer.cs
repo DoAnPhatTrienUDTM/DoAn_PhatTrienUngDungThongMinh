@@ -80,7 +80,7 @@ namespace GUI
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(3, 446);
+            this.label9.Location = new System.Drawing.Point(12, 451);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(206, 22);
             this.label9.TabIndex = 2;
@@ -89,29 +89,29 @@ namespace GUI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(26, 258);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(297, 22);
+            this.label1.Size = new System.Drawing.Size(296, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "HỆ THỐNG QUẢN LÝ KHO HÀNG";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label2.Location = new System.Drawing.Point(373, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(237, 30);
+            this.label2.Size = new System.Drawing.Size(225, 32);
             this.label2.TabIndex = 5;
             this.label2.Text = "Thông tin tài khoản";
             // 
             // txtPass
             // 
             this.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPass.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPass.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPass.HintForeColor = System.Drawing.Color.Empty;
             this.txtPass.HintText = "";
@@ -132,18 +132,18 @@ namespace GUI
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label4.Location = new System.Drawing.Point(374, 174);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 21);
+            this.label4.Size = new System.Drawing.Size(78, 21);
             this.label4.TabIndex = 6;
             this.label4.Text = "&Mật khẩu:";
             // 
             // txtUsername
             // 
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtUsername.HintForeColor = System.Drawing.Color.Empty;
             this.txtUsername.HintText = "";
@@ -163,11 +163,11 @@ namespace GUI
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.label3.Location = new System.Drawing.Point(374, 103);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 21);
+            this.label3.Size = new System.Drawing.Size(114, 21);
             this.label3.TabIndex = 7;
             this.label3.Text = "&Tên đăng nhập:";
             // 
@@ -175,7 +175,7 @@ namespace GUI
             // 
             this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
             this.btnLuu.Location = new System.Drawing.Point(378, 318);
             this.btnLuu.Name = "btnLuu";
@@ -212,6 +212,7 @@ namespace GUI
             this.Name = "frmShowPass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmShowPass";
+            this.Load += new System.EventHandler(this.frmShowPass_Load);
             this.panelLeft.ResumeLayout(false);
             this.panelLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

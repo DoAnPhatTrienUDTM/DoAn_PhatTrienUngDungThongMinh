@@ -60,13 +60,20 @@
   <ItemGroup>
     <Compile Include="Add_NhaCungCap.cs" />
     <Compile Include="CTPD_BLL_DAL.cs" />
+    <Compile Include="CTPN_BLL_DAL.cs" />
+    <Compile Include="CTPX_BLL_DAL.cs" />
     <Compile Include="DanhMucMH_BLL_DAL.cs" />
     <Compile Include="Hanghoa_BLL_DAL.cs" />
     <Compile Include="KhoBLL_DAL.cs" />
     <Compile Include="LoaiSanPham_BLL_DAL.cs" />
     <Compile Include="NCC_BLL_DAL.cs" />
     <Compile Include="NhanVienBLL_DAL.cs" />
+    <Compile Include="PhanQuyen_BLL_DAL.cs" />
+    <Compile Include="PhanQuyen_Join.cs" />
     <Compile Include="PhieuDat_BLL_DAL.cs" />
+    <Compile Include="PhieuNhap_BLL_DAL.cs" />
+    <Compile Include="PhieuXuat_BLL_DAL.cs" />
+    <Compile Include="QL_NguoiDungNhomNguoiDung_BLL_DAL.cs" />
     <Compile Include="QL_NhomNguoiDung.cs" />
     <Compile Include="QuanLyKho.designer.cs">
       <AutoGen>True</AutoGen>

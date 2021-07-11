@@ -46,7 +46,7 @@ namespace BLL_DAL.Properties {
                 this["UserName"] = value;
             }
         }
-        
+
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
@@ -63,8 +63,30 @@ namespace BLL_DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-RVB43SGO\\SQLEXPRESS;Initial Catalog=QL_KHOHANG;User ID=sa;Pass" +
+            "word=sa123")]
+        public string QL_KHOHANGConnectionString1 {
+            get {
+                return setting.GetConnectionString("BLL_DAL.Properties.Settings.QL_KHOHANGConnectionString");
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-9LVSSPC\\SQLEXPRESS;Initial Catalog=QL_KHOHANG;Persist Securit" +
             "y Info=True;User ID=sa;Password=sa2012")]
+        public string QL_KHOHANGConnectionString2 {
+            get {
+                return setting.GetConnectionString("BLL_DAL.Properties.Settings.QL_KHOHANGConnectionString");
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-9LVSSPC\\SQLEXPRESS;Initial Catalog=QL_KHOHANG;Persist Securit" +
+            "y Info=True;User ID=sa;Password=sa2012;")]
         public string QL_KHOHANGConnectionString {
             get {
                 return setting.GetConnectionString("BLL_DAL.Properties.Settings.QL_KHOHANGConnectionString");
