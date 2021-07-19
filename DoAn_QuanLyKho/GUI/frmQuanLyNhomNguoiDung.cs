@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
+using Custom_Control;
 
 namespace GUI
 {
@@ -36,6 +37,12 @@ namespace GUI
             this.Close();
         }
 
+        public void Alert(string msg, frmNotificationCustom.enmType type)
+        {
+            Custom_Control.frmNotificationCustom frm = new frmNotificationCustom();
+            frm.showAlert(msg, type);
+        }
+
         private void btnTaoMoi_Click(object sender, EventArgs e)
         {
             txtTenNhom.Enabled = true;
@@ -52,13 +59,13 @@ namespace GUI
             if (nhonmNguoiDung.themNhomNguoiDung(id, tennhom) == true)
             {
                 grvNhomNguoiDung.DataSource = nhonmNguoiDung.loadDataNhomNguoiDung();
-                MessageBox.Show("Thêm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Alert("Thêm thành công!", frmNotificationCustom.enmType.Success);
                 txtTenNhom.Enabled = false;
                 txtNhomNguoiDung.Enabled = false;
             }
             else
             {
-                MessageBox.Show("Thêm thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Alert("Thêm thất bại!", frmNotificationCustom.enmType.Error);
             }
         }
 
@@ -68,11 +75,11 @@ namespace GUI
             if (nhonmNguoiDung.xoaNhomNguoiDung(id) == true)
             {
                 grvNhomNguoiDung.DataSource = nhonmNguoiDung.loadDataNhomNguoiDung();
-                MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Alert("Xóa thành công!", frmNotificationCustom.enmType.Success);
             }
             else
             {
-                MessageBox.Show("Xóa thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Alert("Xóa thất bại!", frmNotificationCustom.enmType.Error);
             }
         }
 
@@ -83,13 +90,13 @@ namespace GUI
             if (nhonmNguoiDung.suaNhomNguoiDung(id, tennhom) == true)
             {
                 grvNhomNguoiDung.DataSource = nhonmNguoiDung.loadDataNhomNguoiDung();
-                MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Alert("Sửa thành công!", frmNotificationCustom.enmType.Success);
                 txtTenNhom.Enabled = false;
                 txtNhomNguoiDung.Enabled = false;
             }
             else
             {
-                MessageBox.Show("Sửa thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Alert("Sửa thất bại!", frmNotificationCustom.enmType.Error);
             }
         }
     }

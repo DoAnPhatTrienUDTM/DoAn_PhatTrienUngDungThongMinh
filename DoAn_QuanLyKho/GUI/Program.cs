@@ -13,6 +13,7 @@ namespace GUI
         public static frmMain main = null;
         public static frmLogin login = null;
         public static frmPhieuDat frmphieudat = null;
+        public static frmQuanLy frmquanly = null;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -25,8 +26,9 @@ namespace GUI
             login = new frmLogin();
             main = new frmMain();
             frmphieudat = new frmPhieuDat();
+            frmquanly = new frmQuanLy();
             Application.Run(new frmLoading());
-            //Application.Run(new TestMapControl());
+            //Application.Run(new frmChuyenHang());
         }
     }
 }

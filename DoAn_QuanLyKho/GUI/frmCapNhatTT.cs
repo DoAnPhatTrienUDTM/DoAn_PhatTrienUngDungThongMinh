@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
 using System.IO;
+using Custom_Control;
 
 namespace GUI
 {
@@ -64,6 +65,12 @@ namespace GUI
             btnLoadAnh.Enabled = true;
         }
 
+        public void Alert(string msg, frmNotificationCustom.enmType type)
+        {
+            Custom_Control.frmNotificationCustom frm = new frmNotificationCustom();
+            frm.showAlert(msg, type);
+        }
+
         private void btnLuu_Click(object sender, EventArgs e)
         {
             string ten = txtHoVaTen.Text.ToString();
@@ -92,7 +99,6 @@ namespace GUI
                 gioitinh = "Nữ";
             }
 
-
             DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn lưu thay đổi này?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (dialogResult == DialogResult.Yes)
             {
@@ -103,27 +109,28 @@ namespace GUI
                         bool check = nv.updateInfo(maNV, ten, sdt, diachi, ngaysinh, gioitinh, pass, picture);
                         if (check)
                         {
-                            MessageBox.Show("Cập nhật thành công!");
+                            this.Alert("Cập nhật thành công!", frmNotificationCustom.enmType.Success);
                             try
                             {
                                 File.Copy(lblFullPath.Text, Application.StartupPath + "\\img\\" + lblTenFile.Text, true);
                             }
                             catch
                             {
-                                MessageBox.Show("Không thể lưu file ảnh này!");
+                                //MessageBox.Show("Không thể lưu file ảnh này!");
+                                this.Alert("Không thể lưu file ảnh này!", frmNotificationCustom.enmType.Error);
                             }
                         }
                         else
                         {
 
-                            MessageBox.Show("Cập nhật không thành công!");
+                            this.Alert("Cập nhật không thành công!", frmNotificationCustom.enmType.Error);
                         }
                     }
                 }
                 else
                 {
 
-                    MessageBox.Show("Lỗi cập nhật!");
+                    this.Alert("Lỗi cập nhât!", frmNotificationCustom.enmType.Warning);
                 }
             }
         }

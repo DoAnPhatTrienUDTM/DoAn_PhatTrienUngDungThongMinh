@@ -17,7 +17,7 @@ namespace GUI
         CTPD_BLL_DAL ctpd = new CTPD_BLL_DAL();
         Hanghoa_BLL_DAL hanghoa = new Hanghoa_BLL_DAL();
         public PHIEUDAT phieudat = new PHIEUDAT();
-      
+        public bool vitri;
         public fromCTPD()
         {
             InitializeComponent();
@@ -26,13 +26,26 @@ namespace GUI
 
         private void fromCTPD_Load(object sender, EventArgs e)
         {
-            gridPDat.DataSource = phieudat_bll.get_PD_CTPD(Program.main.nd.ID_KHO);
+            
             lblmapd.Text = phieudat.ID_PD.ToString();
             lblngaylap.Text = phieudat.NGAYLAP.Value.Date.ToShortDateString();
             lblnv.Text = phieudat.NGUOIDUNG.TEN;
             Load_CTPD(ctpd.get_CTPD(phieudat.ID_PD));
            
             
+        }
+        public void Load_PD_CTPD()
+        {
+            gridPDat.Rows.Clear();
+            gridPDat.Refresh();
+            if (vitri)
+            {
+                gridPDat.DataSource = phieudat_bll.get_ALL_PD_CTPD();
+            }
+            else
+            {
+                gridPDat.DataSource = phieudat_bll.get_PD_CTPD(Program.main.nd.ID_KHO);
+            }
         }
         public void Load_CTPD(IQueryable dsctpd)
         {
@@ -80,6 +93,35 @@ namespace GUI
         private void gridCTPD_CellClick(object sender, DataGridViewCellEventArgs e)
         {
            
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string keysearch = txtSearch.Text;
+            gridPDat.Rows.Clear();
+            gridPDat.Refresh();
+            if (vitri)
+            {
+                gridPDat.DataSource = phieudat_bll.get_ALL_PD_CTPD_search(keysearch);
+            }
+            else
+            {
+                gridPDat.DataSource = phieudat_bll.get_PD_CTPD_search(Program.main.nd.ID_KHO,keysearch);
+            }
+        }
+
+        private void bunifuDatepicker1_onValueChanged(object sender, EventArgs e)
+        {
+            DateTime date = bunifuDatepicker1.Value.Date;
+
+            if (vitri)
+            {
+                gridPDat.DataSource = phieudat_bll.get_ALL_PD_CTPD_date(date);
+            }
+            else
+            {
+                gridPDat.DataSource = phieudat_bll.get_PD_CTPD_date(Program.main.nd.ID_KHO,date);
+            }
         }
     }
 }

@@ -19,7 +19,7 @@ namespace BLL_DAL
         //Load full bảng
         public IQueryable load_PhanQuyenFull(string id_nhom)
         {
-            return quanLyKho.PHANQUYENs.Select(s => s).Where(s => s.ID_NHOM == id_nhom);
+            return quanLyKho.PHANQUYENs.Select(s => s).Where(s => s.ID_NHOM == id_nhom && s.COQUYEN == true);
         }
 
         //Liên kết bảng phân quyền và màn hình

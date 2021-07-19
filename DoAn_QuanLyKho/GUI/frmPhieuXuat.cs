@@ -15,6 +15,7 @@ namespace GUI
     {
         PhieuXuat_BLL_DAL phieuxuat_bll = new PhieuXuat_BLL_DAL();
         PHIEUXUAT phieuxuat = new PHIEUXUAT();
+        public bool vitri = false;
         public frmPhieuXuat()
         {
             InitializeComponent();
@@ -22,21 +23,48 @@ namespace GUI
         private void bunifuDatepicker1_onValueChanged(object sender, EventArgs e)
         {
             DateTime date = bunifuDatepicker1.Value.Date;
-            Load_DL(phieuxuat_bll.get_PX_date(Program.main.nd.ID_KHO, date));
+            if (vitri)
+            {
+                Load_DL(phieuxuat_bll.get_ALL_PX_date(date));
+            }
+            else
+            {
+                Load_DL(phieuxuat_bll.get_PX_date(Program.main.nd.ID_KHO, date));
+            }
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string keysearch = txtSearch.Text;
-            Load_DL(phieuxuat_bll.get_PX_search(Program.main.nd.ID_KHO, keysearch));
+            if (vitri)
+            {
+                Load_DL(phieuxuat_bll.get_All_PX_search(keysearch));
+            }
+            else
+            {
+                Load_DL(phieuxuat_bll.get_PX_search(Program.main.nd.ID_KHO, keysearch));
+            }
+           
         }
 
         private void gridPN_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int id = int.Parse(gridPX.CurrentRow.Cells[0].Value.ToString());
             frmCTPX frm = new frmCTPX();
-            frm.phieuxuat = phieuxuat_bll.getPX(id);
-            Program.main.openSubForm(frm);
+            if (vitri)
+            {
+                frm.vitri = true;
+                frm.phieuxuat = phieuxuat_bll.getPX(id);
+                frm.Load_PX_CTPX();
+                Program.frmquanly.openSubForm(frm);
+            }
+            else
+            {
+                frm.vitri = false;
+                frm.phieuxuat = phieuxuat_bll.getPX(id);
+                frm.Load_PX_CTPX();
+                Program.main.openSubForm(frm);
+            }
         }
 
        
@@ -53,8 +81,20 @@ namespace GUI
 
         private void frmPhieuXuat_Load(object sender, EventArgs e)
         {
+            if (vitri)
+            {
+                Load_DL(phieuxuat_bll.get_ALL());
+            }
+            else
+            {
                 Load_DL(phieuxuat_bll.get_PX_TheoKho(Program.main.nd.ID_KHO));
+            }
+                
             
         }
+
+        
+
+       
     }
 }

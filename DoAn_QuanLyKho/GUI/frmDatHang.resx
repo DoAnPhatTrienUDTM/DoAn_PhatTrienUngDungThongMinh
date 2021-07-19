@@ -117,6 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnDSChuyenHang.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAAAoCAYAAAAIeF9DAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI5SURBVGhD7Zq/ixNREMf9E22sbK6yucrGShCxuCIHigda
+        WFgIKh54KrZidWphJSJaHIKFooLZ7NvdrEn2fZ2ZGLmYOeW45OUV34FPldkNzIf3Y9+bU0VRgOQDhWQG
+        hWQGhWQGhWQGhWTGf4XUdY1xNcBEiG0DxvFD66b10zo2TYPBYODWWjlSSFVViEPhw2tgdxu4fRG4eg64
+        dJocF62b1u/eFuLbfcQmoAnBrfuCELU3CgXip/dAb8P/A3Iyts4ivntpo+bv0TInRH/sJAlPbvgvIsvl
+        zmV0xXeUZekL0ZFBGYmRqUxHyoIQWzN0mvIeIqvl1VO0YTpK/gjRBZxrxpq4cgax/9WmLhOiWzFd/d1k
+        koZnd9HWYSpE98e6JXMTSRpunkcn22ET0ul0tbPpJ5I0yLSFbjIVEscj2xu7iSQdEibEwksgaZGgkJyQ
+        oJCckKCQnJCgkJyQoJCckKCQnJCYCpEPEvsw8ZJIOmZC7GqWt4HrZyZEz+P1ssRNImnY2bQjLBMyrCvg
+        xWM/kaRh7zpG1e/jdz2Hj+UPriNrJB68sQ4fE6K0pSzu+4/cZLJiHl7DOPTnbwyVSdkHbl3wHyKrobeB
+        eKj7ZE6ITV3FN96NpEJlfPlo/QwzB3NClBCCtQLF5/f9l5Dl8KBnI+OwDGVByIw2iJTPB7b6s/lhSegl
+        4O62dYOOZXnwWkqPFKKoPd2KxZ9D+2hhnCz0Zlb7F3Q35dVb+acQkh4KyQwKyQwKyQwKyYoCvwDAVq0L
+        ozZLXAAAAABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -138,7 +155,6 @@
   <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnluu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAAAoCAYAAAAIeF9DAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

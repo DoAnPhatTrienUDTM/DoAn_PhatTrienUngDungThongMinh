@@ -48,6 +48,8 @@ namespace GUI
             this.txtSoDT = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.lblTrangThai = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.picNhanVien = new Custom_Control.CircularPictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtHoVaTen = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtPass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -59,17 +61,15 @@ namespace GUI
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.picNhanVien = new Custom_Control.CircularPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.lblFullPath = new System.Windows.Forms.Label();
             this.lblTenAnh = new System.Windows.Forms.Label();
             this.btnAnh = new System.Windows.Forms.Button();
             this.lblFileAnh = new System.Windows.Forms.Label();
             this.bunifuCards1.SuspendLayout();
-            this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).BeginInit();
+            this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -288,6 +288,27 @@ namespace GUI
             this.bunifuCards1.Size = new System.Drawing.Size(302, 483);
             this.bunifuCards1.TabIndex = 93;
             // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(13, 18);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(83, 20);
+            this.bunifuCustomLabel1.TabIndex = 8;
+            this.bunifuCustomLabel1.Text = "Xem trước:";
+            // 
+            // picNhanVien
+            // 
+            this.picNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("picNhanVien.Image")));
+            this.picNhanVien.Location = new System.Drawing.Point(95, 90);
+            this.picNhanVien.Name = "picNhanVien";
+            this.picNhanVien.Size = new System.Drawing.Size(100, 100);
+            this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picNhanVien.TabIndex = 3;
+            this.picNhanVien.TabStop = false;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -435,21 +456,6 @@ namespace GUI
             this.panelLeft.Size = new System.Drawing.Size(367, 789);
             this.panelLeft.TabIndex = 81;
             // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 25;
-            this.bunifuElipse2.TargetControl = this;
-            // 
-            // picNhanVien
-            // 
-            this.picNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("picNhanVien.Image")));
-            this.picNhanVien.Location = new System.Drawing.Point(95, 90);
-            this.picNhanVien.Name = "picNhanVien";
-            this.picNhanVien.Size = new System.Drawing.Size(100, 100);
-            this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picNhanVien.TabIndex = 3;
-            this.picNhanVien.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GUI.Properties.Resources.wms_logo;
@@ -460,16 +466,10 @@ namespace GUI
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // bunifuCustomLabel1
+            // bunifuElipse2
             // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(13, 18);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(83, 20);
-            this.bunifuCustomLabel1.TabIndex = 8;
-            this.bunifuCustomLabel1.Text = "Xem trước:";
+            this.bunifuElipse2.ElipseRadius = 25;
+            this.bunifuElipse2.TargetControl = this;
             // 
             // lblFullPath
             // 
@@ -513,9 +513,8 @@ namespace GUI
             this.lblFileAnh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.lblFileAnh.Location = new System.Drawing.Point(862, 681);
             this.lblFileAnh.Name = "lblFileAnh";
-            this.lblFileAnh.Size = new System.Drawing.Size(27, 21);
+            this.lblFileAnh.Size = new System.Drawing.Size(0, 21);
             this.lblFileAnh.TabIndex = 103;
-            this.lblFileAnh.Text = "txt";
             // 
             // frmSuaNhanVien
             // 
@@ -555,9 +554,9 @@ namespace GUI
             this.Load += new System.EventHandler(this.frmSuaNhanVien_Load);
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).EndInit();
             this.panelLeft.ResumeLayout(false);
             this.panelLeft.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
+using Custom_Control;
 
 namespace GUI
 {
@@ -25,6 +26,12 @@ namespace GUI
         public frmNhapHang()
         {
             InitializeComponent();
+        }
+
+        public void Alert(string msg, frmNotificationCustom.enmType type)
+        {
+            Custom_Control.frmNotificationCustom frm = new frmNotificationCustom();
+            frm.showAlert(msg, type);
         }
 
         private void frmNhapHang_Load(object sender, EventArgs e)
@@ -54,7 +61,6 @@ namespace GUI
             panel2.Enabled = true;
             lblncc.Text = gridPDFalse.CurrentRow.Cells[1].Value.ToString();
             load_CbxSP_Ncc(int.Parse(gridPDFalse.CurrentRow.Cells[0].Value.ToString()));
-            
         }
 
         private void lbltongiten_Click(object sender, EventArgs e)
@@ -71,23 +77,23 @@ namespace GUI
             int sl = 0;
             if (txtSLD.Text.Equals("") || txtDGN.Text.Equals(""))
             {
-                MessageBox.Show("Không được bỏ trống");
+                this.Alert("Không được bỏ trống!", frmNotificationCustom.enmType.Warning);
                 return;
             }
             else
             {
                 sl = int.Parse(txtSLD.Text);
             }
-            if (!ctpd.ktslnhap(idpd, sp.ID_SP, sldanhap+sl))
+            if (!ctpd.ktslnhap(idpd, sp.ID_SP, sldanhap + sl))
             {
-                MessageBox.Show("không nhập quá số lượng đã đặt");
+                this.Alert("Không nhập quá số lượng đã đặt!", frmNotificationCustom.enmType.Warning);
                 return;
             }
-            
+
             if (gridCTNH.Rows.Count == 0)
             {
                 thanhtien = int.Parse(txtDGN.Text) * int.Parse(txtSLD.Text);
-                gridCTNH.Rows.Add(sp.ID_SP, sp.TENSP, txtSLD.Text,txtDGN.Text, (thanhtien));
+                gridCTNH.Rows.Add(sp.ID_SP, sp.TENSP, txtSLD.Text, txtDGN.Text, (thanhtien));
                 gridPDFalse.Enabled = false;
             }
             else
@@ -97,13 +103,13 @@ namespace GUI
                     int id = int.Parse(gridCTNH.Rows[i].Cells[0].Value.ToString().Trim());
                     if (id == sp.ID_SP)
                     {
-                        MessageBox.Show("sản phẩm đã có trong danh sách đặt hàng");
+                        this.Alert("Sản phẩm đã có trong danh sách đặt hàng!", frmNotificationCustom.enmType.Info);
                         return;
                     }
                 }
                 thanhtien = (int)sp.DONGIA * int.Parse(txtSLD.Text);
-                gridCTNH.Rows.Add(sp.ID_SP, sp.TENSP, txtSLD.Text,txtDGN.Text, (thanhtien));
-              
+                gridCTNH.Rows.Add(sp.ID_SP, sp.TENSP, txtSLD.Text, txtDGN.Text, (thanhtien));
+
             }
             string[] cat = lbltongiten.Text.Split(' ');
             int tongtien = int.Parse(cat[0]) + thanhtien;
@@ -137,7 +143,7 @@ namespace GUI
                     int id = int.Parse(gridCTNH.Rows[i].Cells[0].Value.ToString().Trim());
                     if (id == sp.ID_SP)
                     {
-                        MessageBox.Show("sản phẩm đã có trong danh sách đặt hàng");
+                        this.Alert("Sản phẩm đã có trong danh sách đặt hàng!", frmNotificationCustom.enmType.Info);
                         return;
                     }
                 }
@@ -176,7 +182,7 @@ namespace GUI
 
         private void bunifuDatepicker1_onValueChanged(object sender, EventArgs e)
         {
-            Load_PD(phieudat.get_PD_false_date(ng.ID_KHO,bunifuDatepicker1.Value.Date));
+            Load_PD(phieudat.get_PD_false_date(ng.ID_KHO, bunifuDatepicker1.Value.Date));
         }
 
         private void txtSearch_MouseClick(object sender, MouseEventArgs e)
@@ -188,7 +194,7 @@ namespace GUI
         {
             string[] ds = lbltongiten.Text.Split(' ');
             PHIEUDAT pd = phieudat.getPD(int.Parse(gridPDFalse.CurrentRow.Cells[0].Value.ToString()));
-            phieunhap.insert_PhieuNhap(pd.ID_PD,(int)pd.ID_NCC, ng.ID_DN, dateTimePicker1.Value.Date, int.Parse(ds[0]));
+            phieunhap.insert_PhieuNhap(pd.ID_PD, (int)pd.ID_NCC, ng.ID_DN, dateTimePicker1.Value.Date, int.Parse(ds[0]));
             int idpn = phieunhap.countpn();
             for (int i = 0; i < gridCTNH.Rows.Count; i++)
             {
@@ -196,13 +202,13 @@ namespace GUI
                 int sld = int.Parse(gridCTNH.Rows[i].Cells[2].Value.ToString());
                 int dongia = int.Parse(gridCTNH.Rows[i].Cells[3].Value.ToString());
                 int thanhtien = int.Parse(gridCTNH.Rows[i].Cells[4].Value.ToString());
-                if (!ctpn.insert_CTPN(idpn, idsp, sld, dongia, thanhtien))
+                if (!ctpn.insert_CTPN(ng.ID_KHO, idpn, idsp, sld, dongia, thanhtien))
                 {
-                    MessageBox.Show("Lỗi nhập chi tiết PN");
+                    this.Alert("Lỗi nhập chi tiết phiếu nhập!", frmNotificationCustom.enmType.Warning);
                 }
             }
             phieudat.update_TrangThai_PD(pd.ID_PD);
-            MessageBox.Show("Nhập Hàng Thành Công");
+            this.Alert("Nhập hàng thành công!", frmNotificationCustom.enmType.Success);
             gridCTNH.Rows.Clear();
             gridCTNH.Refresh();
             Load_PD(phieudat.get_PD_false(ng.ID_KHO));

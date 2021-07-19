@@ -30,6 +30,7 @@ namespace GUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fromCTPD));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -37,13 +38,14 @@ namespace GUI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fromCTPD));
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.cbxloaisp = new System.Windows.Forms.ComboBox();
             this.lb1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnthem = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -52,6 +54,11 @@ namespace GUI
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.gridCTPD = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbbsp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblnv = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -60,14 +67,8 @@ namespace GUI
             this.lblngaylap = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.btnthem = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cbbsp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -76,13 +77,12 @@ namespace GUI
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridCTPD)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSearch
             // 
             this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSearch.HintForeColor = System.Drawing.Color.Empty;
             this.txtSearch.HintText = "Nhập tại đây để tìm kiếm";
@@ -96,7 +96,6 @@ namespace GUI
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(336, 33);
             this.txtSearch.TabIndex = 4;
-            this.txtSearch.Text = "Search";
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // panel2
@@ -111,6 +110,21 @@ namespace GUI
             this.panel2.Size = new System.Drawing.Size(715, 68);
             this.panel2.TabIndex = 1;
             // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.ImageActive = null;
+            this.btnSearch.Location = new System.Drawing.Point(337, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(58, 35);
+            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSearch.TabIndex = 5;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Zoom = 10;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // bunifuDatepicker1
             // 
             this.bunifuDatepicker1.BackColor = System.Drawing.Color.Coral;
@@ -119,11 +133,12 @@ namespace GUI
             this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.bunifuDatepicker1.FormatCustom = null;
             this.bunifuDatepicker1.Location = new System.Drawing.Point(181, 11);
-            this.bunifuDatepicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuDatepicker1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuDatepicker1.Name = "bunifuDatepicker1";
             this.bunifuDatepicker1.Size = new System.Drawing.Size(38, 38);
             this.bunifuDatepicker1.TabIndex = 2;
             this.bunifuDatepicker1.Value = new System.DateTime(2021, 7, 7, 9, 52, 8, 180);
+            this.bunifuDatepicker1.onValueChanged += new System.EventHandler(this.bunifuDatepicker1_onValueChanged);
             // 
             // cbxloaisp
             // 
@@ -159,6 +174,32 @@ namespace GUI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(715, 68);
             this.panel1.TabIndex = 0;
+            // 
+            // btnthem
+            // 
+            this.btnthem.ActiveBorderThickness = 1;
+            this.btnthem.ActiveCornerRadius = 20;
+            this.btnthem.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnthem.ActiveForecolor = System.Drawing.Color.White;
+            this.btnthem.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnthem.BackColor = System.Drawing.Color.White;
+            this.btnthem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnthem.BackgroundImage")));
+            this.btnthem.ButtonText = "+ Add Oders";
+            this.btnthem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnthem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnthem.ForeColor = System.Drawing.Color.White;
+            this.btnthem.IdleBorderThickness = 1;
+            this.btnthem.IdleCornerRadius = 20;
+            this.btnthem.IdleFillColor = System.Drawing.Color.Coral;
+            this.btnthem.IdleForecolor = System.Drawing.Color.White;
+            this.btnthem.IdleLineColor = System.Drawing.Color.White;
+            this.btnthem.Location = new System.Drawing.Point(226, 9);
+            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnthem.Name = "btnthem";
+            this.btnthem.Size = new System.Drawing.Size(109, 40);
+            this.btnthem.TabIndex = 3;
+            this.btnthem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnthem.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -344,6 +385,37 @@ namespace GUI
             this.gridCTPD.TabIndex = 7;
             this.gridCTPD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridCTPD_CellClick);
             // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // cbbsp
+            // 
+            this.cbbsp.HeaderText = "Tên Sản Phẩm";
+            this.cbbsp.Name = "cbbsp";
+            this.cbbsp.ReadOnly = true;
+            this.cbbsp.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Số Lượng";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Đơn Giá";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Thành Tiền";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.lblnv);
@@ -423,77 +495,6 @@ namespace GUI
             this.bunifuElipse1.ElipseRadius = 1;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // btnthem
-            // 
-            this.btnthem.ActiveBorderThickness = 1;
-            this.btnthem.ActiveCornerRadius = 20;
-            this.btnthem.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnthem.ActiveForecolor = System.Drawing.Color.White;
-            this.btnthem.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnthem.BackColor = System.Drawing.Color.White;
-            this.btnthem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnthem.BackgroundImage")));
-            this.btnthem.ButtonText = "+ Add Oders";
-            this.btnthem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnthem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthem.ForeColor = System.Drawing.Color.White;
-            this.btnthem.IdleBorderThickness = 1;
-            this.btnthem.IdleCornerRadius = 20;
-            this.btnthem.IdleFillColor = System.Drawing.Color.Coral;
-            this.btnthem.IdleForecolor = System.Drawing.Color.White;
-            this.btnthem.IdleLineColor = System.Drawing.Color.White;
-            this.btnthem.Location = new System.Drawing.Point(226, 9);
-            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
-            this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(109, 40);
-            this.btnthem.TabIndex = 3;
-            this.btnthem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnthem.Click += new System.EventHandler(this.bunifuThinButton21_Click);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.ImageActive = null;
-            this.btnSearch.Location = new System.Drawing.Point(337, 4);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(58, 35);
-            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnSearch.TabIndex = 5;
-            this.btnSearch.TabStop = false;
-            this.btnSearch.Zoom = 10;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // cbbsp
-            // 
-            this.cbbsp.HeaderText = "Tên Sản Phẩm";
-            this.cbbsp.Name = "cbbsp";
-            this.cbbsp.ReadOnly = true;
-            this.cbbsp.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Số Lượng";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Đơn Giá";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Thành Tiền";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
             // fromCTPD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -506,6 +507,7 @@ namespace GUI
             this.Text = "fromCTPD";
             this.Load += new System.EventHandler(this.fromCTPD_Load);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -516,7 +518,6 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.gridCTPD)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             this.ResumeLayout(false);
 
         }

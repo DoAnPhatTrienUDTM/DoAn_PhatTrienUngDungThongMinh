@@ -22,9 +22,22 @@ namespace BLL_DAL
             return quanLyKho.NGUOIDUNGNHOMNGUOIDUNGs.Select(t => t).Where(s => s.ID_DN == id_nhom);
         }
 
+        public IQueryable loadDataNguoiDungNhomNguoiDung_id_combobox(string id_nhom)
+        {
+            return quanLyKho.NGUOIDUNGNHOMNGUOIDUNGs.Where(s => s.ID_NHOM == id_nhom).Select(t => new {
+                ID_NHOM = t.ID_NHOM,
+                ID_DN = t.ID_DN,
+                GHICHU = t.GHICHU
+            });
+        }
+
         public IQueryable loadDataNguoiDungNhomNguoiDung()
         {
-            return quanLyKho.NGUOIDUNGNHOMNGUOIDUNGs.Select(t => t);
+            return quanLyKho.NGUOIDUNGNHOMNGUOIDUNGs.Select(t => new {
+                ID_NHOM = t.ID_NHOM,
+                ID_DN = t.ID_DN,
+                GHICHU = t.GHICHU
+            });
         }
 
         //Thêm

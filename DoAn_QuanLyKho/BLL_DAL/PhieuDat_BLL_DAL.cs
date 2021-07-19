@@ -16,6 +16,7 @@ namespace BLL_DAL
             var phieudat = from pd in quanLyKho.PHIEUDATs where pd.NGUOIDUNG.ID_KHO == Id_Kho select (pd);
             return phieudat;
         }
+
         public IQueryable get_PD_search(int Id_kho, string tenncc)
         {
             var phieudat = from pd in quanLyKho.PHIEUDATs where pd.NHACUNGCAP.TENNCC.Contains(tenncc) && pd.NGUOIDUNG.ID_KHO == Id_kho select (pd);
@@ -31,14 +32,12 @@ namespace BLL_DAL
             var phieudat = quanLyKho.PHIEUDATs.Where(n => n.NGUOIDUNG.ID_KHO == idkho).Select(n => new { Id = n.ID_PD, tenncc = n.NHACUNGCAP.TENNCC });
             return phieudat;
         }
+
         public PHIEUDAT getPD(int id)
         {
             return quanLyKho.PHIEUDATs.SingleOrDefault(n => n.ID_PD == id);
         }
-        public IQueryable get_PD_false(int idkho)
-        {
-            return quanLyKho.PHIEUDATs.Where(n => n.TINHTRANG == false && n.NGUOIDUNG.ID_KHO == idkho);
-        }
+       
         public IQueryable get_PD_false_search(int idkho, string tenncc)
         {
             return quanLyKho.PHIEUDATs.Where(n => n.TINHTRANG == false && n.NGUOIDUNG.ID_KHO == idkho && n.NHACUNGCAP.TENNCC.Contains(tenncc));
@@ -102,6 +101,83 @@ namespace BLL_DAL
                 i = pn.ID_PD;
             return i;
 
+        }
+        public IQueryable get_ALL()
+        {
+            return quanLyKho.PHIEUDATs;
+        }
+        public IQueryable get_ALL_PD_CTPD()
+        {
+            var phieudat = quanLyKho.PHIEUDATs.Select(n => new { Id = n.ID_PD, tenncc = n.NHACUNGCAP.TENNCC });
+            return phieudat;
+        }
+        public IQueryable get_All_PD_search(string tenncc)
+        {
+            var phieudat = from pd in quanLyKho.PHIEUDATs where pd.NHACUNGCAP.TENNCC.Contains(tenncc)  select (pd);
+            return phieudat;
+        }
+        public IQueryable get_ALL_PD_date(DateTime date)
+        {
+            var phieudat = from pd in quanLyKho.PHIEUDATs where pd.NGAYLAP == date  select (pd);
+            return phieudat;
+        }
+        public IQueryable get_ALL_PD_CTPD_search(string tenncc)
+        {
+            var phieudat = quanLyKho.PHIEUDATs.Where(pd => pd.NHACUNGCAP.TENNCC.Contains(tenncc)).Select(n => new { Id = n.ID_PD, tenncc = n.NHACUNGCAP.TENNCC });
+            return phieudat;
+        }
+        public IQueryable get_PD_CTPD_search(int idkho, string tenncc)
+        {
+            var phieudat = quanLyKho.PHIEUDATs.Where(pd => pd.NHACUNGCAP.TENNCC.Contains(tenncc) && pd.NGUOIDUNG.ID_KHO == idkho).Select(n => new { Id = n.ID_PD, tenncc = n.NHACUNGCAP.TENNCC });
+            return phieudat;
+        }
+        public IQueryable get_ALL_PD_CTPD_date(DateTime date)
+        {
+            var phieudat = quanLyKho.PHIEUDATs.Where(pd => pd.NGAYLAP == date).Select(n => new { Id = n.ID_PD, tenncc = n.NHACUNGCAP.TENNCC });
+            return phieudat;
+        }
+        public IQueryable get_PD_CTPD_date(int idkho,DateTime date)
+        {
+            var phieudat = quanLyKho.PHIEUDATs.Where(pd => pd.NGAYLAP == date && pd.NGUOIDUNG.ID_KHO == idkho).Select(n => new { Id = n.ID_PD, tenncc = n.NHACUNGCAP.TENNCC });
+            return phieudat;
+        }
+        public IQueryable get_PD_false(int idkho)
+        {
+            return quanLyKho.PHIEUDATs.Where(n => n.TINHTRANG == false && n.NGUOIDUNG.ID_KHO == idkho);
+        }
+        public IQueryable get_All_PD_false()
+        {
+            return quanLyKho.PHIEUDATs.Where(n => n.TINHTRANG == false);
+        }
+        public IQueryable get_PD_true(int idkho)
+        {
+            return quanLyKho.PHIEUDATs.Where(n => n.TINHTRANG == true && n.NGUOIDUNG.ID_KHO == idkho);
+        }
+        public IQueryable get_All_PD_true()
+        {
+            return quanLyKho.PHIEUDATs.Where(n => n.TINHTRANG == true );
+        }
+        public IQueryable get_PD_TrangThai(int idKho, string trangthai)
+        {
+            if (trangthai.Equals("true"))
+            {
+                return get_PD_true(idKho);
+            }
+            else
+            {
+                return get_PD_false(idKho);
+            }
+        }
+        public IQueryable get_All_PD_TrangThai(string trangthai)
+        {
+            if (trangthai.Equals("true"))
+            {
+                return get_All_PD_true();
+            }
+            else
+            {
+                return get_All_PD_false();
+            }
         }
     }
 }

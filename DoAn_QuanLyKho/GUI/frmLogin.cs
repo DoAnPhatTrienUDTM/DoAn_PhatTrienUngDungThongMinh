@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using BLL_DAL;
+using Custom_Control;
 
 namespace GUI
 {
@@ -14,16 +15,26 @@ namespace GUI
     {
         Check_Login login = new Check_Login();
         DefendPassword password = new DefendPassword();
+       
         public string manv;
         public frmLogin()
         {
             InitializeComponent();
             txtPass.isPassword = true;
+            txtUsername.Text = "Username";
+            txtPass.Text = "Password";
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        public void Alert(string msg, frmNotificationCustom.enmType type)
+        {
+            Custom_Control.frmNotificationCustom frm = new frmNotificationCustom();
+            frm.showAlert(msg, type);
         }
 
         private void ReadSettings()
@@ -36,8 +47,9 @@ namespace GUI
             }
             else
             {
-                txtUsername.Text = "User name";
+                txtUsername.Text = "Username";
                 txtPass.Text = "Password";
+                txtPass.isPassword = true;
                 chkRememberMe.Checked = false;
             }
         }
@@ -53,8 +65,8 @@ namespace GUI
             }
             else
             {
-                Properties.Settings.Default.UserName = this.txtUsername.Text;
-                Properties.Settings.Default.Password = "";
+                Properties.Settings.Default.UserName = "Username";
+                Properties.Settings.Default.Password = "Password";
                 Properties.Settings.Default.RememberMe = "false";
                 Properties.Settings.Default.Save();
             }
@@ -88,11 +100,11 @@ namespace GUI
             AppSetting setting = new AppSetting();
             if(txtUsername.Text == "")
             {
-                MessageBox.Show("User name không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Alert("User name không được để trống!", frmNotificationCustom.enmType.Error);
             }
             else if(txtPass.Text == "")
             {
-                MessageBox.Show("Mật khẩu không được để trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Alert("Mật khẩu không được để trống!", frmNotificationCustom.enmType.Error);
             }  
             else if(login.IsvalidUser(txtUsername.Text, txtPass.Text))
             {
@@ -102,13 +114,14 @@ namespace GUI
                     frm.ShowDialog(this);
                 }
                 manv = login.getIDUser(txtUsername.Text, txtPass.Text);
+                SaveSettings();
                 Program.main.MaNhanVien = manv;
                 Program.main.Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Đăng nhập thất bại. Vui lòng kiểm tra lại tài khoản!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Alert("Đăng nhập thất bại. Vui lòng kiểm tra lại tài khoản!", frmNotificationCustom.enmType.Error);
             }    
         }
 
@@ -119,10 +132,20 @@ namespace GUI
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            txtUsername.Text = "Username";
-            txtPass.Text = "Password";
-            txtPass.isPassword = true;
-            ReadSettings();
+           
+            if (Program.main.MaNhanVien == null)
+            {
+                txtUsername.Text = "Username";
+                txtPass.Text = "Password";
+                txtPass.isPassword = true;
+                ReadSettings();
+            }
+            else
+            {
+                txtUsername.Text = Program.main.MaNhanVien;
+                txtPass.Text = login.getPassUser(txtUsername.Text.Trim());
+                txtPass.isPassword = true;
+            }    
         }
 
         private void label7_Click(object sender, EventArgs e)

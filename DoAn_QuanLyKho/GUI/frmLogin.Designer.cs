@@ -180,7 +180,7 @@ namespace GUI
             this.txtPass.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtPass.LineThickness = 3;
             this.txtPass.Location = new System.Drawing.Point(24, 205);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(339, 31);
             this.txtPass.TabIndex = 2;
@@ -213,7 +213,7 @@ namespace GUI
             this.txtUsername.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.txtUsername.LineThickness = 3;
             this.txtUsername.Location = new System.Drawing.Point(24, 134);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(339, 31);
             this.txtUsername.TabIndex = 1;
@@ -341,9 +341,7 @@ namespace GUI
         private Bunifu.Framework.UI.BunifuCheckbox chkShowPass;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label7;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtPass;
         private System.Windows.Forms.Label label4;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtUsername;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.Label label2;
@@ -355,6 +353,8 @@ namespace GUI
         private System.Windows.Forms.Label label9;
         private Bunifu.Framework.UI.BunifuCheckbox chkRememberMe;
         private System.Windows.Forms.Label label6;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txtPass;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txtUsername;
     }
 }
 

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
+using Custom_Control;
 
 namespace GUI
 {
@@ -32,6 +33,13 @@ namespace GUI
             grvNhomNguoiDung.DataSource = nhomNguoiDung.loadDataNhomNguoiDung();
             //grvPhanQuyen.DataSource = phanQuyen.loadPhanQuyen_Join();
         }
+
+        public void Alert(string msg, frmNotificationCustom.enmType type)
+        {
+            Custom_Control.frmNotificationCustom frm = new frmNotificationCustom();
+            frm.showAlert(msg, type);
+        }
+
 
         public void loadData_Bindings()
         {
@@ -73,11 +81,11 @@ namespace GUI
                         return;
                     }
                 }
-                MessageBox.Show("Lưu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Alert("Lưu thành công!", frmNotificationCustom.enmType.Success);
             }
             catch
             {
-                MessageBox.Show("Lưu thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Alert("Lưu thất bại!", frmNotificationCustom.enmType.Error);
             }
         }
 

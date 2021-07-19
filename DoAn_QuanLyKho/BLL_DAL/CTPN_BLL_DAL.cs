@@ -23,18 +23,19 @@ namespace BLL_DAL
             }
             return tong;
         }
-        public bool insert_CTPN(int idpn, int idsp, int soluong, int gianhap, int thanhtien)
+        public bool insert_CTPN(int idkho, int idpn, int idsp, int soluong, int gianhap, int thanhtien)
         {
             try
             {
                 CHITIETPHIEUNHAP insert = new CHITIETPHIEUNHAP();
-                SANPHAM sp = quanLyKho.SANPHAMs.SingleOrDefault(t => t.ID_SP.Equals(idsp));
+                TONKHO tonkho = quanLyKho.TONKHOs.SingleOrDefault(n => n.ID_KHO == idkho && n.ID_SP == idsp);
                 insert.ID_PN = idpn;
                 insert.ID_SP = idsp;
                 insert.SOLUONG = soluong;
                 insert.DONGIANHAP = (float)gianhap;
                 insert.THANHTIEN = (float)thanhtien;
                 quanLyKho.CHITIETPHIEUNHAPs.InsertOnSubmit(insert);
+                tonkho.SOLUONGTON = tonkho.SOLUONGTON + soluong;
                 quanLyKho.SubmitChanges();
                 return true;
             }

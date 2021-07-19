@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
+using Custom_Control;
 
 namespace GUI
 {
@@ -45,6 +46,12 @@ namespace GUI
             loadData();
         }
 
+        public void Alert(string msg, frmNotificationCustom.enmType type)
+        {
+            Custom_Control.frmNotificationCustom frm = new frmNotificationCustom();
+            frm.showAlert(msg, type);
+        }
+
         private void btnThem_Click(object sender, EventArgs e)
         {
             string id_dn = grvNguoiDung.CurrentRow.Cells[0].Value.ToString();
@@ -52,11 +59,11 @@ namespace GUI
             if (nhom.themNDVaoNhom(id_dn, id_nhom) == true)
             {
                 grvNhomND.DataSource = nhom.loadDataNguoiDungNhomNguoiDung();
-                MessageBox.Show("Thêm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Alert("Thêm thành công!", frmNotificationCustom.enmType.Success);
             }
             else
             {
-                MessageBox.Show("Thêm thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Alert("Thêm thất bại!", frmNotificationCustom.enmType.Error);
             }
         }
 
@@ -67,17 +74,17 @@ namespace GUI
             if (nhom.xoaNhomNguoiDung(id_dn, id_nhom) == true)
             {
                 grvNhomND.DataSource = nhom.loadDataNguoiDungNhomNguoiDung();
-                MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Alert("Xóa thành công!", frmNotificationCustom.enmType.Success);
             }
             else
             {
-                MessageBox.Show("Xóa thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Alert("Xóa thất bại!", frmNotificationCustom.enmType.Error);
             }
         }
 
         private void cboNhomNguoiDung_SelectedIndexChanged(object sender, EventArgs e)
         {
-            grvNhomND.DataSource = nhom.loadDataNguoiDungNhomNguoiDung_id(cboNhomNguoiDung.SelectedValue.ToString());
+            grvNhomND.DataSource = nhom.loadDataNguoiDungNhomNguoiDung_id_combobox(cboNhomNguoiDung.SelectedValue.ToString());
         }
     }
 }

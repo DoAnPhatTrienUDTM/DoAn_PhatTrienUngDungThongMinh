@@ -38,7 +38,6 @@ namespace BLL_DAL
                     insert.ID_LSP = id_lsp;
                     insert.HINHANH = hinh;
                     insert.DONGIA = dongia;
-                    insert.SOLUONG = 0;
                     insert.NGAYNHAP = DateTime.Today.Date;
                     quanLyKho.SANPHAMs.InsertOnSubmit(insert);
                     quanLyKho.SubmitChanges();
@@ -110,6 +109,38 @@ namespace BLL_DAL
                 if (ct.SOLUONG != ctpn.get_SP_DANHAP(idpd, ct.ID_SP))
                     list.Add(get_sp(ct.ID_SP));
             }
+            return list;
+        }
+        public int getidspmoi()
+        {
+            int id = -1;
+            var sp = quanLyKho.SANPHAMs.OrderByDescending(n => n.ID_SP).Take(1);
+            foreach (SANPHAM item in sp)
+            {
+                id = item.ID_SP;
+            }
+            return id;
+        }
+        public List<SPXuatNhieu> get_SPXuatNhieu(int idkho)
+        {
+            List<SPXuatNhieu> list = new List<SPXuatNhieu>();
+
+            var dsctpxGroupbyIDSP =
+            from ctpx in quanLyKho.CHITIETPHIEUXUATs.Where(n => n.PHIEUXUAT.NGUOIDUNG.ID_KHO == idkho)
+            group ctpx by ctpx.ID_SP into newGroup
+            orderby newGroup.Key
+            select newGroup;
+            foreach (var idsp in dsctpxGroupbyIDSP)
+            {
+                int tong = 0;
+                foreach (var ctpxidsp in idsp)
+                {
+                    tong += (int)ctpxidsp.SOLUONG;
+                }
+                SPXuatNhieu sp = new SPXuatNhieu(idsp.Key, tong);
+                list.Add(sp);
+            }
+
             return list;
         }
     }

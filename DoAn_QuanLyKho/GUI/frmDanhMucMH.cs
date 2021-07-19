@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
+using Custom_Control;
 
 namespace GUI
 {
@@ -35,33 +36,39 @@ namespace GUI
             txtTenManHinh.Text = grvDanhMucManHinh.CurrentRow.Cells[1].Value.ToString();
         }
 
+        public void Alert(string msg, frmNotificationCustom.enmType type)
+        {
+            Custom_Control.frmNotificationCustom frm = new frmNotificationCustom();
+            frm.showAlert(msg, type);
+        }
+
         private void btnThem_Click(object sender, EventArgs e)
         {
             string tenmh = txtTenManHinh.Text;
-            if(dm.themDanhMuc_MH(tenmh) == true)
+            if (dm.themDanhMuc_MH(tenmh) == true)
             {
                 grvDanhMucManHinh.DataSource = dm.loadDataDanhMucMH();
-                MessageBox.Show("Thêm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Alert("Thêm thành công!", frmNotificationCustom.enmType.Success);
                 txtTenManHinh.Enabled = false;
             }
             else
             {
-                MessageBox.Show("Thêm thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }    
+                this.Alert("Thêm thất bại!", frmNotificationCustom.enmType.Error);
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
             int id = int.Parse(grvDanhMucManHinh.CurrentRow.Cells[0].Value.ToString());
-            if(dm.xoaDanhMuc_MH(id) == true)
+            if (dm.xoaDanhMuc_MH(id) == true)
             {
                 grvDanhMucManHinh.DataSource = dm.loadDataDanhMucMH();
-                MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }   
+                this.Alert("Xóa thành công!", frmNotificationCustom.enmType.Success);
+            }
             else
             {
-                MessageBox.Show("Xóa thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }    
+                this.Alert("Xóa thất bại!", frmNotificationCustom.enmType.Error);
+            }
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -71,13 +78,13 @@ namespace GUI
             if (dm.suaDanhMuc_MH(id, tenmh) == true)
             {
                 grvDanhMucManHinh.DataSource = dm.loadDataDanhMucMH();
-                MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Alert("Sửa thành công!", frmNotificationCustom.enmType.Success);
                 txtTenManHinh.Enabled = false;
-            }   
+            }
             else
             {
-                MessageBox.Show("Sửa thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }    
+                this.Alert("Sửa thất bại!", frmNotificationCustom.enmType.Error);
+            }
         }
 
         private void btnTaoMoi_Click(object sender, EventArgs e)

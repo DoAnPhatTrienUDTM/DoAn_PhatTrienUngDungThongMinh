@@ -29,41 +29,40 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHangHoa));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHangHoa));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnexprot = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.cbxloaisp = new System.Windows.Forms.ComboBox();
             this.lb1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.gridHangHoa = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbbLoaiSP = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnsua = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnluu = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.btnexprot = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridHangHoa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridHangHoa)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -113,6 +112,58 @@ namespace GUI
             this.panel1.Size = new System.Drawing.Size(510, 67);
             this.panel1.TabIndex = 0;
             // 
+            // btnexprot
+            // 
+            this.btnexprot.ActiveBorderThickness = 1;
+            this.btnexprot.ActiveCornerRadius = 20;
+            this.btnexprot.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnexprot.ActiveForecolor = System.Drawing.Color.White;
+            this.btnexprot.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnexprot.BackColor = System.Drawing.Color.White;
+            this.btnexprot.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnexprot.BackgroundImage")));
+            this.btnexprot.ButtonText = "Export ";
+            this.btnexprot.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnexprot.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexprot.ForeColor = System.Drawing.Color.White;
+            this.btnexprot.IdleBorderThickness = 1;
+            this.btnexprot.IdleCornerRadius = 20;
+            this.btnexprot.IdleFillColor = System.Drawing.Color.Coral;
+            this.btnexprot.IdleForecolor = System.Drawing.Color.White;
+            this.btnexprot.IdleLineColor = System.Drawing.Color.White;
+            this.btnexprot.Location = new System.Drawing.Point(365, 4);
+            this.btnexprot.Margin = new System.Windows.Forms.Padding(4);
+            this.btnexprot.Name = "btnexprot";
+            this.btnexprot.Size = new System.Drawing.Size(136, 40);
+            this.btnexprot.TabIndex = 4;
+            this.btnexprot.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnexprot.Click += new System.EventHandler(this.btnexprot_Click);
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "+ Add Items";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Coral;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(226, 4);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(136, 40);
+            this.bunifuThinButton21.TabIndex = 3;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            // 
             // bunifuDatepicker1
             // 
             this.bunifuDatepicker1.BackColor = System.Drawing.Color.Coral;
@@ -160,10 +211,25 @@ namespace GUI
             this.panel2.Size = new System.Drawing.Size(510, 67);
             this.panel2.TabIndex = 1;
             // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.ImageActive = null;
+            this.btnSearch.Location = new System.Drawing.Point(264, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(58, 35);
+            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSearch.TabIndex = 5;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Zoom = 10;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // txtSearch
             // 
             this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSearch.HintForeColor = System.Drawing.Color.Empty;
             this.txtSearch.HintText = "Nhập tại đây để tìm kiếm";
@@ -177,7 +243,6 @@ namespace GUI
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(261, 33);
             this.txtSearch.TabIndex = 4;
-            this.txtSearch.Text = "Search";
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtSearch.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtSearch_MouseClick);
             // 
@@ -206,7 +271,6 @@ namespace GUI
             this.Column2,
             this.Column6,
             this.cbbLoaiSP,
-            this.Column5,
             this.Column7,
             this.Column3,
             this.Column4,
@@ -277,14 +341,6 @@ namespace GUI
             this.cbbLoaiSP.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.cbbLoaiSP.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "SOLUONG";
-            this.Column5.HeaderText = "Số Lượng Tồn";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
             // Column7
             // 
             this.Column7.DataPropertyName = "DONGIA";
@@ -344,73 +400,6 @@ namespace GUI
             this.btnluu.ToolTipText = "luu";
             this.btnluu.UseColumnTextForButtonValue = true;
             // 
-            // btnexprot
-            // 
-            this.btnexprot.ActiveBorderThickness = 1;
-            this.btnexprot.ActiveCornerRadius = 20;
-            this.btnexprot.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnexprot.ActiveForecolor = System.Drawing.Color.White;
-            this.btnexprot.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnexprot.BackColor = System.Drawing.Color.White;
-            this.btnexprot.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnexprot.BackgroundImage")));
-            this.btnexprot.ButtonText = "Export ";
-            this.btnexprot.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnexprot.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexprot.ForeColor = System.Drawing.Color.White;
-            this.btnexprot.IdleBorderThickness = 1;
-            this.btnexprot.IdleCornerRadius = 20;
-            this.btnexprot.IdleFillColor = System.Drawing.Color.Coral;
-            this.btnexprot.IdleForecolor = System.Drawing.Color.White;
-            this.btnexprot.IdleLineColor = System.Drawing.Color.White;
-            this.btnexprot.Location = new System.Drawing.Point(365, 4);
-            this.btnexprot.Margin = new System.Windows.Forms.Padding(4);
-            this.btnexprot.Name = "btnexprot";
-            this.btnexprot.Size = new System.Drawing.Size(136, 40);
-            this.btnexprot.TabIndex = 4;
-            this.btnexprot.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnexprot.Click += new System.EventHandler(this.btnexprot_Click);
-            // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "+ Add Items";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Coral;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(226, 4);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(136, 40);
-            this.bunifuThinButton21.TabIndex = 3;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.ImageActive = null;
-            this.btnSearch.Location = new System.Drawing.Point(264, 4);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(58, 35);
-            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnSearch.TabIndex = 5;
-            this.btnSearch.TabStop = false;
-            this.btnSearch.Zoom = 10;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
             // frmHangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -426,8 +415,8 @@ namespace GUI
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridHangHoa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridHangHoa)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -450,7 +439,6 @@ namespace GUI
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewComboBoxColumn cbbLoaiSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewImageColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;

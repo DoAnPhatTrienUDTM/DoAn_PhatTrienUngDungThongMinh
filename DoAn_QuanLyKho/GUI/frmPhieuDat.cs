@@ -15,6 +15,7 @@ namespace GUI
     {
         PhieuDat_BLL_DAL phieuDat = new PhieuDat_BLL_DAL();
         public int idPD;
+        public bool vitri = false;
         public frmPhieuDat()
         {
             InitializeComponent();
@@ -22,7 +23,15 @@ namespace GUI
 
         private void frmPhieuDat_Load(object sender, EventArgs e)
         {
-            Load_DL(phieuDat.get_PD_TheoKho(Program.main.nd.ID_KHO));
+            if (vitri)
+            {
+                Load_DL(phieuDat.get_ALL());
+            }
+            else
+            {
+                Load_DL(phieuDat.get_PD_TheoKho(Program.main.nd.ID_KHO));
+            }
+           
         }
         public void Load_DL(IQueryable dspd)
         {
@@ -37,21 +46,63 @@ namespace GUI
         private void bunifuDatepicker1_onValueChanged(object sender, EventArgs e)
         {
             DateTime date = bunifuDatepicker1.Value.Date;
-            Load_DL(phieuDat.get_PD_date(Program.main.nd.ID_KHO, date));
+            
+            if (vitri)
+            {
+                Load_DL(phieuDat.get_ALL_PD_date(date));
+            }
+            else
+            {
+                Load_DL(phieuDat.get_PD_date(Program.main.nd.ID_KHO, date));
+            }
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string keysearch = txtSearch.Text;
-            Load_DL(phieuDat.get_PD_search(Program.main.nd.ID_KHO, keysearch));
+            if (vitri)
+            {
+                Load_DL(phieuDat.get_All_PD_search(keysearch));
+            }
+            else
+            {
+                Load_DL(phieuDat.get_PD_search(Program.main.nd.ID_KHO, keysearch));
+            }
+           
         }
 
         private void gridPD_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             idPD = int.Parse(gridPD.CurrentRow.Cells[0].Value.ToString());
             fromCTPD frm = new fromCTPD();
-            frm.phieudat = phieuDat.getPD(idPD);
-            Program.main.openSubForm(frm);
+            if (vitri)
+            {
+                frm.vitri = true;
+                frm.phieudat = phieuDat.getPD(idPD);
+                frm.Load_PD_CTPD();
+                Program.frmquanly.openSubForm(frm);
+            }
+            else
+            {
+                frm.vitri = false;
+                frm.phieudat = phieuDat.getPD(idPD);
+                frm.Load_PD_CTPD();
+                Program.main.openSubForm(frm);
+            }
+            
+        }
+
+        private void cbxloaisp_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string trangthai = cbxloaisp.SelectedItem.ToString();
+            if (vitri)
+            {
+                Load_DL(phieuDat.get_All_PD_TrangThai(trangthai));
+            }
+            else
+            {
+                Load_DL(phieuDat.get_PD_TrangThai(Program.main.nd.ID_KHO,trangthai));
+            }
         }
     }
 }

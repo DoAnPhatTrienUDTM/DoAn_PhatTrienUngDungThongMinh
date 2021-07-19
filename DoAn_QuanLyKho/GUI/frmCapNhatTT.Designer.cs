@@ -35,7 +35,6 @@ namespace GUI
             this.panelLeft = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblClose = new System.Windows.Forms.Label();
             this.btnLuu = new System.Windows.Forms.Button();
             this.txtPass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -55,7 +54,6 @@ namespace GUI
             this.label7 = new System.Windows.Forms.Label();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.lblTrangThai = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.picNhanVien = new Custom_Control.CircularPictureBox();
             this.lblTen = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblChucVu = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.rdoNu = new System.Windows.Forms.RadioButton();
@@ -64,10 +62,12 @@ namespace GUI
             this.lblTenFile = new System.Windows.Forms.Label();
             this.lblFileAnh = new System.Windows.Forms.Label();
             this.btnLoadAnh = new System.Windows.Forms.Button();
+            this.picNhanVien = new Custom_Control.CircularPictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -109,16 +109,6 @@ namespace GUI
             this.label1.TabIndex = 1;
             this.label1.Text = "HỆ THỐNG QUẢN LÝ KHO HÀNG";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.wms_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(70, 43);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(217, 196);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // lblClose
             // 
             this.lblClose.AutoSize = true;
@@ -150,7 +140,7 @@ namespace GUI
             // 
             this.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPass.Enabled = false;
-            this.txtPass.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPass.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPass.HintForeColor = System.Drawing.Color.Empty;
             this.txtPass.HintText = "";
@@ -182,7 +172,7 @@ namespace GUI
             // 
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsername.Enabled = false;
-            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtUsername.HintForeColor = System.Drawing.Color.Empty;
             this.txtUsername.HintText = "";
@@ -226,7 +216,7 @@ namespace GUI
             // 
             this.txtHoVaTen.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtHoVaTen.Enabled = false;
-            this.txtHoVaTen.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtHoVaTen.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtHoVaTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtHoVaTen.HintForeColor = System.Drawing.Color.Empty;
             this.txtHoVaTen.HintText = "";
@@ -257,7 +247,7 @@ namespace GUI
             // 
             this.txtSoDT.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSoDT.Enabled = false;
-            this.txtSoDT.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtSoDT.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtSoDT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSoDT.HintForeColor = System.Drawing.Color.Empty;
             this.txtSoDT.HintText = "";
@@ -340,7 +330,7 @@ namespace GUI
             // 
             this.txtDiaChi.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDiaChi.Enabled = false;
-            this.txtDiaChi.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDiaChi.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtDiaChi.HintForeColor = System.Drawing.Color.Empty;
             this.txtDiaChi.HintText = "";
@@ -396,16 +386,6 @@ namespace GUI
             this.lblTrangThai.TabIndex = 6;
             this.lblTrangThai.Text = "Trạng thái tài khoản: Đang hoạt động";
             // 
-            // picNhanVien
-            // 
-            this.picNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("picNhanVien.Image")));
-            this.picNhanVien.Location = new System.Drawing.Point(98, 25);
-            this.picNhanVien.Name = "picNhanVien";
-            this.picNhanVien.Size = new System.Drawing.Size(100, 100);
-            this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picNhanVien.TabIndex = 3;
-            this.picNhanVien.TabStop = false;
-            // 
             // lblTen
             // 
             this.lblTen.AutoSize = true;
@@ -423,7 +403,7 @@ namespace GUI
             this.lblChucVu.AutoSize = true;
             this.lblChucVu.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChucVu.ForeColor = System.Drawing.Color.White;
-            this.lblChucVu.Location = new System.Drawing.Point(123, 176);
+            this.lblChucVu.Location = new System.Drawing.Point(94, 175);
             this.lblChucVu.Name = "lblChucVu";
             this.lblChucVu.Size = new System.Drawing.Size(53, 20);
             this.lblChucVu.TabIndex = 5;
@@ -474,9 +454,8 @@ namespace GUI
             this.lblTenFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.lblTenFile.Location = new System.Drawing.Point(1184, 436);
             this.lblTenFile.Name = "lblTenFile";
-            this.lblTenFile.Size = new System.Drawing.Size(49, 21);
+            this.lblTenFile.Size = new System.Drawing.Size(0, 21);
             this.lblTenFile.TabIndex = 61;
-            this.lblTenFile.Text = "Tènile";
             // 
             // lblFileAnh
             // 
@@ -503,6 +482,26 @@ namespace GUI
             this.btnLoadAnh.Text = "&Thay đổi ảnh đại diện của bạn";
             this.btnLoadAnh.UseVisualStyleBackColor = false;
             this.btnLoadAnh.Click += new System.EventHandler(this.btnLoadAnh_Click);
+            // 
+            // picNhanVien
+            // 
+            this.picNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("picNhanVien.Image")));
+            this.picNhanVien.Location = new System.Drawing.Point(98, 25);
+            this.picNhanVien.Name = "picNhanVien";
+            this.picNhanVien.Size = new System.Drawing.Size(100, 100);
+            this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picNhanVien.TabIndex = 3;
+            this.picNhanVien.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.wms_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(70, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(217, 196);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // frmCapNhatTT
             // 
@@ -541,10 +540,10 @@ namespace GUI
             this.Load += new System.EventHandler(this.frmCapNhatTT_Load);
             this.panelLeft.ResumeLayout(false);
             this.panelLeft.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

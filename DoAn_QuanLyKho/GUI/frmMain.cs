@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
+using Custom_Control;
 
 namespace GUI
 {
@@ -70,33 +71,7 @@ namespace GUI
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            lblHeader.Text = "Trang chủ";
-            frmTrangChu frm = new frmTrangChu();
-            openSubForm(frm);
-            NGUOIDUNG nd = new NGUOIDUNG();
-            try
-            {
-                nd = nv.get_Info(MaNhanVien);
-                lblTen.Text = "Xin chào " + nd.TEN.ToString() + "!";
-                Image img = Image.FromFile(Application.StartupPath + "\\img\\" + nd.HINH);
-                picNhanVien.Image = img;
-            }
-            catch
-            {
-                nd = nv.get_Info(MaNhanVien);
-                lblTen.Text = "Xin chào " + nd.TEN.ToString() + "!";
-                Image img = Image.FromFile(Application.StartupPath + "\\img\\profile1.png");
-                picNhanVien.Image = img;
-            }
-            if (nguoiDung.getRole(MaNhanVien) == null)
-            {
-                lblChucVu.Text = "Chưa có chức vụ";
-            }
-            else
-            {
-                lblChucVu.Text = nguoiDung.getRole(MaNhanVien);
-            }
-            loadPhanQuyen();
+           
         }
 
         private void lblClose_Click(object sender, EventArgs e)
@@ -148,7 +123,7 @@ namespace GUI
         {
             lblHeader.Text = "Sản phẩm";
             indicator.Top = ((Control)sender).Top;
-            frmHangHoa n = new frmHangHoa();
+            frmHangHoaTheoKho n = new frmHangHoaTheoKho();
             openSubForm(n);
         }
 
@@ -156,13 +131,14 @@ namespace GUI
         {
             lblHeader.Text = "Báo cáo";
             indicator.Top = ((Control)sender).Top;
+            frmBaoCao frm = new frmBaoCao();
+            openSubForm(frm);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             lblHeader.Text = "Đặt Hàng";
             indicator.Top = ((Control)sender).Top;
-            //frmPhieuDat frm = new frmPhieuDat();
             frmDatHang frm = new frmDatHang();
             openSubForm(frm);
         }
@@ -171,7 +147,6 @@ namespace GUI
         {
             lblHeader.Text = "Nhập Hàng";
             indicator.Top = ((Control)sender).Top;
-            //frmPhieuDat frm = new frmPhieuDat();
             frmNhapHang frm = new frmNhapHang();
             openSubForm(frm);
         }
@@ -180,7 +155,6 @@ namespace GUI
         {
             lblHeader.Text = "Xuất Hàng";
             indicator.Top = ((Control)sender).Top;
-            //frmPhieuDat frm = new frmPhieuDat();
             frmXuatHang frm = new frmXuatHang();
             openSubForm(frm);
         }
@@ -198,7 +172,7 @@ namespace GUI
 
         private void CheckAllButtonChildVisiable(int tag)
         {
-            foreach (Control bt in panelMenu.Controls)
+            foreach (System.Windows.Forms.Control bt in panelMenu.Controls)
             {
                 if (bt.GetType().ToString() == "System.Windows.Forms.Button")
                 {
@@ -208,9 +182,88 @@ namespace GUI
                         {
                             bt.Visible = true;
                         }
-                    }
+                    }   
                 }
             }
+        }
+
+        private void btnnDangXuat_Click(object sender, EventArgs e)
+        {
+            DialogResult rs;
+            rs = MessageBox.Show("Bạn có muốn đăng xuất?", "Thông báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2);
+            if (rs == DialogResult.Yes)
+            {
+                //frmLogin frm = new frmLogin();
+                //frm.Show();
+                //this.Hide();
+                Application.Restart();
+                Environment.Exit(0);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            lblHeader.Text = "Quản lý";
+            indicator.Top = ((Control)sender).Top;
+            openSubForm(Program.frmquanly);
+        }
+
+        private void frmMain_Shown(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void mainPanel_VisibleChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void frmMain_VisibleChanged(object sender, EventArgs e)
+        {
+            lblHeader.Text = "Trang chủ";
+            frmTrangChu frm = new frmTrangChu();
+            openSubForm(frm);
+            try
+            {
+                nd = nv.get_Info(MaNhanVien);
+                lblTen.Text = "Xin chào " + nd.TEN.ToString() + "!";
+                Image img = Image.FromFile(Application.StartupPath + "\\img\\" + nd.HINH);
+                picNhanVien.Image = img;
+            }
+            catch
+            {
+                nd = nv.get_Info(MaNhanVien);
+                lblTen.Text = "Xin chào " + nd.TEN.ToString() + "!";
+                Image img = Image.FromFile(Application.StartupPath + "\\img\\profile1.png");
+                picNhanVien.Image = img;
+            }
+            if (nguoiDung.getRole(MaNhanVien) == null)
+            {
+                lblChucVu.Text = "Chưa có chức vụ";
+            }
+            else
+            {
+                lblChucVu.Text = nguoiDung.getRole(MaNhanVien);
+            }
+            loadPhanQuyen();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            frmPhieuChuyen frm = new frmPhieuChuyen();
+            Program.main.openSubForm(frm);
+            lblHeader.Text = "Chuyển hàng";
+        }
+
+        public void Alert(string msg)
+        {
+            Custom_Control.frmNotification frm = new frmNotification();
+            frm.showAlert(msg);
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            this.Alert(null);
         }
     }
 }

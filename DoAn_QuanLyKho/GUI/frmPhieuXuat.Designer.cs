@@ -29,31 +29,31 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPhieuXuat));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPhieuXuat));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnaddPD = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.cbxloaisp = new System.Windows.Forms.ComboBox();
             this.lb1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.gridPX = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnaddPD = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridPX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPX)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -102,6 +102,31 @@ namespace GUI
             this.panel1.Size = new System.Drawing.Size(394, 49);
             this.panel1.TabIndex = 0;
             // 
+            // btnaddPD
+            // 
+            this.btnaddPD.ActiveBorderThickness = 1;
+            this.btnaddPD.ActiveCornerRadius = 20;
+            this.btnaddPD.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnaddPD.ActiveForecolor = System.Drawing.Color.White;
+            this.btnaddPD.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnaddPD.BackColor = System.Drawing.Color.White;
+            this.btnaddPD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddPD.BackgroundImage")));
+            this.btnaddPD.ButtonText = "+ Add Orders";
+            this.btnaddPD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnaddPD.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnaddPD.ForeColor = System.Drawing.Color.White;
+            this.btnaddPD.IdleBorderThickness = 1;
+            this.btnaddPD.IdleCornerRadius = 20;
+            this.btnaddPD.IdleFillColor = System.Drawing.Color.Coral;
+            this.btnaddPD.IdleForecolor = System.Drawing.Color.White;
+            this.btnaddPD.IdleLineColor = System.Drawing.Color.White;
+            this.btnaddPD.Location = new System.Drawing.Point(226, 4);
+            this.btnaddPD.Margin = new System.Windows.Forms.Padding(4);
+            this.btnaddPD.Name = "btnaddPD";
+            this.btnaddPD.Size = new System.Drawing.Size(136, 40);
+            this.btnaddPD.TabIndex = 3;
+            this.btnaddPD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // bunifuDatepicker1
             // 
             this.bunifuDatepicker1.BackColor = System.Drawing.Color.Coral;
@@ -114,6 +139,7 @@ namespace GUI
             this.bunifuDatepicker1.Size = new System.Drawing.Size(38, 38);
             this.bunifuDatepicker1.TabIndex = 2;
             this.bunifuDatepicker1.Value = new System.DateTime(2021, 7, 7, 9, 52, 8, 180);
+            this.bunifuDatepicker1.Click += new System.EventHandler(this.bunifuDatepicker1_onValueChanged);
             // 
             // cbxloaisp
             // 
@@ -146,10 +172,25 @@ namespace GUI
             this.panel2.Size = new System.Drawing.Size(394, 49);
             this.panel2.TabIndex = 1;
             // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.ImageActive = null;
+            this.btnSearch.Location = new System.Drawing.Point(264, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(58, 35);
+            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSearch.TabIndex = 5;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Zoom = 10;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // txtSearch
             // 
             this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSearch.HintForeColor = System.Drawing.Color.Empty;
             this.txtSearch.HintText = "Nhập tại đây để tìm kiếm";
@@ -163,7 +204,6 @@ namespace GUI
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(261, 33);
             this.txtSearch.TabIndex = 4;
-            this.txtSearch.Text = "Search";
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // gridPX
@@ -212,6 +252,7 @@ namespace GUI
             this.gridPX.RowTemplate.Height = 50;
             this.gridPX.Size = new System.Drawing.Size(794, 387);
             this.gridPX.TabIndex = 3;
+            this.gridPX.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridPN_CellContentClick);
             // 
             // Column1
             // 
@@ -237,45 +278,6 @@ namespace GUI
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             // 
-            // btnaddPD
-            // 
-            this.btnaddPD.ActiveBorderThickness = 1;
-            this.btnaddPD.ActiveCornerRadius = 20;
-            this.btnaddPD.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnaddPD.ActiveForecolor = System.Drawing.Color.White;
-            this.btnaddPD.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnaddPD.BackColor = System.Drawing.Color.White;
-            this.btnaddPD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnaddPD.BackgroundImage")));
-            this.btnaddPD.ButtonText = "+ Add Orders";
-            this.btnaddPD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnaddPD.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaddPD.ForeColor = System.Drawing.Color.White;
-            this.btnaddPD.IdleBorderThickness = 1;
-            this.btnaddPD.IdleCornerRadius = 20;
-            this.btnaddPD.IdleFillColor = System.Drawing.Color.Coral;
-            this.btnaddPD.IdleForecolor = System.Drawing.Color.White;
-            this.btnaddPD.IdleLineColor = System.Drawing.Color.White;
-            this.btnaddPD.Location = new System.Drawing.Point(226, 4);
-            this.btnaddPD.Margin = new System.Windows.Forms.Padding(4);
-            this.btnaddPD.Name = "btnaddPD";
-            this.btnaddPD.Size = new System.Drawing.Size(136, 40);
-            this.btnaddPD.TabIndex = 3;
-            this.btnaddPD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.ImageActive = null;
-            this.btnSearch.Location = new System.Drawing.Point(264, 4);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(58, 35);
-            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnSearch.TabIndex = 5;
-            this.btnSearch.TabStop = false;
-            this.btnSearch.Zoom = 10;
-            // 
             // frmPhieuXuat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,8 +292,8 @@ namespace GUI
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridPX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPX)).EndInit();
             this.ResumeLayout(false);
 
         }

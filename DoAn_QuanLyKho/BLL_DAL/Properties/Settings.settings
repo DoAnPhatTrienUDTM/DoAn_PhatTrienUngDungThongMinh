@@ -19,14 +19,6 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=LAPTOP-RVB43SGO\SQLEXPRESS;Initial Catalog=QL_KHOHANG;Persist Security Info=True;User ID=sa;Password=sa123;</Value>
     </Setting>
-    <Setting Name="QL_KHOHANGConnectionString1" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=LAPTOP-RVB43SGO\SQLEXPRESS;Initial Catalog=QL_KHOHANG;User ID=sa;Password=sa123&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=LAPTOP-RVB43SGO\SQLEXPRESS;Initial Catalog=QL_KHOHANG;User ID=sa;Password=sa123</Value>
-    </Setting>
     <Setting Name="QL_KHOHANGConnectionString2" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
@@ -34,6 +26,22 @@
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=DESKTOP-9LVSSPC\SQLEXPRESS;Initial Catalog=QL_KHOHANG;Persist Security Info=True;User ID=sa;Password=sa2012</Value>
+    </Setting>
+    <Setting Name="QL_KHOHANGConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=DESKTOP-9LVSSPC\SQLEXPRESS;Initial Catalog=QL_KHOHANG;Persist Security Info=True;User ID=sa;Password=sa2012;&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DESKTOP-9LVSSPC\SQLEXPRESS;Initial Catalog=QL_KHOHANG;Persist Security Info=True;User ID=sa;Password=sa2012;</Value>
+    </Setting>
+    <Setting Name="QL_KHOHANGConnectionString3" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=LAPTOP-RVB43SGO\SQLEXPRESS;Initial Catalog=QL_KHOHANG;User ID=sa;Password=sa123&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=LAPTOP-RVB43SGO\SQLEXPRESS;Initial Catalog=QL_KHOHANG;User ID=sa;Password=sa123</Value>
     </Setting>
   </Settings>
 </SettingsFile>

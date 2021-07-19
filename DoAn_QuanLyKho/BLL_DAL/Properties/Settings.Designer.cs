@@ -12,7 +12,7 @@ namespace BLL_DAL.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -46,7 +46,7 @@ namespace BLL_DAL.Properties {
                 this["UserName"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
@@ -58,14 +58,14 @@ namespace BLL_DAL.Properties {
                 this["Password"] = value;
             }
         }
-
         AppSetting setting = new AppSetting();
+
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-RVB43SGO\\SQLEXPRESS;Initial Catalog=QL_KHOHANG;User ID=sa;Pass" +
-            "word=sa123")]
-        public string QL_KHOHANGConnectionString1 {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-RVB43SGO\\SQLEXPRESS;Initial Catalog=QL_KHOHANG;Persist Securit" +
+            "y Info=True;User ID=sa;Password=sa123;")]
+        public string QL_KHOHANGConnectionString {
             get {
                 return setting.GetConnectionString("BLL_DAL.Properties.Settings.QL_KHOHANGConnectionString");
             }
@@ -87,7 +87,18 @@ namespace BLL_DAL.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-9LVSSPC\\SQLEXPRESS;Initial Catalog=QL_KHOHANG;Persist Securit" +
             "y Info=True;User ID=sa;Password=sa2012;")]
-        public string QL_KHOHANGConnectionString {
+        public string QL_KHOHANGConnectionString1 {
+            get {
+                return setting.GetConnectionString("BLL_DAL.Properties.Settings.QL_KHOHANGConnectionString");
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-RVB43SGO\\SQLEXPRESS;Initial Catalog=QL_KHOHANG;User ID=sa;Pass" +
+            "word=sa123")]
+        public string QL_KHOHANGConnectionString3 {
             get {
                 return setting.GetConnectionString("BLL_DAL.Properties.Settings.QL_KHOHANGConnectionString");
             }

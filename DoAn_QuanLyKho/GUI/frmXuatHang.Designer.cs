@@ -29,7 +29,6 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmXuatHang));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -43,14 +42,11 @@ namespace GUI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmXuatHang));
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblsanpham = new System.Windows.Forms.Label();
-            this.btnluu = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnsua = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnxoa = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lbltongiten = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnthem = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label6 = new System.Windows.Forms.Label();
             this.txtSLD = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -77,6 +73,10 @@ namespace GUI
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnluu = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnsua = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnxoa = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnthem = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridCTDH)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -106,7 +106,7 @@ namespace GUI
             this.panel2.Enabled = false;
             this.panel2.Location = new System.Drawing.Point(3, 318);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(367, 310);
+            this.panel2.Size = new System.Drawing.Size(365, 310);
             this.panel2.TabIndex = 3;
             // 
             // lblsanpham
@@ -117,84 +117,6 @@ namespace GUI
             this.lblsanpham.Size = new System.Drawing.Size(16, 13);
             this.lblsanpham.TabIndex = 19;
             this.lblsanpham.Text = "...";
-            // 
-            // btnluu
-            // 
-            this.btnluu.ActiveBorderThickness = 1;
-            this.btnluu.ActiveCornerRadius = 20;
-            this.btnluu.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnluu.ActiveForecolor = System.Drawing.Color.White;
-            this.btnluu.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnluu.BackColor = System.Drawing.SystemColors.Control;
-            this.btnluu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnluu.BackgroundImage")));
-            this.btnluu.ButtonText = "Lưu";
-            this.btnluu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnluu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnluu.ForeColor = System.Drawing.Color.White;
-            this.btnluu.IdleBorderThickness = 1;
-            this.btnluu.IdleCornerRadius = 20;
-            this.btnluu.IdleFillColor = System.Drawing.Color.Coral;
-            this.btnluu.IdleForecolor = System.Drawing.Color.White;
-            this.btnluu.IdleLineColor = System.Drawing.Color.White;
-            this.btnluu.Location = new System.Drawing.Point(254, 230);
-            this.btnluu.Margin = new System.Windows.Forms.Padding(4);
-            this.btnluu.Name = "btnluu";
-            this.btnluu.Size = new System.Drawing.Size(100, 40);
-            this.btnluu.TabIndex = 18;
-            this.btnluu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnluu.Click += new System.EventHandler(this.btnluu_Click);
-            // 
-            // btnsua
-            // 
-            this.btnsua.ActiveBorderThickness = 1;
-            this.btnsua.ActiveCornerRadius = 20;
-            this.btnsua.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnsua.ActiveForecolor = System.Drawing.Color.White;
-            this.btnsua.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnsua.BackColor = System.Drawing.SystemColors.Control;
-            this.btnsua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsua.BackgroundImage")));
-            this.btnsua.ButtonText = "Sửa";
-            this.btnsua.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnsua.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsua.ForeColor = System.Drawing.Color.White;
-            this.btnsua.IdleBorderThickness = 1;
-            this.btnsua.IdleCornerRadius = 20;
-            this.btnsua.IdleFillColor = System.Drawing.Color.Coral;
-            this.btnsua.IdleForecolor = System.Drawing.Color.White;
-            this.btnsua.IdleLineColor = System.Drawing.Color.White;
-            this.btnsua.Location = new System.Drawing.Point(143, 230);
-            this.btnsua.Margin = new System.Windows.Forms.Padding(4);
-            this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(100, 40);
-            this.btnsua.TabIndex = 17;
-            this.btnsua.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
-            // 
-            // btnxoa
-            // 
-            this.btnxoa.ActiveBorderThickness = 1;
-            this.btnxoa.ActiveCornerRadius = 20;
-            this.btnxoa.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnxoa.ActiveForecolor = System.Drawing.Color.White;
-            this.btnxoa.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnxoa.BackColor = System.Drawing.SystemColors.Control;
-            this.btnxoa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnxoa.BackgroundImage")));
-            this.btnxoa.ButtonText = "Xóa";
-            this.btnxoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnxoa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnxoa.ForeColor = System.Drawing.Color.White;
-            this.btnxoa.IdleBorderThickness = 1;
-            this.btnxoa.IdleCornerRadius = 20;
-            this.btnxoa.IdleFillColor = System.Drawing.Color.Coral;
-            this.btnxoa.IdleForecolor = System.Drawing.Color.White;
-            this.btnxoa.IdleLineColor = System.Drawing.Color.White;
-            this.btnxoa.Location = new System.Drawing.Point(254, 197);
-            this.btnxoa.Margin = new System.Windows.Forms.Padding(4);
-            this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(100, 40);
-            this.btnxoa.TabIndex = 16;
-            this.btnxoa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // lbltongiten
             // 
@@ -215,32 +137,6 @@ namespace GUI
             this.label9.Size = new System.Drawing.Size(59, 13);
             this.label9.TabIndex = 14;
             this.label9.Text = "Tổng Tiền:";
-            // 
-            // btnthem
-            // 
-            this.btnthem.ActiveBorderThickness = 1;
-            this.btnthem.ActiveCornerRadius = 20;
-            this.btnthem.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnthem.ActiveForecolor = System.Drawing.Color.White;
-            this.btnthem.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnthem.BackColor = System.Drawing.SystemColors.Control;
-            this.btnthem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnthem.BackgroundImage")));
-            this.btnthem.ButtonText = "Thêm";
-            this.btnthem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnthem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthem.ForeColor = System.Drawing.Color.White;
-            this.btnthem.IdleBorderThickness = 1;
-            this.btnthem.IdleCornerRadius = 20;
-            this.btnthem.IdleFillColor = System.Drawing.Color.Coral;
-            this.btnthem.IdleForecolor = System.Drawing.Color.White;
-            this.btnthem.IdleLineColor = System.Drawing.Color.White;
-            this.btnthem.Location = new System.Drawing.Point(143, 197);
-            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
-            this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(100, 40);
-            this.btnthem.TabIndex = 11;
-            this.btnthem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // label6
             // 
@@ -362,11 +258,11 @@ namespace GUI
             this.gridCTDH.GridColor = System.Drawing.Color.White;
             this.gridCTDH.HeaderBgColor = System.Drawing.Color.White;
             this.gridCTDH.HeaderForeColor = System.Drawing.Color.Black;
-            this.gridCTDH.Location = new System.Drawing.Point(376, 318);
+            this.gridCTDH.Location = new System.Drawing.Point(374, 318);
             this.gridCTDH.Name = "gridCTDH";
             this.gridCTDH.ReadOnly = true;
             this.gridCTDH.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gridCTDH.Size = new System.Drawing.Size(641, 310);
+            this.gridCTDH.Size = new System.Drawing.Size(643, 310);
             this.gridCTDH.TabIndex = 4;
             // 
             // Column7
@@ -398,7 +294,7 @@ namespace GUI
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.939F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.061F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.gridSPCanDat, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 1);
@@ -418,9 +314,9 @@ namespace GUI
             this.panel1.Controls.Add(this.circularButton2);
             this.panel1.Controls.Add(this.circularButton1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(893, 3);
+            this.panel1.Location = new System.Drawing.Point(889, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(124, 309);
+            this.panel1.Size = new System.Drawing.Size(128, 309);
             this.panel1.TabIndex = 1;
             // 
             // circularButton2
@@ -499,7 +395,7 @@ namespace GUI
             this.gridSPCanDat.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.gridSPCanDat.RowTemplate.Height = 50;
             this.gridSPCanDat.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSPCanDat.Size = new System.Drawing.Size(884, 309);
+            this.gridSPCanDat.Size = new System.Drawing.Size(880, 309);
             this.gridSPCanDat.TabIndex = 2;
             this.gridSPCanDat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSPCanDat_CellClick);
             // 
@@ -565,6 +461,110 @@ namespace GUI
             this.Column6.ReadOnly = true;
             this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // btnluu
+            // 
+            this.btnluu.ActiveBorderThickness = 1;
+            this.btnluu.ActiveCornerRadius = 20;
+            this.btnluu.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnluu.ActiveForecolor = System.Drawing.Color.White;
+            this.btnluu.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnluu.BackColor = System.Drawing.SystemColors.Control;
+            this.btnluu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnluu.BackgroundImage")));
+            this.btnluu.ButtonText = "Lưu";
+            this.btnluu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnluu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnluu.ForeColor = System.Drawing.Color.White;
+            this.btnluu.IdleBorderThickness = 1;
+            this.btnluu.IdleCornerRadius = 20;
+            this.btnluu.IdleFillColor = System.Drawing.Color.Coral;
+            this.btnluu.IdleForecolor = System.Drawing.Color.White;
+            this.btnluu.IdleLineColor = System.Drawing.Color.White;
+            this.btnluu.Location = new System.Drawing.Point(254, 230);
+            this.btnluu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnluu.Name = "btnluu";
+            this.btnluu.Size = new System.Drawing.Size(100, 40);
+            this.btnluu.TabIndex = 18;
+            this.btnluu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnluu.Click += new System.EventHandler(this.btnluu_Click);
+            // 
+            // btnsua
+            // 
+            this.btnsua.ActiveBorderThickness = 1;
+            this.btnsua.ActiveCornerRadius = 20;
+            this.btnsua.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnsua.ActiveForecolor = System.Drawing.Color.White;
+            this.btnsua.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnsua.BackColor = System.Drawing.SystemColors.Control;
+            this.btnsua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsua.BackgroundImage")));
+            this.btnsua.ButtonText = "Sửa";
+            this.btnsua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsua.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsua.ForeColor = System.Drawing.Color.White;
+            this.btnsua.IdleBorderThickness = 1;
+            this.btnsua.IdleCornerRadius = 20;
+            this.btnsua.IdleFillColor = System.Drawing.Color.Coral;
+            this.btnsua.IdleForecolor = System.Drawing.Color.White;
+            this.btnsua.IdleLineColor = System.Drawing.Color.White;
+            this.btnsua.Location = new System.Drawing.Point(143, 230);
+            this.btnsua.Margin = new System.Windows.Forms.Padding(4);
+            this.btnsua.Name = "btnsua";
+            this.btnsua.Size = new System.Drawing.Size(100, 40);
+            this.btnsua.TabIndex = 17;
+            this.btnsua.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
+            // 
+            // btnxoa
+            // 
+            this.btnxoa.ActiveBorderThickness = 1;
+            this.btnxoa.ActiveCornerRadius = 20;
+            this.btnxoa.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnxoa.ActiveForecolor = System.Drawing.Color.White;
+            this.btnxoa.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnxoa.BackColor = System.Drawing.SystemColors.Control;
+            this.btnxoa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnxoa.BackgroundImage")));
+            this.btnxoa.ButtonText = "Xóa";
+            this.btnxoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnxoa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnxoa.ForeColor = System.Drawing.Color.White;
+            this.btnxoa.IdleBorderThickness = 1;
+            this.btnxoa.IdleCornerRadius = 20;
+            this.btnxoa.IdleFillColor = System.Drawing.Color.Coral;
+            this.btnxoa.IdleForecolor = System.Drawing.Color.White;
+            this.btnxoa.IdleLineColor = System.Drawing.Color.White;
+            this.btnxoa.Location = new System.Drawing.Point(254, 197);
+            this.btnxoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnxoa.Name = "btnxoa";
+            this.btnxoa.Size = new System.Drawing.Size(100, 40);
+            this.btnxoa.TabIndex = 16;
+            this.btnxoa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
+            // 
+            // btnthem
+            // 
+            this.btnthem.ActiveBorderThickness = 1;
+            this.btnthem.ActiveCornerRadius = 20;
+            this.btnthem.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnthem.ActiveForecolor = System.Drawing.Color.White;
+            this.btnthem.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnthem.BackColor = System.Drawing.SystemColors.Control;
+            this.btnthem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnthem.BackgroundImage")));
+            this.btnthem.ButtonText = "Thêm";
+            this.btnthem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnthem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnthem.ForeColor = System.Drawing.Color.White;
+            this.btnthem.IdleBorderThickness = 1;
+            this.btnthem.IdleCornerRadius = 20;
+            this.btnthem.IdleFillColor = System.Drawing.Color.Coral;
+            this.btnthem.IdleForecolor = System.Drawing.Color.White;
+            this.btnthem.IdleLineColor = System.Drawing.Color.White;
+            this.btnthem.Location = new System.Drawing.Point(143, 197);
+            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnthem.Name = "btnthem";
+            this.btnthem.Size = new System.Drawing.Size(100, 40);
+            this.btnthem.TabIndex = 11;
+            this.btnthem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // frmXuatHang
             // 

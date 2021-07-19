@@ -37,6 +37,7 @@ namespace BLL_DAL
             }
         }
 
+        //Get id
         public string getIDUser(string strUser, string strPass)
         {
             string manv;
@@ -49,6 +50,22 @@ namespace BLL_DAL
             {
                 manv = nv.ID_DN;
                 return manv;
+            }
+        }
+
+        //Get pass
+        public string getPassUser(string strUser)
+        {
+            string matkhau;
+            NGUOIDUNG nv = quanLyKho.NGUOIDUNGs.Where(t => t.ID_DN == strUser).FirstOrDefault();
+            if (nv == null)
+            {
+                return null; //No ID User
+            }
+            else
+            {
+                matkhau = nv.MATKHAU;
+                return matkhau;
             }
         }
 

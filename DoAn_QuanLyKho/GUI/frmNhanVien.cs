@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
+using Custom_Control;
 
 namespace GUI
 {
@@ -20,6 +21,13 @@ namespace GUI
             InitializeComponent();
             this.Load += new EventHandler(frmNhanVien_Load);
         }
+
+        public void Alert(string msg, frmNotificationCustom.enmType type)
+        {
+            Custom_Control.frmNotificationCustom frm = new frmNotificationCustom();
+            frm.showAlert(msg, type);
+        }
+
 
         public BindingSource bindingSource1;
         private void InitializeData()
@@ -53,6 +61,34 @@ namespace GUI
         private void frmNhanVien_Load(object sender, EventArgs e)
         {
             InitializeData();
+            string id = grvNhanVien.CurrentRow.Cells[0].Value.ToString();
+            lblDiaChi.Text = nv.gridViewCellClick_DiaChi(id);
+            lblGioiTinh.Text = nv.gridViewCellClick_GioiTinh(id);
+            lblNgaySinh.Text = nv.gridViewCellClick_NgaySinh(id);
+            lblSDT.Text = nv.gridViewCellClick_SoDT(id);
+            lblTenNV.Text = nv.gridViewCellClick_TenNhanVien(id);
+            bool? tinhTrang = nv.gridViewCellClick_TinhTrangTaiKhoan(id);
+            if (tinhTrang == true)
+            {
+                lblTinhTrang.Text = "Đang hoạt động";
+            }
+            else
+            {
+                lblTinhTrang.Text = "Tài khoản bị vô hiệu hóa!";
+            }
+            lblKho.Text = "Kho số " + nv.gridViewCellClick_IDKho(id);
+            lblDiaChiKho.Text = nv.gridViewCellClick_DiaChiKho(nv.gridViewCellClick_IDKho(id));
+
+            if (lblTinhTrang.Text == "Đang hoạt động")
+            {
+                btnKichHoatTaiKhoan.Visible = false;
+                btnKhoaTaiKhoan.Visible = true;
+            }
+            else
+            {
+                btnKichHoatTaiKhoan.Visible = true;
+                btnKhoaTaiKhoan.Visible = false;
+            }
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
@@ -79,7 +115,7 @@ namespace GUI
                 lblTinhTrang.Text = "Tài khoản bị vô hiệu hóa!";
             }
             lblKho.Text = "Kho số " + nv.gridViewCellClick_IDKho(id);
-            lblDiaChiKho.Text = nv.gridViewCellClick_DiaChiKho(nv.gridViewCellClick_IDKho(id));
+            lblDiaChiKho.Text = nv.gridViewCellClick_DiaChiKho(nv.gridViewCellClick_IDKho(id));  
         }
 
         private void btnDanhMucMH_Click(object sender, EventArgs e)
@@ -116,14 +152,21 @@ namespace GUI
         private void btnXoa_Click(object sender, EventArgs e)
         {
             string id = grvNhanVien.CurrentRow.Cells[0].Value.ToString();
-            if (nv.xoaNguoiDung(id) == true)
+            if (id == Program.main.MaNhanVien)
             {
-                grvNhanVien.DataSource = nv.loadDataNguoiDung();
-                MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Alert("Không thể xóa tài khoản này, vì tài khoản này đang được sử dụng!", frmNotificationCustom.enmType.Warning);
             }
             else
             {
-                MessageBox.Show("Xóa thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (nv.xoaNguoiDung(id) == true)
+                {
+                    grvNhanVien.DataSource = nv.loadDataNguoiDung();
+                    this.Alert("Xóa thành công", frmNotificationCustom.enmType.Success);
+                }
+                else
+                {
+                    this.Alert("Xóa thất bại!", frmNotificationCustom.enmType.Error);
+                }
             }
         }
 
@@ -145,11 +188,13 @@ namespace GUI
             string id = grvNhanVien.CurrentRow.Cells[0].Value.ToString();
             if (nv.update_TinhTrang_True(id) == true)
             {
-                MessageBox.Show("Đã kích hoạt tài khoản thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Alert("Đã kích hoạt tài khoản thành công!", frmNotificationCustom.enmType.Success);
+                btnKhoaTaiKhoan.Visible = true;
+                btnKichHoatTaiKhoan.Visible = false;
             }
             else
             {
-                MessageBox.Show("Kích hoạt thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Alert("Kích hoạt thất bại!", frmNotificationCustom.enmType.Error);
             }
         }
 
@@ -158,11 +203,13 @@ namespace GUI
             string id = grvNhanVien.CurrentRow.Cells[0].Value.ToString();
             if (nv.update_TinhTrang_False(id) == true)
             {
-                MessageBox.Show("Đã khóa tài khoản thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Alert("Đã khóa tài khoản thành công!", frmNotificationCustom.enmType.Success);
+                btnKhoaTaiKhoan.Visible = false;
+                btnKichHoatTaiKhoan.Visible = true;
             }
             else
             {
-                MessageBox.Show("Khóa tài khoản thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Alert("Khóa tài khoản thất bại!", frmNotificationCustom.enmType.Error);
             }
         }
 

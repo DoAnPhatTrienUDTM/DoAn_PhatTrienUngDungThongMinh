@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
+using Custom_Control;
 using Microsoft.Office.Interop.Excel;
 
 namespace GUI
@@ -21,9 +22,16 @@ namespace GUI
         CTPX_BLL_DAL ctpx = new CTPX_BLL_DAL();
         NhanVienBLL_DAL nv = new NhanVienBLL_DAL();
         NGUOIDUNG ng = new NGUOIDUNG();
+        TonKho_BLL_DAL tonkho = new TonKho_BLL_DAL();
         public frmXuatHang()
         {
             InitializeComponent();
+        }
+
+        public void Alert(string msg, frmNotificationCustom.enmType type)
+        {
+            Custom_Control.frmNotificationCustom frm = new frmNotificationCustom();
+            frm.showAlert(msg, type);
         }
 
         private void circularButton1_Click(object sender, EventArgs e)
@@ -33,6 +41,7 @@ namespace GUI
         }
         public void Load_DS_SP_XUAT()
         {
+
             gridSPCanDat.Rows.Clear();
             gridSPCanDat.Refresh();
             _Application fileimport;
@@ -92,16 +101,16 @@ namespace GUI
             int sl = 0;
             if (txtSLD.Text.Equals(""))
             {
-                MessageBox.Show("Phải Nhập Số Lượng");
+                this.Alert("Phải nhập số lượng!", frmNotificationCustom.enmType.Warning);
                 return;
             }
             else
             {
                 sl = int.Parse(txtSLD.Text);
             }
-            if (sl > slx || sl > sp.SOLUONG)
+            if (sl > slx || sl > tonkho.get_SL(ng.ID_KHO, sp.ID_SP))
             {
-                MessageBox.Show("Không được nhập quá số lượng");
+                this.Alert("Không được nhập quá số lượng!", frmNotificationCustom.enmType.Warning);
                 return;
             }
             if (gridCTDH.Rows.Count == 0)
@@ -117,7 +126,7 @@ namespace GUI
                     int id = int.Parse(gridCTDH.Rows[i].Cells[0].Value.ToString().Trim());
                     if (id == sp.ID_SP)
                     {
-                        MessageBox.Show("sản phẩm đã có trong danh sách đặt hàng");
+                        this.Alert("Sản phẩm đã có trong danh sách đặt hàng!", frmNotificationCustom.enmType.Warning);
                         return;
                     }
                 }
@@ -171,7 +180,7 @@ namespace GUI
                 gridCTDH.CurrentRow.Cells[1].Value = sp.TENSP;
                 gridCTDH.CurrentRow.Cells[2].Value = txtSLD.Text;
                 gridCTDH.CurrentRow.Cells[3].Value = thanhtien;
-                MessageBox.Show("Sửa Thành công");
+                this.Alert("Sửa thành công!", frmNotificationCustom.enmType.Success);
             }
             else
             {
@@ -180,7 +189,7 @@ namespace GUI
                     int id = int.Parse(gridCTDH.Rows[i].Cells[0].Value.ToString().Trim());
                     if (id == sp.ID_SP)
                     {
-                        MessageBox.Show("sản phẩm đã có trong danh sách đặt hàng");
+                        this.Alert("Sản phẩm đã có trong danh sách đặt hàng!", frmNotificationCustom.enmType.Warning);
                         return;
                     }
                 }
@@ -189,7 +198,7 @@ namespace GUI
                 gridCTDH.CurrentRow.Cells[1].Value = sp.TENSP;
                 gridCTDH.CurrentRow.Cells[2].Value = txtSLD.Text;
                 gridCTDH.CurrentRow.Cells[3].Value = thanhtien;
-                MessageBox.Show("Sửa Thành công");
+                this.Alert("Sửa thành công!", frmNotificationCustom.enmType.Success);
             }
             string[] cat = lbltongiten.Text.Split(' ');
             int tongtien = int.Parse(cat[0]) + thanhtien - ttcu;
@@ -199,16 +208,16 @@ namespace GUI
         private void btnluu_Click(object sender, EventArgs e)
         {
             string[] ds = lbltongiten.Text.Split(' ');
-            phieuxuat.insert_PhieuXuat(ng.ID_DN,cbxNCC.SelectedItem.ToString(), dateTimePicker1.Value.Date, int.Parse(ds[0]));
+            phieuxuat.insert_PhieuXuat(ng.ID_DN, cbxNCC.SelectedItem.ToString(), dateTimePicker1.Value.Date, int.Parse(ds[0]));
             int idpd = phieuxuat.countpx();
             for (int i = 0; i < gridCTDH.Rows.Count; i++)
             {
                 int idsp = int.Parse(gridCTDH.Rows[i].Cells[0].Value.ToString());
                 int sld = int.Parse(gridCTDH.Rows[i].Cells[2].Value.ToString());
                 int thannhtien = int.Parse(gridCTDH.Rows[i].Cells[3].Value.ToString());
-                ctpx.insert_CTPX(idpd, idsp, sld,thannhtien/sld,thannhtien);
+                ctpx.insert_CTPX(ng.ID_KHO, idpd, idsp, sld, thannhtien / sld, thannhtien);
             }
-            MessageBox.Show("Xuất hàng Thành Công");
+            this.Alert("Xuất hàng thành công!", frmNotificationCustom.enmType.Success);
             for (int i = 0; i < gridCTDH.Rows.Count; i++)
             {
                 for (int j = 0; j < gridSPCanDat.Rows.Count; j++)

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
+using Custom_Control;
 
 namespace GUI
 {
@@ -18,13 +19,23 @@ namespace GUI
         LoaiSanPham_BLL_DAL loaisp = new LoaiSanPham_BLL_DAL();
         OpenFileDialog opf = new OpenFileDialog();
         List<string> lstimg = new List<string>();
+        TonKho_BLL_DAL tonkho = new TonKho_BLL_DAL();
+        NhanVienBLL_DAL nv = new NhanVienBLL_DAL();
+        NGUOIDUNG nd = new NGUOIDUNG();
         public frmHangHoa()
         {
             InitializeComponent();
         }
 
+        public void Alert(string msg, frmNotificationCustom.enmType type)
+        {
+            Custom_Control.frmNotificationCustom frm = new frmNotificationCustom();
+            frm.showAlert(msg, type);
+        }
+
         private void frmHangHoa_Load(object sender, EventArgs e)
         {
+            nd = nv.get_Info(Program.main.MaNhanVien);
             cbxloaisp.DataSource = loaisp.loadLoaiSP();
             cbxloaisp.DisplayMember = "TENLOAISANPHAM";
             cbxloaisp.ValueMember = "ID_LSP";
@@ -35,6 +46,7 @@ namespace GUI
             cbbLoaiSP.DataSource = loaisp.loadLoaiSP();
             cbbLoaiSP.DisplayMember = "TENLOAISANPHAM";
             cbbLoaiSP.ValueMember = "ID_LSP";
+            cbbLoaiSP.DefaultCellStyle.BackColor = System.Drawing.Color.White;
         }
 
         private void cbxloaisp_SelectedIndexChanged(object sender, EventArgs e)
@@ -61,7 +73,7 @@ namespace GUI
             gridHangHoa.ReadOnly = false;
             for (int i = 0; i < gridHangHoa.Rows.Count; i++)
             {
-                if (i == gridHangHoa.Rows.Count-1)
+                if (i == gridHangHoa.Rows.Count - 1)
                 {
                     gridHangHoa.Rows[i].ReadOnly = false;
                     gridHangHoa.Rows[i].Cells[0].ReadOnly = true;
@@ -97,16 +109,17 @@ namespace GUI
                     {
                         img = Image.FromFile(Application.StartupPath + "\\img\\img_sp\\product.png");
                         lstimg.Add(Application.StartupPath + "\\img\\img_sp\\product.png");
-                    }    
-                       
+                    }
+
                 }
                 catch (Exception)
                 {
-                    
+
                     img = Image.FromFile(Application.StartupPath + "\\img\\img_sp\\product.png");
                     lstimg.Add(Application.StartupPath + "\\img\\img_sp\\product.png");
                 }
-                gridHangHoa.Rows.Add(item.ID_SP, item.TENSP, item.DVT, item.ID_LSP, item.SOLUONG, item.DONGIA, img,item.NGAYNHAP);
+              
+                gridHangHoa.Rows.Add(item.ID_SP, item.TENSP, item.DVT, item.ID_LSP, item.DONGIA, img, item.NGAYNHAP);
             }
         }
 
@@ -115,11 +128,11 @@ namespace GUI
             var senderGrid = (DataGridView)sender;
 
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
-                e.ColumnIndex == 8)
+                e.ColumnIndex == 7)
             {
                 if (btnsua.Text.Equals("xóa"))
                 {
-                    
+
                 }
                 else
                 {
@@ -140,20 +153,20 @@ namespace GUI
 
             }
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
-               e.ColumnIndex == 9)
+               e.ColumnIndex == 8)
             {
                 DataGridViewButtonCell btn = (DataGridViewButtonCell)gridHangHoa.CurrentRow.Cells["btnsua"];
                 gridHangHoa.ReadOnly = true;
                 DataGridViewRow row = gridHangHoa.Rows[e.RowIndex];
                 int idsp = int.Parse(row.Cells[0].Value.ToString());
                 int idlsp = int.Parse(row.Cells[3].Value.ToString());
-                int dongia = int.Parse(row.Cells[5].Value.ToString());
-                
+                int dongia = int.Parse(row.Cells[4].Value.ToString());
+
                 if (btn.UseColumnTextForButtonValue)
                 {
                     string imgpath = lstimg[e.RowIndex];
                     string nameImage = imgpath.Substring(imgpath.LastIndexOf('\\') + 1);
-                    DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn cập nhật thông tin!", "Thông báo", MessageBoxButtons.YesNo);
+                    DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn cập nhật thông tin?", "Thông báo", MessageBoxButtons.YesNo);
                     if (get_nameIMG().Equals(""))
                     {
                         if (dialogResult == DialogResult.Yes)
@@ -161,11 +174,10 @@ namespace GUI
                             if (hanghoa.update_SanPham(idsp, row.Cells[1].Value.ToString(), row.Cells[2].Value.ToString(), nameImage, dongia, idlsp))
                             {
                                 load_SP(hanghoa.LoadHangHoa());
-
-                                MessageBox.Show("Cập nhật thành công!");
+                                this.Alert("Cập nhật thành công!", frmNotificationCustom.enmType.Success);
                             }
                             else
-                                MessageBox.Show("Cập nhật không thành công!");
+                                this.Alert("Cập nhật không thành công!", frmNotificationCustom.enmType.Error);
                         }
                     }
                     else
@@ -174,16 +186,16 @@ namespace GUI
                         var path = Path.Combine(Application.StartupPath + "\\img\\img_sp\\", filename);
                         try
                         {
-                            
+
                             File.Copy(opf.FileName, path, true);
                             if (hanghoa.update_SanPham(idsp, row.Cells[1].Value.ToString(), row.Cells[2].Value.ToString(), filename, dongia, idlsp))
                             {
                                 load_SP(hanghoa.LoadHangHoa());
 
-                                MessageBox.Show("Cập nhật thành công!");
+                                this.Alert("Cập nhật thành công!", frmNotificationCustom.enmType.Success);
                             }
                             else
-                                MessageBox.Show("Cập nhật không thành công!");
+                                this.Alert("Cập nhật không thành công!", frmNotificationCustom.enmType.Error);
                         }
                         catch
                         {
@@ -191,10 +203,10 @@ namespace GUI
                             {
                                 load_SP(hanghoa.LoadHangHoa());
 
-                                MessageBox.Show("Cập nhật thành công!");
+                                this.Alert("Cập nhật thành công!", frmNotificationCustom.enmType.Success);
                             }
                             else
-                                MessageBox.Show("Cập nhật không thành công!");
+                                this.Alert("Cập nhật không thành công!", frmNotificationCustom.enmType.Error);
 
                         }
                     }
@@ -202,28 +214,28 @@ namespace GUI
                 }
                 else
                 {
-                    DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn cập nhật thông tin!", "Thông báo", MessageBoxButtons.YesNo);
+                    DialogResult dialogResult = MessageBox.Show("Bạn có chắc chắn muốn cập nhật thông tin?", "Thông báo", MessageBoxButtons.YesNo);
 
                     if (dialogResult == DialogResult.Yes)
                     {
                         var filename = Path.GetFileName(opf.FileName);
                         var path = Path.Combine(Application.StartupPath + "\\img\\img_sp\\", filename);
                         File.Copy(opf.FileName, path);
-                        if (hanghoa.insert_SanPham(row.Cells[1].Value.ToString(), row.Cells[2].Value.ToString(),idlsp,filename, dongia))
+                        if (hanghoa.insert_SanPham(row.Cells[1].Value.ToString(), row.Cells[2].Value.ToString(), idlsp, filename, dongia))
                         {
+                            tonkho.insertSL(hanghoa.getidspmoi());
                             load_SP(hanghoa.LoadHangHoa());
-
-                            MessageBox.Show("Cập nhật thành công!");
+                            this.Alert("Cập nhật thành công!", frmNotificationCustom.enmType.Success);
                         }
                         else
-                            MessageBox.Show("Cập nhật không thành công!");
+                            this.Alert("Cập nhật không thành công!", frmNotificationCustom.enmType.Error);
                     }
 
 
                 }
-                        
 
-                    
+
+
             }
 
         }
@@ -285,11 +297,10 @@ namespace GUI
 
         private void btnexprot_Click(object sender, EventArgs e)
         {
-
             Microsoft.Office.Interop.Excel.Application xcelApp = new Microsoft.Office.Interop.Excel.Application();
             xcelApp.Application.Workbooks.Add(Type.Missing);
 
-            for (int i = 1; i < gridHangHoa.Columns.Count-2; i++)
+            for (int i = 1; i < gridHangHoa.Columns.Count - 2; i++)
             {
                 xcelApp.Cells[1, i] = gridHangHoa.Columns[i - 1].HeaderText;
             }
@@ -297,10 +308,10 @@ namespace GUI
             for (int i = 0; i < gridHangHoa.Rows.Count; i++)
             {
                 int sl = int.Parse(gridHangHoa.Rows[i].Cells[4].Value.ToString());
-                
+
                 if (sl < 50)
                 {
-                    for (int j = 0; j < gridHangHoa.Columns.Count-2; j++)
+                    for (int j = 0; j < gridHangHoa.Columns.Count - 2; j++)
                     {
                         if (j == 6)
                         {

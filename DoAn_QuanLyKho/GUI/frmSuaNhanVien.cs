@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
 using System.IO;
+using Custom_Control;
 
 namespace GUI
 {
@@ -28,6 +29,12 @@ namespace GUI
             formDataSource = dataSource;
             txtUsername.DataBindings.Clear();
             txtUsername.DataBindings.Add("Text", formDataSource, "ID_DN", true, DataSourceUpdateMode.OnPropertyChanged);
+        }
+
+        public void Alert(string msg, frmNotificationCustom.enmType type)
+        {
+            Custom_Control.frmNotificationCustom frm = new frmNotificationCustom();
+            frm.showAlert(msg, type);
         }
 
         private void lblClose_Click(object sender, EventArgs e)
@@ -63,19 +70,19 @@ namespace GUI
                 {
                     frm.grvNhanVien.DataSource = nv.loadDataNguoiDung();
                     frm.grvNhanVien.Refresh();
-                    MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Alert("Sửa thành công!", frmNotificationCustom.enmType.Success);
                     try
                     {
                         File.Copy(lblFullPath.Text, Application.StartupPath + "\\img\\" + lblFileAnh.Text, true);
                     }
                     catch
                     {
-                        MessageBox.Show("Không thể lưu file ảnh này!");
+                        this.Alert("Không thể lưu file ảnh này!", frmNotificationCustom.enmType.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Sửa thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.Alert("Sửa thất bại!", frmNotificationCustom.enmType.Error);
                 }
             }
             else
@@ -85,11 +92,19 @@ namespace GUI
                 {
                     frm.grvNhanVien.DataSource = nv.loadDataNguoiDung();
                     frm.grvNhanVien.Refresh();
-                    MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Alert("Sửa thành công!", frmNotificationCustom.enmType.Success);
+                    try
+                    {
+                        File.Copy(lblFullPath.Text, Application.StartupPath + "\\img\\" + lblFileAnh.Text, true);
+                    }
+                    catch
+                    {
+                        this.Alert("Không thể lưu file ảnh này!", frmNotificationCustom.enmType.Warning);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Sửa thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.Alert("Sửa thất bại!", frmNotificationCustom.enmType.Error);
                 }
             }
         }
@@ -103,6 +118,18 @@ namespace GUI
             txtSoDT.Text = nd.SDT.ToString();
             txtPass.Text = nd.MATKHAU.ToString();
             dateNgaySinh.Value = (DateTime)nd.NGAYSINH;
+            bool? tinhTrang = nd.TINHTRANG;
+
+            if (tinhTrang == true)
+            {
+                lblTrangThai.Text = "Trạng thái tài khoản: Đang hoạt động";
+            }
+            else
+            {
+                lblTrangThai.Text = "Trạng thái tài khoản: Không hoạt động";
+            }
+
+            lblTen.Text = txtHoVaTen.Text;
 
             if (String.Compare(nd.GIOITINH.ToString(), "Nam", true) == 0)
             {

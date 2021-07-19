@@ -36,6 +36,7 @@ namespace GUI
             this.panelLeft = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rdoNu = new System.Windows.Forms.RadioButton();
             this.rdoNam = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
@@ -54,22 +55,21 @@ namespace GUI
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblTrangThai = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.picNhanVien = new Custom_Control.CircularPictureBox();
             this.lblTen = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblChucVu = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.label11 = new System.Windows.Forms.Label();
             this.cboKho = new System.Windows.Forms.ComboBox();
-            this.picNhanVien = new Custom_Control.CircularPictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblFullPath = new System.Windows.Forms.Label();
             this.lblTenAnh = new System.Windows.Forms.Label();
             this.btnAnh = new System.Windows.Forms.Button();
             this.lblFileAnh = new System.Windows.Forms.Label();
             this.panelLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -123,6 +123,16 @@ namespace GUI
             this.label1.TabIndex = 1;
             this.label1.Text = "HỆ THỐNG QUẢN LÝ KHO HÀNG";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GUI.Properties.Resources.wms_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(69, 189);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(217, 196);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // rdoNu
             // 
             this.rdoNu.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -165,7 +175,7 @@ namespace GUI
             // txtDiaChi
             // 
             this.txtDiaChi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDiaChi.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtDiaChi.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtDiaChi.HintForeColor = System.Drawing.Color.Empty;
             this.txtDiaChi.HintText = "";
@@ -233,7 +243,7 @@ namespace GUI
             // txtSoDT
             // 
             this.txtSoDT.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSoDT.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtSoDT.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtSoDT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSoDT.HintForeColor = System.Drawing.Color.Empty;
             this.txtSoDT.HintText = "";
@@ -248,6 +258,7 @@ namespace GUI
             this.txtSoDT.Size = new System.Drawing.Size(339, 31);
             this.txtSoDT.TabIndex = 4;
             this.txtSoDT.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSoDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoDT_KeyPress);
             // 
             // label6
             // 
@@ -263,7 +274,7 @@ namespace GUI
             // txtHoVaTen
             // 
             this.txtHoVaTen.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtHoVaTen.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtHoVaTen.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtHoVaTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtHoVaTen.HintForeColor = System.Drawing.Color.Empty;
             this.txtHoVaTen.HintText = "";
@@ -293,7 +304,7 @@ namespace GUI
             // txtPass
             // 
             this.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPass.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPass.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPass.HintForeColor = System.Drawing.Color.Empty;
             this.txtPass.HintText = "";
@@ -324,7 +335,7 @@ namespace GUI
             // txtUsername
             // 
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtUsername.HintForeColor = System.Drawing.Color.Empty;
             this.txtUsername.HintText = "";
@@ -381,6 +392,17 @@ namespace GUI
             this.bunifuCards1.Size = new System.Drawing.Size(302, 483);
             this.bunifuCards1.TabIndex = 70;
             // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(13, 18);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(83, 20);
+            this.bunifuCustomLabel1.TabIndex = 7;
+            this.bunifuCustomLabel1.Text = "Xem trước:";
+            // 
             // lblTrangThai
             // 
             this.lblTrangThai.AutoSize = true;
@@ -391,6 +413,16 @@ namespace GUI
             this.lblTrangThai.Size = new System.Drawing.Size(256, 20);
             this.lblTrangThai.TabIndex = 6;
             this.lblTrangThai.Text = "Trạng thái tài khoản: Đang hoạt động";
+            // 
+            // picNhanVien
+            // 
+            this.picNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("picNhanVien.Image")));
+            this.picNhanVien.Location = new System.Drawing.Point(95, 90);
+            this.picNhanVien.Name = "picNhanVien";
+            this.picNhanVien.Size = new System.Drawing.Size(100, 100);
+            this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picNhanVien.TabIndex = 3;
+            this.picNhanVien.TabStop = false;
             // 
             // lblTen
             // 
@@ -434,37 +466,6 @@ namespace GUI
             this.cboKho.Size = new System.Drawing.Size(302, 21);
             this.cboKho.TabIndex = 73;
             // 
-            // picNhanVien
-            // 
-            this.picNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("picNhanVien.Image")));
-            this.picNhanVien.Location = new System.Drawing.Point(95, 90);
-            this.picNhanVien.Name = "picNhanVien";
-            this.picNhanVien.Size = new System.Drawing.Size(100, 100);
-            this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picNhanVien.TabIndex = 3;
-            this.picNhanVien.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.wms_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(69, 189);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(217, 196);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(13, 18);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(83, 20);
-            this.bunifuCustomLabel1.TabIndex = 7;
-            this.bunifuCustomLabel1.Text = "Xem trước:";
-            // 
             // lblFullPath
             // 
             this.lblFullPath.AutoSize = true;
@@ -507,9 +508,8 @@ namespace GUI
             this.lblFileAnh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
             this.lblFileAnh.Location = new System.Drawing.Point(856, 681);
             this.lblFileAnh.Name = "lblFileAnh";
-            this.lblFileAnh.Size = new System.Drawing.Size(27, 21);
+            this.lblFileAnh.Size = new System.Drawing.Size(0, 21);
             this.lblFileAnh.TabIndex = 81;
-            this.lblFileAnh.Text = "txt";
             // 
             // frmThemNhanVien
             // 
@@ -549,10 +549,10 @@ namespace GUI
             this.Load += new System.EventHandler(this.frmThemNhanVien_Load);
             this.panelLeft.ResumeLayout(false);
             this.panelLeft.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

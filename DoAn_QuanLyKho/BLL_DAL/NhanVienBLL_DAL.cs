@@ -241,5 +241,16 @@ namespace BLL_DAL
             var demNhanVien = from nhanvien in quanLyKho.NGUOIDUNGs where nhanvien.TINHTRANG == true select nhanvien;
             return demNhanVien.Count();
         }
+
+        //Lấy nhân viên theo id Kho
+        public IQueryable get_NhanVien_idKho(int idKho)
+        {
+            var data = quanLyKho.NGUOIDUNGs.Where(s => s.ID_KHO == idKho).Select(s => new
+            {
+                TEN = s.TEN,
+                SDT = s.SDT
+            });
+            return data as IQueryable;
+        }
     }
 }

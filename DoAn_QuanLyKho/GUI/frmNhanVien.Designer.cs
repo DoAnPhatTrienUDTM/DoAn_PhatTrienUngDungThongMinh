@@ -98,7 +98,7 @@ namespace GUI
             // txtSearch
             // 
             this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSearch.HintForeColor = System.Drawing.Color.Empty;
             this.txtSearch.HintText = "Nhập tại đây để tìm kiếm";
@@ -428,7 +428,6 @@ namespace GUI
             this.btnLamMoi.Size = new System.Drawing.Size(319, 48);
             this.btnLamMoi.TabIndex = 11;
             this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnLamMoi.Visible = false;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnKhoaTaiKhoan

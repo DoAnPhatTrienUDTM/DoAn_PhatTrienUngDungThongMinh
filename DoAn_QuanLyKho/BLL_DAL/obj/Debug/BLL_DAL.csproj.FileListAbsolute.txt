@@ -462,3 +462,141 @@ C:\Users\Phan Van Dai\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es
 C:\Users\Phan Van Dai\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\Phan Van Dai\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\Phan Van Dai\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csproj.CopyComplete
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\FireSharp.dll
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Microsoft.Threading.Tasks.dll
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Newtonsoft.Json.dll
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\System.Net.Http.Extensions.dll
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\System.Net.Http.Primitives.dll
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Microsoft.Threading.Tasks.xml
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Newtonsoft.Json.xml
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\System.Net.Http.Extensions.xml
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\System.Net.Http.Primitives.xml
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csproj.App.config
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraMap.v20.1.dll
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Map.v20.1.Core.dll
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraMap.v20.1.xml
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Map.v20.1.Core.xml
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\de\DevExpress.Map.v20.1.Core.resources.dll
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.Map.v20.1.Core.resources.dll
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.Map.v20.1.Core.resources.dll
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.Map.v20.1.Core.resources.dll
+D:\dean\PhatTrienPhanMemVaUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_PhatTrienUngDungThongMinh\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csprojAssemblyReference.cache
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\BLL_DAL.dll.config
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\BLL_DAL.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\BLL_DAL.pdb
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Data.Desktop.v20.1.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Data.v20.1.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Printing.v20.1.Core.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Utils.v20.1.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraBars.v20.1.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraEditors.v20.1.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraGrid.v20.1.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraLayout.v20.1.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraMap.v20.1.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraPrinting.v20.1.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\FireSharp.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Pdf.v20.1.Core.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Pdf.v20.1.Drawing.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Sparkline.v20.1.Core.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Map.v20.1.Core.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.RichEdit.v20.1.Core.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraTreeList.v20.1.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Office.v20.1.Core.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Data.Desktop.v20.1.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Data.v20.1.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Printing.v20.1.Core.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Utils.v20.1.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraBars.v20.1.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraEditors.v20.1.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraGrid.v20.1.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraLayout.v20.1.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraMap.v20.1.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraPrinting.v20.1.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Pdf.v20.1.Core.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Pdf.v20.1.Drawing.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Sparkline.v20.1.Core.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Map.v20.1.Core.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.RichEdit.v20.1.Core.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.XtraTreeList.v20.1.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\DevExpress.Office.v20.1.Core.xml
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\de\DevExpress.Data.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.Data.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.Data.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.Data.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\de\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\de\DevExpress.Utils.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.Utils.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.Utils.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.Utils.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\de\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\de\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\de\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\de\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\de\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\de\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\de\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\de\DevExpress.Map.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.Map.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.Map.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.Map.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\de\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\de\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\de\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\es\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csproj.App.config
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csproj.AssemblyReference.cache
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.Properties.Resources.resources
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csproj.GenerateResource.cache
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.dll.licenses
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csproj.CoreCompileInputs.cache
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.csproj.CopyComplete
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.dll
+C:\Users\Phan Van Dai\Desktop\Desktop\DoAn_QuanLyKho\DoAn_QuanLyKho\BLL_DAL\obj\Debug\BLL_DAL.pdb

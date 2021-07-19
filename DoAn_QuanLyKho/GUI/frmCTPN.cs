@@ -17,6 +17,7 @@ namespace GUI
         CTPN_BLL_DAL ctpn = new CTPN_BLL_DAL();
         Hanghoa_BLL_DAL hanghoa = new Hanghoa_BLL_DAL();
         public PHIEUNHAP phieunhap = new PHIEUNHAP();
+        public bool vitri = false;
         public frmCTPN()
         {
             InitializeComponent();
@@ -35,13 +36,23 @@ namespace GUI
 
         private void frmCTPN_Load(object sender, EventArgs e)
         {
-            gridPNhap.DataSource = phieunhnap_bll.get_PN_CTPN(Program.main.nd.ID_KHO);
+            
             lblmapn.Text = phieunhap.ID_PD.ToString();
             lblngaylap.Text = phieunhap.NGAYLAP.Value.Date.ToShortDateString();
             lblnv.Text = phieunhap.NGUOIDUNG.TEN;
             Load_CTPD(ctpn.get_CTPN(phieunhap.ID_PN));
         }
-
+        public void Load_PN_CTPN()
+        {
+            if (vitri)
+            {
+                gridPNhap.DataSource = phieunhnap_bll.get_ALL_PN_CTPN(); ;
+            }
+            else
+            {
+                gridPNhap.DataSource = phieunhnap_bll.get_PN_CTPN(Program.main.nd.ID_KHO);
+            }
+        }
         private void gridPNhap_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             phieunhap = phieunhnap_bll.get_PN(int.Parse(gridPNhap.CurrentRow.Cells[0].Value.ToString()));
@@ -49,6 +60,36 @@ namespace GUI
             lblmapn.Text = phieunhap.ID_PN.ToString();
             lblngaylap.Text = phieunhap.NGAYLAP.Value.Date.ToShortDateString();
             lblnv.Text = phieunhap.NGUOIDUNG.TEN;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string keysearch = txtSearch.Text;
+            gridPNhap.Rows.Clear();
+            gridPNhap.Refresh();
+            if (vitri)
+            {
+                gridPNhap.DataSource = phieunhnap_bll.get_ALL_PN_CTPN_search(keysearch);
+            }
+            else
+            {
+                gridPNhap.DataSource = phieunhnap_bll.get_PN_CTPN_search(Program.main.nd.ID_KHO,keysearch);
+            }
+        }
+
+        private void bunifuDatepicker1_onValueChanged(object sender, EventArgs e)
+        {
+            DateTime date = bunifuDatepicker1.Value.Date;
+            gridPNhap.Rows.Clear();
+            gridPNhap.Refresh();
+            if (vitri)
+            {
+                gridPNhap.DataSource = phieunhnap_bll.get_ALL_PN_CTPN_date(date);
+            }
+            else
+            {
+                gridPNhap.DataSource = phieunhnap_bll.get_PN_CTPN_date(Program.main.nd.ID_KHO, date);
+            }
         }
     }
 }

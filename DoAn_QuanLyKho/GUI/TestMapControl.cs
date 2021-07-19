@@ -16,6 +16,7 @@ namespace GUI
     {
         string bingKey = "";
         string FromAddress, ToAddress;
+        public string Khoangcach = "";
         public TestMapControl()
         {
             InitializeComponent();
@@ -46,7 +47,7 @@ namespace GUI
                 });
 
                 //this event will generate later
-                provider.RouteCalculated += OnRouteCalculated;
+                
 
                 List<RouteWaypoint> waypoints = new List<RouteWaypoint>();
                 //Add waypoint means Address
@@ -55,6 +56,8 @@ namespace GUI
                 waypoints.Add(new RouteWaypoint("From Address", FromAddress));
                 waypoints.Add(new RouteWaypoint("To Address", ToAddress));
                 provider.CalculateRoute(waypoints);
+                provider.RouteCalculated += OnRouteCalculated;
+               
                 provider.LayerItemsGenerating += routeLayerItemGenerating;
                 System.Threading.Thread.Sleep((int)System.TimeSpan.FromSeconds(2).TotalMilliseconds);
             }
@@ -89,7 +92,7 @@ namespace GUI
                     {
                         //int legNum = 1;
                         foreach (BingRouteLeg leg in e.CalculationResult.RouteResults[rnum].Legs)
-                            lblMiles.Text = leg.Distance.ToString("0.00") + " KM";
+                            Khoangcach = leg.Distance.ToString("0.00") + " KM";
                     }
                 }
             }

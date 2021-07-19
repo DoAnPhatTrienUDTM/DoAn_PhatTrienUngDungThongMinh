@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_DAL;
 using Microsoft.Office.Interop.Excel;
+using Custom_Control;
 
 namespace GUI
 {
@@ -21,9 +22,17 @@ namespace GUI
         CTPD_BLL_DAL ctpd = new CTPD_BLL_DAL();
         NhanVienBLL_DAL nv = new NhanVienBLL_DAL();
         NGUOIDUNG ng = new NGUOIDUNG();
+        CTPX_BLL_DAL ctpx = new CTPX_BLL_DAL();
+        TonKho_BLL_DAL tonkho = new TonKho_BLL_DAL();
         public frmDatHang()
         {
             InitializeComponent();
+        }
+
+        public void Alert(string msg, frmNotificationCustom.enmType type)
+        {
+            Custom_Control.frmNotificationCustom frm = new frmNotificationCustom();
+            frm.showAlert(msg, type);
         }
 
         private void circularButton1_Click(object sender, EventArgs e)
@@ -101,7 +110,7 @@ namespace GUI
         {
             if (txtSLD.Text.Equals(""))
             {
-                MessageBox.Show("Phải Nhập Số Lượng");
+                this.Alert("Phải nhập số lượng!", frmNotificationCustom.enmType.Info);
                 return;
             }
             SANPHAM sp = hanghoa.get_sp(int.Parse(cbxSPNCC.SelectedValue.ToString()));
@@ -119,7 +128,7 @@ namespace GUI
                     int id = int.Parse(gridCTDH.Rows[i].Cells[0].Value.ToString().Trim());
                     if (id == sp.ID_SP)
                     {
-                        MessageBox.Show("sản phẩm đã có trong danh sách đặt hàng");
+                        this.Alert("Sản phẩm đã có trong danh sách đặt hàng!", frmNotificationCustom.enmType.Info);
                         return;
                     }
                 }
@@ -129,7 +138,7 @@ namespace GUI
             }
             string[] cat = lbltongiten.Text.Split(' ');
             int tongtien = int.Parse(cat[0]) + thanhtien;
-            lbltongiten.Text = tongtien.ToString()+" VNĐ";
+            lbltongiten.Text = tongtien.ToString() + " VNĐ";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -186,7 +195,7 @@ namespace GUI
                 int sld = int.Parse(gridCTDH.Rows[i].Cells[2].Value.ToString());
                 ctpd.insert_CTPD(idpd, idsp, sld);
             }
-            MessageBox.Show("Đặt hàng Thành Công");
+            this.Alert("Đặt hàng thành công!", frmNotificationCustom.enmType.Success);
             for (int i = 0; i < gridCTDH.Rows.Count; i++)
             {
                 for (int j = 0; j < gridSPCanDat.Rows.Count; j++)
@@ -244,7 +253,7 @@ namespace GUI
                 gridCTDH.CurrentRow.Cells[1].Value = sp.TENSP;
                 gridCTDH.CurrentRow.Cells[2].Value = txtSLD.Text;
                 gridCTDH.CurrentRow.Cells[3].Value = thanhtien;
-                MessageBox.Show("Sửa Thành công");
+                this.Alert("Sửa thành công!", frmNotificationCustom.enmType.Success);
             }
             else
             {
@@ -253,7 +262,7 @@ namespace GUI
                     int id = int.Parse(gridCTDH.Rows[i].Cells[0].Value.ToString().Trim());
                     if (id == sp.ID_SP)
                     {
-                        MessageBox.Show("sản phẩm đã có trong danh sách đặt hàng");
+                        this.Alert("Sản phẩm đã có trong danh sách đặt hàng!", frmNotificationCustom.enmType.Info);
                         return;
                     }
                 }
@@ -262,11 +271,30 @@ namespace GUI
                 gridCTDH.CurrentRow.Cells[1].Value = sp.TENSP;
                 gridCTDH.CurrentRow.Cells[2].Value = txtSLD.Text;
                 gridCTDH.CurrentRow.Cells[3].Value = thanhtien;
-                MessageBox.Show("Sửa Thành công");
+                this.Alert("Sửa thành công!", frmNotificationCustom.enmType.Success);
             }
             string[] cat = lbltongiten.Text.Split(' ');
             int tongtien = int.Parse(cat[0]) + thanhtien - ttcu;
             lbltongiten.Text = tongtien.ToString() + " VNĐ";
+        }
+
+        private void btnDSChuyenHang_Click(object sender, EventArgs e)
+        {
+            List<SANPHAM> list = new List<SANPHAM>();
+            for (int i = 0; i < gridSPCanDat.Rows.Count; i++)
+            {
+                int id = int.Parse(gridSPCanDat.Rows[i].Cells[0].Value.ToString());
+                SANPHAM sp = hanghoa.get_sp(id);
+                int slton = tonkho.get_SL(Program.main.nd.ID_KHO, sp.ID_SP);
+                float slx_tb = ctpx.get_TB_Xuat(Program.main.nd.ID_KHO, sp.ID_SP);
+                if ((slx_tb / slton) >= 0.8)
+                {
+                    list.Add(sp);
+                }
+            }
+            frmYCChuyenHang frm = new frmYCChuyenHang();
+            frm.list = list;
+            Program.main.openSubForm(frm);
         }
         //public void load_SP(IQueryable HangHoas)
         //{

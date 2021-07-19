@@ -67,7 +67,7 @@ namespace BLL_DAL
             bool kq = true;
             CHITIETPHIEUDAT ctpd = quanLyKho.CHITIETPHIEUDATs.SingleOrDefault(n => n.ID_PD == idpd && n.ID_SP == idsp);
             int sl = (int)ctpd.SOLUONG;
-            if ( sldanhap > sl)
+            if (sldanhap > sl)
             {
                 kq = false;
             }
