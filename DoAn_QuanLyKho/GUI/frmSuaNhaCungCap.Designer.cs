@@ -91,6 +91,7 @@ namespace GUI
             this.grvNhaCungCap.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grvNhaCungCap.Size = new System.Drawing.Size(560, 362);
             this.grvNhaCungCap.TabIndex = 0;
+            this.grvNhaCungCap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grvNhaCungCap_CellClick);
             // 
             // Column1
             // 

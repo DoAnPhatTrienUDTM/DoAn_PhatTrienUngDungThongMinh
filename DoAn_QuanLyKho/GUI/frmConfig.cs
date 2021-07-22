@@ -82,9 +82,12 @@ namespace GUI
                     MessageBox.Show("Your connection string has been successfully save.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //frmSetupCompany frmSetup = new frmSetupCompany();
                     //frmSetup.Show();
-                    frmLogin frmlogin = new frmLogin();
-                    frmlogin.Show();
-                    this.Hide();
+                    //frmLogin frmlogin = new frmLogin();
+                    //frmlogin.Show();
+                    //this.Hide();
+
+                    Application.Restart();
+                    Environment.Exit(0);
                 }
             }
             catch (Exception ex)

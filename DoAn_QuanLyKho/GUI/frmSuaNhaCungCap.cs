@@ -54,5 +54,12 @@ namespace GUI
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
                 e.Handled = true;
         }
+
+        private void grvNhaCungCap_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtTenNhaCungCap.Text = grvNhaCungCap.CurrentRow.Cells[1].Value.ToString();
+            txtDiaChi.Text = grvNhaCungCap.CurrentRow.Cells[2].Value.ToString();
+            txtSoDienThoai.Text = grvNhaCungCap.CurrentRow.Cells[3].Value.ToString();
+        }
     }
 }

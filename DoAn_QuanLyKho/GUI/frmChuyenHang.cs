@@ -139,6 +139,7 @@ namespace GUI
 
         private void btnTimKho_Click(object sender, EventArgs e)
         {
+            list.Add(0);
             int slCanChuyen = int.Parse(gridSPCanChuyen.CurrentRow.Cells[4].Value.ToString());
             int idsp = int.Parse(gridSPCanChuyen.CurrentRow.Cells[0].Value.ToString());
             string Ten = gridSPCanChuyen.CurrentRow.Cells[1].Value.ToString();
