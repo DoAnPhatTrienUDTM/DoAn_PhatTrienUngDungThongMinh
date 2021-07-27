@@ -329,6 +329,12 @@
     <Compile Include="frmXemChiTietKho.Designer.cs">
       <DependentUpon>frmXemChiTietKho.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmXemPhieuChuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemPhieuChuyen.Designer.cs">
+      <DependentUpon>frmXemPhieuChuyen.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmXuatHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -480,6 +486,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmXemChiTietKho.resx">
       <DependentUpon>frmXemChiTietKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXemPhieuChuyen.resx">
+      <DependentUpon>frmXemPhieuChuyen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmXuatHang.resx">
       <DependentUpon>frmXuatHang.cs</DependentUpon>

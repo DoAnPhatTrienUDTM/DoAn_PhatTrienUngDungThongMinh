@@ -132,6 +132,6 @@ namespace BLL_DAL
             var phieudat = quanLyKho.PHIEUNHAPs.Where(pd => pd.NGAYLAP == date && pd.NGUOIDUNG.ID_KHO == idkho).Select(n => new { Id = n.ID_PN, tenncc = n.NHACUNGCAP.TENNCC });
             return phieudat;
         }
-       
+
     }
 }

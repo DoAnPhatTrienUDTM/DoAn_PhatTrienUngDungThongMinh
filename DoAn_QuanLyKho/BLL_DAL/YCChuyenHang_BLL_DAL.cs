@@ -51,5 +51,11 @@ namespace BLL_DAL
             ycch.TINHTRANG = "Đã xử lý";
             quanLyKho.SubmitChanges();
         }
+        public void updatetrngthai(int idpc)
+        {
+            var pc = quanLyKho.YEUCAUCHUYENHANGs.SingleOrDefault(n => n.ID_PC == idpc);
+            pc.TINHTRANG = "Đã xử lý";
+            quanLyKho.SubmitChanges();
+        }
     }
 }

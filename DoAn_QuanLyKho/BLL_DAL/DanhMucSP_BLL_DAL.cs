@@ -21,7 +21,7 @@ namespace BLL_DAL
         }
         public bool insert_DMSP(int idncc, int idsp, int gianhap)
         {
-            
+
             try
             {
                 DANHMUCSANPHAM dmsp = new DANHMUCSANPHAM();
@@ -37,7 +37,7 @@ namespace BLL_DAL
             }
             return true;
         }
-        public bool update_DMSP(int idncc, int idsp,int idspmoi, int gianhap)
+        public bool update_DMSP(int idncc, int idsp, int idspmoi, int gianhap)
         {
             DANHMUCSANPHAM dmsp = quanLyKho.DANHMUCSANPHAMs.SingleOrDefault(n => n.ID_NCC == idncc && n.ID_SP == idsp);
             var kt = quanLyKho.CHITIETPHIEUDATs.Where(n => n.PHIEUDAT.TINHTRANG == false && n.PHIEUDAT.ID_NCC == idncc && n.ID_SP == idsp);
@@ -54,7 +54,7 @@ namespace BLL_DAL
                 {
                     return false;
                 }
-                
+
             }
             else
             {

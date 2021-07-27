@@ -44,7 +44,7 @@ namespace GUI
             {
                 Load_DL(phieuxuat_bll.get_PX_search(Program.main.nd.ID_KHO, keysearch));
             }
-           
+
         }
 
         private void gridPN_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -67,15 +67,15 @@ namespace GUI
             }
         }
 
-       
-           
+
+
         public void Load_DL(IQueryable dspd)
         {
             gridPX.Rows.Clear();
             gridPX.Refresh();
             foreach (PHIEUXUAT pd in dspd)
             {
-                gridPX.Rows.Add(pd.ID_PX,pd.NGUOIDUNG.TEN, pd.NGAYLAP, pd.TONGTIEN);
+                gridPX.Rows.Add(pd.ID_PX, pd.NGUOIDUNG.TEN, pd.NGAYLAP, pd.TONGTIEN);
             }
         }
 

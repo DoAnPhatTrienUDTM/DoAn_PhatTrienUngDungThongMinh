@@ -49,6 +49,7 @@ namespace GUI
             this.btnnDangXuat = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.picNhanVien = new Custom_Control.CircularPictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.headerPanel = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -58,17 +59,16 @@ namespace GUI
             this.mainPanel = new System.Windows.Forms.Panel();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.indicator = new System.Windows.Forms.PictureBox();
-            this.picNhanVien = new Custom_Control.CircularPictureBox();
             this.panel1.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.headerPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.indicator)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTen
@@ -445,6 +445,17 @@ namespace GUI
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
+            // picNhanVien
+            // 
+            this.picNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("picNhanVien.Image")));
+            this.picNhanVien.Location = new System.Drawing.Point(87, 6);
+            this.picNhanVien.Name = "picNhanVien";
+            this.picNhanVien.Size = new System.Drawing.Size(100, 100);
+            this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picNhanVien.TabIndex = 0;
+            this.picNhanVien.TabStop = false;
+            this.picNhanVien.Click += new System.EventHandler(this.circularPictureBox1_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -531,19 +542,8 @@ namespace GUI
             this.indicator.Location = new System.Drawing.Point(0, 0);
             this.indicator.Name = "indicator";
             this.indicator.Size = new System.Drawing.Size(3, 53);
-            this.indicator.TabIndex = 12;
+            this.indicator.TabIndex = 14;
             this.indicator.TabStop = false;
-            // 
-            // picNhanVien
-            // 
-            this.picNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("picNhanVien.Image")));
-            this.picNhanVien.Location = new System.Drawing.Point(87, 6);
-            this.picNhanVien.Name = "picNhanVien";
-            this.picNhanVien.Size = new System.Drawing.Size(100, 100);
-            this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picNhanVien.TabIndex = 0;
-            this.picNhanVien.TabStop = false;
-            this.picNhanVien.Click += new System.EventHandler(this.circularPictureBox1_Click);
             // 
             // frmMain
             // 
@@ -565,6 +565,7 @@ namespace GUI
             this.panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.headerPanel.ResumeLayout(false);
             this.headerPanel.PerformLayout();
@@ -572,7 +573,6 @@ namespace GUI
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.indicator)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).EndInit();
             this.ResumeLayout(false);
 
         }

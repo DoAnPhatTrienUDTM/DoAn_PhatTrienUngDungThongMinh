@@ -32,10 +32,10 @@ namespace GUI
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChuyenHang));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChuyenHang));
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.mapControl1 = new DevExpress.XtraMap.MapControl();
@@ -61,6 +61,7 @@ namespace GUI
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SLDat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnxacnhan = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mapControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridSPCanChuyen)).BeginInit();
@@ -236,6 +237,7 @@ namespace GUI
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.btnxacnhan);
             this.panel2.Controls.Add(this.lblDC);
             this.panel2.Controls.Add(this.lblmakho);
             this.panel2.Controls.Add(this.btnTimKho);
@@ -386,6 +388,32 @@ namespace GUI
             this.SLDat.Name = "SLDat";
             this.SLDat.ReadOnly = true;
             // 
+            // btnxacnhan
+            // 
+            this.btnxacnhan.ActiveBorderThickness = 1;
+            this.btnxacnhan.ActiveCornerRadius = 20;
+            this.btnxacnhan.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnxacnhan.ActiveForecolor = System.Drawing.Color.White;
+            this.btnxacnhan.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnxacnhan.BackColor = System.Drawing.Color.White;
+            this.btnxacnhan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnxacnhan.BackgroundImage")));
+            this.btnxacnhan.ButtonText = "Xác Nhận";
+            this.btnxacnhan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnxacnhan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnxacnhan.ForeColor = System.Drawing.Color.White;
+            this.btnxacnhan.IdleBorderThickness = 1;
+            this.btnxacnhan.IdleCornerRadius = 20;
+            this.btnxacnhan.IdleFillColor = System.Drawing.Color.Coral;
+            this.btnxacnhan.IdleForecolor = System.Drawing.Color.White;
+            this.btnxacnhan.IdleLineColor = System.Drawing.Color.White;
+            this.btnxacnhan.Location = new System.Drawing.Point(143, 219);
+            this.btnxacnhan.Margin = new System.Windows.Forms.Padding(4);
+            this.btnxacnhan.Name = "btnxacnhan";
+            this.btnxacnhan.Size = new System.Drawing.Size(211, 48);
+            this.btnxacnhan.TabIndex = 22;
+            this.btnxacnhan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnxacnhan.Click += new System.EventHandler(this.btnxacnhan_Click);
+            // 
             // frmChuyenHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -432,5 +460,6 @@ namespace GUI
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn SLDat;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnxacnhan;
     }
 }

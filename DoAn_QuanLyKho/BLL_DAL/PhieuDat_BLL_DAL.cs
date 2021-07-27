@@ -37,7 +37,7 @@ namespace BLL_DAL
         {
             return quanLyKho.PHIEUDATs.SingleOrDefault(n => n.ID_PD == id);
         }
-       
+
         public IQueryable get_PD_false_search(int idkho, string tenncc)
         {
             return quanLyKho.PHIEUDATs.Where(n => n.TINHTRANG == false && n.NGUOIDUNG.ID_KHO == idkho && n.NHACUNGCAP.TENNCC.Contains(tenncc));
@@ -113,12 +113,12 @@ namespace BLL_DAL
         }
         public IQueryable get_All_PD_search(string tenncc)
         {
-            var phieudat = from pd in quanLyKho.PHIEUDATs where pd.NHACUNGCAP.TENNCC.Contains(tenncc)  select (pd);
+            var phieudat = from pd in quanLyKho.PHIEUDATs where pd.NHACUNGCAP.TENNCC.Contains(tenncc) select (pd);
             return phieudat;
         }
         public IQueryable get_ALL_PD_date(DateTime date)
         {
-            var phieudat = from pd in quanLyKho.PHIEUDATs where pd.NGAYLAP == date  select (pd);
+            var phieudat = from pd in quanLyKho.PHIEUDATs where pd.NGAYLAP == date select (pd);
             return phieudat;
         }
         public IQueryable get_ALL_PD_CTPD_search(string tenncc)
@@ -136,7 +136,7 @@ namespace BLL_DAL
             var phieudat = quanLyKho.PHIEUDATs.Where(pd => pd.NGAYLAP == date).Select(n => new { Id = n.ID_PD, tenncc = n.NHACUNGCAP.TENNCC });
             return phieudat;
         }
-        public IQueryable get_PD_CTPD_date(int idkho,DateTime date)
+        public IQueryable get_PD_CTPD_date(int idkho, DateTime date)
         {
             var phieudat = quanLyKho.PHIEUDATs.Where(pd => pd.NGAYLAP == date && pd.NGUOIDUNG.ID_KHO == idkho).Select(n => new { Id = n.ID_PD, tenncc = n.NHACUNGCAP.TENNCC });
             return phieudat;
@@ -155,7 +155,7 @@ namespace BLL_DAL
         }
         public IQueryable get_All_PD_true()
         {
-            return quanLyKho.PHIEUDATs.Where(n => n.TINHTRANG == true );
+            return quanLyKho.PHIEUDATs.Where(n => n.TINHTRANG == true);
         }
         public IQueryable get_PD_TrangThai(int idKho, string trangthai)
         {

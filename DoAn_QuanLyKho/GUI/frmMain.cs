@@ -253,6 +253,7 @@ namespace GUI
             frmPhieuChuyen frm = new frmPhieuChuyen();
             Program.main.openSubForm(frm);
             lblHeader.Text = "Chuyển hàng";
+            indicator.Top = ((Control)sender).Top;
         }
 
         public void Alert(string msg)

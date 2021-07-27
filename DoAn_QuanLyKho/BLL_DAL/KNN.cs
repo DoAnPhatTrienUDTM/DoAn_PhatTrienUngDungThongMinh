@@ -12,10 +12,10 @@ namespace BLL_DAL
         TonKho_BLL_DAL tonkho = new TonKho_BLL_DAL();
 
         CTPX_BLL_DAL ctpx = new CTPX_BLL_DAL();
-        public float timMax(List<float>  a)
+        public float timMax(List<float> a)
         {
             float max = a[0];
-            for (int i = 1; i < a.Count;i++)
+            for (int i = 1; i < a.Count; i++)
             {
                 if (a[i] > max)
                     max = a[i];
@@ -32,12 +32,12 @@ namespace BLL_DAL
             }
             return min;
         }
-        public List<ThongTin> getTT(int idkho,int idsp, int soluong,List<float> ds_slx_tb,List<float> ds_slt)
+        public List<ThongTin> getTT(int idkho, int idsp, int soluong, List<float> ds_slx_tb, List<float> ds_slt)
         {
 
             List<ThongTin> list = new List<ThongTin>();
 
-            foreach (TONKHO item in tonkho.get_SLTon_Chuyen(idsp, soluong,idkho))
+            foreach (TONKHO item in tonkho.get_SLTon_Chuyen(idsp, soluong, idkho))
             {
                 ThongTin tt = new ThongTin();
                 tt.Idkho = item.ID_KHO;
@@ -59,23 +59,23 @@ namespace BLL_DAL
                 output.Add((input[i] - min) / (max - min));
             }
         }
-        public List<float> tinhkhoangcach(List<ThongTin> ds, float soluongton,float slx_tb)
+        public List<float> tinhkhoangcach(List<ThongTin> ds, float soluongton, float slx_tb)
         {
             List<float> kq = new List<float>();
             foreach (ThongTin item in ds)
             {
-                float khoangcach = (float)Math.Sqrt(Math.Pow(item.Khoangcach, 2) +Math.Pow((item.Soluongton-soluongton),2)+Math.Pow((item.Slx_tb-slx_tb),2));
+                float khoangcach = (float)Math.Sqrt(Math.Pow(item.Khoangcach, 2) + Math.Pow((item.Soluongton - soluongton), 2) + Math.Pow((item.Slx_tb - slx_tb), 2));
                 kq.Add(khoangcach);
             }
             return kq;
         }
-        public ThongTin sapxepGiamVaLayKQ(List<ThongTin> a)
+        public void sapXepTang(List<ThongTin> a)
         {
             for (int i = 0; i < a.Count - 1; i++)
             {
                 for (int j = i + 1; j < a.Count; j++)
                 {
-                    if (a[j].Kq > a[i].Kq)
+                    if (a[j].Kq < a[i].Kq)
                     {
                         ThongTin t = a[i];
                         a[i] = a[j];
@@ -83,7 +83,6 @@ namespace BLL_DAL
                     }
                 }
             }
-            return a[0];
         }
     }
 }

@@ -52,10 +52,10 @@ namespace BLL_DAL
         }
 
         NCC_BLL_DAL ncc = new NCC_BLL_DAL();
-        //Lấy tồn kho <= 10
+        //Lấy tồn kho <= 50
         public IQueryable get_TonKho()
         {
-            var data = quanLyKho.TONKHOs.Where(s => s.SOLUONGTON <= 10).Select(s => new ThongBaoTonKho()
+            var data = quanLyKho.TONKHOs.Where(s => s.SOLUONGTON <= 50).Select(s => new ThongBaoTonKho()
             {
                 IntKho = s.ID_KHO,
                 StrSanPham = ncc.layTenSanPham(s.ID_SP),

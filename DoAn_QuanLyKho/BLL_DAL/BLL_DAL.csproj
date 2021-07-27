@@ -82,6 +82,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChuyenHang_BLL_DAL.cs" />
     <Compile Include="CTPD_BLL_DAL.cs" />
     <Compile Include="CTPN_BLL_DAL.cs" />
     <Compile Include="CTPX_BLL_DAL.cs" />

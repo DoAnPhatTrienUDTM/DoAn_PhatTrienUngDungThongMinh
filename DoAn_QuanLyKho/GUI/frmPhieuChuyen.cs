@@ -48,5 +48,11 @@ namespace GUI
                 Program.main.openSubForm(frm);
             }
         }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            frmXemPhieuChuyen frm = new frmXemPhieuChuyen();
+            frm.Show();
+        }
     }
 }
