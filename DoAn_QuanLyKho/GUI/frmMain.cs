@@ -221,8 +221,8 @@ namespace GUI
         private void frmMain_VisibleChanged(object sender, EventArgs e)
         {
             lblHeader.Text = "Trang chủ";
-            frmTrangChu frm = new frmTrangChu();
-            openSubForm(frm);
+            //frmTrangChu frm = new frmTrangChu();
+            //openSubForm(frm);
             try
             {
                 nd = nv.get_Info(MaNhanVien);
